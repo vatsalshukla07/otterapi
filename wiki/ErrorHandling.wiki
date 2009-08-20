@@ -1,0 +1,11 @@
+#summary Topsy - Otter API Error Handling
+
+== Error Handing: ==
+
+The following HTTP error codes are used to indicate an error condition and any app that uses the API should handle these.
+
+ * *503 Temporarily unavailable.* Whenever the API is unavailable for scheduled or unscheduled downtime, we'll try our best to return a 503 error code.
+
+ * *400 Parameter check failed.* This error indicates that a required parameter is missing or a parameter has a value that is out of bounds.
+
+ * *404 Action not supported. 

@@ -1,0 +1,21 @@
+#summary Topsy - Otter API Request Format
+
+= API Request Format =
+
+All requests are implemented via HTTP GET calls.
+
+== Syntax: ==
+
+{{{
+GET /resource.response-format?query=params HTTP/1.1
+Host: otter.topsy.com
+}}}
+
+The portion of the request url labeled `resource` should be one of the [Resources] available from the API. The portion of the request url labeled `response-format` should be one of the [ResponseFormats], either `json` or `js`. All query parameters for the resource should be provided in via query parameters.
+
+----
+
+==== See Also: ====
+  * [ErrorHandling Error Handling]
+  * [Resources Resources]
+  * [ResponseFormats Response Formats]

@@ -1,0 +1,27 @@
+#summary Topsy - Otter API Response Formats
+
+= Response Formats =
+
+Topsy provides resources in the following formats:
+
+|| *Name* || *Description* ||
+||json||JSON string of the response object.||
+||js||Javascript callback function call that takes the response object as a parameter.||
+
+== JSON ==
+
+When an API request uses a JSON response format, the response body will be in the form of a JSON object. An HTTP Header Content-Type: application/json` will also be sent.
+
+== Javascript ==
+
+When an API request uses a Javascript response format, the response body will be a javascript function call that takes one parameter containing the response object. An HTTP Header Content-Type: application/javascript` will also be sent.
+
+You may specify the callback function via a query parameter in the API request. For example:
+{{{
+http://otter.topsy.com/trackbackcount.js?callback=foobar&url=http://blog.example.com/my-post
+}}}
+
+This API call will respond with the following body:
+{{{
+foobar({'request':{'response_type':'js','parameters':{'url':'http://blog.example.com/my-post'}, ... });
+}}}
