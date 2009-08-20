@@ -4,18 +4,18 @@
 
 Topsy provides access to the following resources:
 
-|| *Name*           || *Description* ||
-|| [#search]           || List of results for a query. ||
-|| profilesearch    || List of author profiles. ||
-|| authorsearch     || List of authors that post about a query. ||
-|| searchcount      || Count of results for a search query. ||
-|| linkposts        || List of urls posted by an author. ||
-|| trackbacks       || List of posts referencing an url. ||
-|| trackbackcount   || Count of posts referencing an url. ||
-|| urlinfo          || Information about an url. ||
-|| authorinfo       || Information about an author. ||
-|| tags             || List of tags associated with an url. ||
-|| related          || List of related urls for another url. ||
+|| *Name*                           || *Description* ||
+|| [#search search]                 || List of results for a query. ||
+|| [#profilesearch profilesearch]   || List of author profiles. ||
+|| [#authorsearch authorsearch]     || List of authors that post about a query. ||
+|| [#searchcount searchcount]       || Count of results for a search query. ||
+|| [#linkposts linkposts]           || List of urls posted by an author. ||
+|| [#trackbacks trackbacks]         || List of posts referencing an url. ||
+|| [#trackbackcount trackbackcount] || Count of posts referencing an url. ||
+|| [#urlinfo urlinfo]               || Information about an url. ||
+|| [#authorinfo authorinfo]         || Information about an author. ||
+|| [#tags tags]                     || List of tags associated with an url. ||
+|| [#related related]               || List of related urls for another url. ||
 
 ----
 

@@ -14,6 +14,9 @@ Each request contains rate limit information in the HTTP response headers.
 || `X-RateLimit-Remaining` || Total credits available. ||
 || `X-RateLimit-Reset` || Timestamp (unix epoch) for when the credits will be reset. ||
 
+
+=== Example HTTP Response Headers ===
+
 {{{
 X-RateLimit-Limit: 2500
 X-RateLimit-Remaining: 2498
