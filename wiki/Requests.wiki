@@ -11,7 +11,7 @@ GET /resource.response-format?query=params HTTP/1.1
 Host: otter.topsy.com
 }}}
 
-The url of the request can be broken down into three parts: [Resources resource-name], [ResponseFormats]response-format], and query parameters.
+The url of the request can be broken down into three parts: [Resources resource-name], [ResponseFormats response-format], and query parameters.
 
 ----
 
