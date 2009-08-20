@@ -1,9 +1,9 @@
 #summary Topsy - Otter API Documentation Home
 #labels Featured
 
-= Topsy - Otter API Documentation = 
+= Otter API to Topsy = 
 
-The Otter API is a REST interface to Topsy resources and is made available through HTTP GET requests.
+The Otter API is an RESTful HTTP web service to Topsy. Search results and information about links or authors can be retrieved via HTTP GET requests.
 
 == [Requests Making API Requests] ==
 == [ErrorHandling Error Handling] ==
@@ -11,9 +11,9 @@ The Otter API is a REST interface to Topsy resources and is made available throu
 
 ----
 
-== Versioning ==
+== Version 1.0 ==
 
-This is v1.0 of the API. The host includes the API version to allow us to do new releases without breaking code that depends on older versions. If you are creating an application that uses this API - check this page often or follow [http://twitter.com/topsyapi @topsyapi] on Twitter to get updates.
+This is v1.0 of Otter API. This version of the api is accessible via the url: `http://otter.topsy.com/`. If you are creating an application that uses this API, subscribe to [http://groups.google.com/group/otterapi Otter API Discussion Group] or follow [http://twitter.com/topsyapi @topsyapi] on Twitter to get updates.
 
 ----
 
