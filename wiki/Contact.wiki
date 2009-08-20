@@ -2,6 +2,6 @@
 
 = Contact Topsy =
 
-  * [http://twitter.com/topsy @topsy]
+  * [http://twitter.com/topsy @Topsy on Twitter]
   * [http://groups.google.com/group/otterapi Otter API Discussion]
   * Email us at api@topsy.com
