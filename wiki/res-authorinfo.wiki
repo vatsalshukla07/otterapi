@@ -1,0 +1,15 @@
+= authorinfo =
+
+Information about an author.
+
+=== Parameters: ===
+
+|| *Name*   || *Type* || *Description* ||
+|| url      || string || URL string for the author. (required) ||
+
+=== Example: ===
+{{{
+http://otter.topsy.com/authorinfo.json?url=http://twitter.com/barackobama
+}}}
+
+This will fetch information about Barack Obama's Twitter profile.

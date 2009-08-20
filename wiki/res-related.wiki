@@ -1,0 +1,17 @@
+= related =
+
+List of related urls for another url.
+
+=== Parameters: ===
+
+|| *Name*   || *Type* || *Description* ||
+|| url      || string || URL string for the target. (required) ||
+|| page    || int    || page number of the result set. (optional, default: `1`, max: `10`) ||
+|| perpage || int    || limit number of results per page. (optional, default: `10`, max: `50`) ||
+
+=== Example: ===
+{{{
+http://otter.topsy.com/related.json?url=http://techcrunch.com/
+}}}
+
+This will fetch all the related urls associated with Techcrunch.

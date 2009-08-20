@@ -1,0 +1,15 @@
+= urlinfo =
+
+Information about an url.
+
+=== Parameters: ===
+
+|| *Name*   || *Type* || *Description* ||
+|| url      || string || URL string for the target. (required) ||
+
+=== Example: ===
+{{{
+http://otter.topsy.com/urlinfo.json?url=http://twitter.com/
+}}}
+
+This will fetch information about Twitter's homepage.

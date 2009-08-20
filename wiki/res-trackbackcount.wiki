@@ -1,0 +1,15 @@
+= trackbackcount =
+
+Count of posts referencing an url.
+
+=== Parameters: ===
+
+|| *Name*   || *Type* || *Description* ||
+|| url      || string || URL string for the target. (required) ||
+
+=== Example: ===
+{{{
+http://otter.topsy.com/trackbackcount.json?url=http://twitter.com/
+}}}
+
+This will fetch only the trackback counts in json format that reference Twitter's homepage.

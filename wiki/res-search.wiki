@@ -1,0 +1,17 @@
+= search =
+
+List of results for a query.
+
+=== Parameters: ===
+
+|| *Name*  || *Type* || *Description* ||
+|| q       || string || Search query string. (required) ||
+|| window  || string || Time window for results. (optional, default: `auto`) Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+|| page    || int    || page number of the result set. (optional, default: `1`, max: `10`) ||
+|| perpage || int    || limit number of results per page. (optional, default: `10`, max: `50`) ||
+
+=== Example: ===
+{{{
+http://otter.topsy.com/search.json?q=New+York
+}}}
+This will fetch search results in json format for the query new york.

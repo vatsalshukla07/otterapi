@@ -1,0 +1,24 @@
+= tags =
+
+List of tags associated with an url.
+
+=== Parameters: ===
+
+|| *Name*   || *Type* || *Description* ||
+|| url      || string || URL string for the target. (required either _q_ or _url_) ||
+|| q        || string || Query string. (required either _q_ or _url_) ||
+|| page    || int    || page number of the result set. (optional, default: `1`, max: `10`) ||
+|| perpage || int    || limit number of results per page. (optional, default: `10`, max: `50`) ||
+
+=== Example: ===
+{{{
+http://otter.topsy.com/tags.json?url=http://twitter.com/
+}}}
+
+This will fetch tags associated with Twitter's homepage.
+
+{{{
+http://otter.topsy.com/tags.json?url=http://twitter.com/barackobama
+}}}
+
+This will fetch tags associated with Barack Obama's Twitter profile.
