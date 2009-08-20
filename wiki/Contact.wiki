@@ -1,6 +1,8 @@
-#summary Contact Topsy
+#summary Contact Us
 
-= Contact Topsy =
+= Contact Us =
+
+Otter API is maintained by [http://labs.topsy.com/ Topsy Labs]. If you need help, have a question, or want to contact us, here are some choices:
 
   * [http://twitter.com/topsy @Topsy on Twitter]
   * [http://groups.google.com/group/otterapi Otter API Discussion]
