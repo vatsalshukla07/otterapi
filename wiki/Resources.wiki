@@ -1,4 +1,4 @@
-#summary Topsy - Otter API Resources
+#summary Resources
 
 = Resources =
 

@@ -1,4 +1,4 @@
-#summary Topsy - Otter API Error Handling
+#summary Error Handling
 
 == Error Handing: ==
 

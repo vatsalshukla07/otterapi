@@ -1,4 +1,4 @@
-#summary Topsy - Otter API Response Formats
+#summary Response Formats
 
 = Response Formats =
 

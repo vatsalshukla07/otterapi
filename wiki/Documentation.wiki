@@ -1,9 +1,9 @@
-#summary Topsy - Otter API Documentation Home
+#summary Documentation for Otter API to Topsy
 #labels Featured
 
 = Otter API to Topsy = 
 
-The Otter API is an RESTful HTTP web service to Topsy. Search results and information about links or authors can be retrieved via HTTP GET requests.
+Otter API is an RESTful HTTP web service to Topsy. Search results and information about links or authors can be retrieved via HTTP GET requests.
 
 == [Requests Making API Requests] ==
 == [ErrorHandling Error Handling] ==
