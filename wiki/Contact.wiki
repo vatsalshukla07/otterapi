@@ -1,0 +1,7 @@
+#summary Contact Topsy
+
+= Contact Topsy =
+
+  * [http://twitter.com/topsy @topsy]
+  * [http://groups.google.com/group/otterapi Otter API Discussion]
+  * Email us at api@topsy.com
