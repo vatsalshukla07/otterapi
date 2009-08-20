@@ -5,7 +5,7 @@
 Topsy provides access to the following resources:
 
 || *Name*           || *Description* ||
-|| search           || List of results for a query. ||
+|| [#search]           || List of results for a query. ||
 || profilesearch    || List of author profiles. ||
 || authorsearch     || List of authors that post about a query. ||
 || searchcount      || Count of results for a search query. ||
