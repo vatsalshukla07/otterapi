@@ -6,11 +6,13 @@ List of tags associated with an url.
 
 == Parameters: ==
 
-|| *Name*   || *Type* || *Description* ||
-|| url      || string || URL string for the target. (required either _q_ or _url_) ||
-|| q        || string || Query string. (required either _q_ or _url_) ||
+|| *Name*   || *Type* || *Required*  || *Description* ||
+|| url      || string || required^1^ || URL string for the target. ||
+|| q        || string || required^1^ || Query string. ||
 
 Accepts [ResListParameters List Parameters]
+
+required^1^: Either _q_ or _url_ is required.
 
 == Example: ==
 

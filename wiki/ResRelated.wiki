@@ -6,8 +6,8 @@ List of related urls for another url.
 
 == Parameters: ==
 
-|| *Name*   || *Type* || *Description* ||
-|| url      || string || URL string for the target. (required) ||
+|| *Name*   || *Type* || *Required* || *Description* ||
+|| url      || string || required   || URL string for the target. ||
 
 Accepts [ResListParameters List Parameters]
 

@@ -6,8 +6,8 @@ List of author profiles.
 
 == Parameters: ==
 
-|| *Name*  || *Type* || *Description* ||
-|| q       || string || Search query string. (required) ||
+|| *Name*  || *Type* || *Required* || *Description* ||
+|| q       || string || required   || Search query string. ||
 
 Accepts [ResListParameters List Parameters]
 

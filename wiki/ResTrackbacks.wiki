@@ -6,9 +6,9 @@ List of posts referencing an url.
 
 == Parameters: ==
 
-|| *Name*   || *Type* || *Description* ||
-|| url      || string || URL string for the target. (required) ||
-|| contains || string || Query string to filter results. (optional) ||
+|| *Name*   || *Type* || *Required* || *Description* ||
+|| url      || string || required   || URL string for the target. ||
+|| contains || string || optional   || Query string to filter results. ||
 
 Accepts [ResListParameters List Parameters]
 
