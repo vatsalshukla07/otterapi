@@ -1,0 +1,11 @@
+  * search
+  * profilesearch
+  * authorsearch
+  * searchcount
+  * linkposts
+  * trackbacks
+  * trackbackcount
+  * urlinfo
+  * authorinfo
+  * tags
+  * related
