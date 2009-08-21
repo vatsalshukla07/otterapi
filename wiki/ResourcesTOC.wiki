@@ -11,4 +11,4 @@
       * [ResAuthorInfo authorinfo]
       * [ResTags tags]
       * [ResRelated related]
-    * [ResponseTypes Response Types]
+    * [ResponseFormats Response Formats]
