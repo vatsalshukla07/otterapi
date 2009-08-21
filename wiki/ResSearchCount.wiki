@@ -6,8 +6,8 @@ Count of results for a search query.
 
 == Parameters: ==
 
-|| *Name*   || *Type* || *Required* || *Description* ||
-|| q        || string || required   || Search query string. ||
+|| *Name*   || *Required* || *Description* ||
+|| q        || required   || Search query string. ||
 
 == Example: ==
 

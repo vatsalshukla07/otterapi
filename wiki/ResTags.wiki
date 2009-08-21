@@ -6,9 +6,9 @@ List of tags associated with an url.
 
 == Parameters: ==
 
-|| *Name*   || *Type* || *Required*  || *Description* ||
-|| url      || string || required^1^ || URL string for the target. ||
-|| q        || string || required^1^ || Query string. ||
+|| *Name*   || *Required*  || *Description* ||
+|| url      || required^1^ || URL string for the target. ||
+|| q        || required^1^ || Query string. ||
 
 Accepts [ResListParameters List Parameters]
 

@@ -6,9 +6,9 @@ List of urls posted by an author.
 
 == Parameters: ==
 
-|| *Name*   || *Type* || *Required* || *Description* ||
-|| url      || string || required   || URL string for the author. ||
-|| contains || string || optional   || Query string to filter results. ||
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the author. ||
+|| contains || optional   || Query string to filter results. ||
 
 Accepts [ResListParameters List Parameters]
 

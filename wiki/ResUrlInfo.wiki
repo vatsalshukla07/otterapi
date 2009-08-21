@@ -6,8 +6,8 @@ Information about an url.
 
 == Parameters: ==
 
-|| *Name*   || *Type* || *Required* || *Description* ||
-|| url      || string || required || URL string for the target. ||
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the target. ||
 
 == Example: ==
 

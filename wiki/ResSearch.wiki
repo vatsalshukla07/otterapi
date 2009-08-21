@@ -6,9 +6,9 @@ List of results for a query.
 
 == Parameters: ==
 
-|| *Name*  || *Type* || *Required* || *Description* ||
-|| q       || string || required   || Search query string. ||
-|| window  || string || optional   || Time window for results. (default: `auto`) Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+|| *Name*  || *Required* || *Description* ||
+|| q       || required   || Search query string. ||
+|| window  || optional   || Time window for results. (default: `auto`) Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
 
 Accepts [ResListParameters List Parameters]
 

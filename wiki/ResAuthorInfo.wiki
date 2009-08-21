@@ -6,8 +6,8 @@ Information about an author.
 
 === Parameters: ===
 
-|| *Name*   || *Type* || *Required* || *Description* ||
-|| url      || string || required   || URL string for the author. ||
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the author. ||
 
 === Example: ===
 {{{
