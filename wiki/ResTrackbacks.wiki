@@ -9,8 +9,9 @@ List of posts referencing an url.
 || *Name*   || *Type* || *Description* ||
 || url      || string || URL string for the target. (required) ||
 || contains || string || Query string to filter results. (optional) ||
-|| page    || int    || page number of the result set. (optional, default: `1`, max: `10`) ||
-|| perpage || int    || limit number of results per page. (optional, default: `10`, max: `50`) ||
+
+Accepts [ResListParameters list parameters]
+
 
 === Example: ===
 {{{
