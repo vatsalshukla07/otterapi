@@ -3,7 +3,7 @@
 
 = Resources =
 
-Topsy provides access to the following resources:
+Otter API provides access to the following resources. These resources are read-only. All list resources can accept [ResListParameters list parameters].
 
 || *Name*                           || *Description* ||
 || [ResSearch search]                 || List of results for a query. ||
