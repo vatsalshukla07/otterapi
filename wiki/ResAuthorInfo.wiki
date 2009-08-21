@@ -1,4 +1,4 @@
-#sidebar ResourcesTOC
+#sidebar TOC
 
 = authorinfo =
 

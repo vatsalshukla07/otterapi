@@ -1,5 +1,5 @@
 #summary Resources
-#sidebar ResourcesTOC
+#sidebar TOC
 
 = Resources =
 

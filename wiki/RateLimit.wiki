@@ -1,4 +1,5 @@
 #summary Rate Limits
+#sidebar TOC
 
 = Rate Limit =
 

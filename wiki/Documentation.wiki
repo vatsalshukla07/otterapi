@@ -1,5 +1,6 @@
 #summary Documentation for Otter API to Topsy
 #labels Featured
+#sidebar TOC
 
 = Otter API to Topsy = 
 

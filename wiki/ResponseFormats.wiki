@@ -1,4 +1,5 @@
 #summary Response Formats
+#sidebar TOC
 
 = Response Formats =
 

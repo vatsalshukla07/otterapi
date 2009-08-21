@@ -1,4 +1,5 @@
 #summary Contact Us
+#sidebar TOC
 
 = Contact Us =
 
