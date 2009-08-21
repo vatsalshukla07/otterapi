@@ -18,7 +18,7 @@ http://otter.topsy.com/trackbackcount.json?url=http://blog.example.com/my-post
 
 ==== Example Response: ====
 {{{
-{'request':{'response_type':'js','parameters':{'url':'http://blog.example.com/my-post'}, ... }
+{'request':{'response_type':'json','parameters':{'url':'http://blog.example.com/my-post'}, ... }
 }}}
 
 ----
