@@ -1,3 +1,5 @@
+#sidebar ResourcesTOC
+
 == linkposts ==
 
 List of urls posted by an author.

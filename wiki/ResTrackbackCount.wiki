@@ -1,3 +1,5 @@
+#sidebar ResourcesTOC
+
 = trackbackcount =
 
 Count of posts referencing an url.
