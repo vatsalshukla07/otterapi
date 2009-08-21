@@ -9,9 +9,13 @@ Response formats are specified as a file-extension in the API request url. Topsy
 ||json||JSON string of the response object.||
 ||js||Javascript callback function call that takes the response object as a parameter.||
 
+----
+
 == JSON ==
 
 When an API request uses a JSON response format, the response body will be in the form of a JSON object. An HTTP Header Content-Type: application/json` will also be sent.
+
+----
 
 == Javascript ==
 
