@@ -1,1 +1,24 @@
-.
+#sidebar TOC
+
+= List Parameters =
+
+List parameters available to all list resources.
+
+=== Parameters: ===
+
+|| *Name*  || *Type* || *Description* ||
+|| page    || int    || page number of the result set. (optional, default: `1`, max: `10`) ||
+|| perpage || int    || limit number of results per page. (optional, default: `10`, max: `50`) ||
+
+=== Example: ===
+{{{
+http://otter.topsy.com/search.json?q=New+York&page=2
+}}}
+
+This query will fetch the second page of a search for "New York" and return a json object.
+
+{{{
+http://otter.topsy.com/search.json?q=New+York&perpage=25
+}}}
+
+This query will fetch the first 25 results of a search for "New York" and return a json object.
