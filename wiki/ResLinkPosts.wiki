@@ -1,0 +1,19 @@
+== linkposts ==
+
+List of urls posted by an author.
+
+=== Parameters: ===
+
+|| *Name*   || *Type* || *Description* ||
+|| url      || string || URL string for the author. (required) ||
+|| contains || string || Query string to filter results. (optional) ||
+|| page    || int    || page number of the result set. (optional, default: `1`, max: `10`) ||
+|| perpage || int    || limit number of results per page. (optional, default: `10`, max: `50`) ||
+
+=== Example: ===
+
+{{{
+http://otter.topsy.com/linkposts.json?url=http://twitter.com/barackobama
+}}}
+
+This will fetch links in json format posted by Barack Obama.

@@ -1,0 +1,17 @@
+== profilesearch ==
+
+List of author profiles.
+
+=== Parameters: ===
+
+|| *Name*  || *Type* || *Description* ||
+|| q       || string || Search query string. (required) ||
+|| page    || int    || page number of the result set. (optional, default: `1`, max: `10`) ||
+|| perpage || int    || limit number of results per page. (optional, default: `10`, max: `50`) ||
+
+=== Example: ===
+{{{
+http://otter.topsy.com/profilesearch.json?q=Barack+Obama
+}}}
+
+This will fetch search results in json format for author profiles that match Barack Obama.
