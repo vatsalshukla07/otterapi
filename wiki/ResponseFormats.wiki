@@ -26,12 +26,12 @@ When an API request uses a Javascript response format, the response body will be
 || *Name*  || *Type* || *Description* ||
 || callback       || string || Javascript callback function name. (required) ||
 
-You may specify the callback function via a query parameter in the API request. For example:
+==== Example Request ====
 {{{
 http://otter.topsy.com/trackbackcount.js?callback=foobar&url=http://blog.example.com/my-post
 }}}
 
-This API call will respond with the following body:
+==== Example Response ====
 {{{
 foobar({'request':{'response_type':'js','parameters':{'url':'http://blog.example.com/my-post'}, ... });
 }}}
