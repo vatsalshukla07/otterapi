@@ -3,7 +3,8 @@
 
 = Rate Limit =
 
- API requests are limited to 2,500 per hour per IP. Topsy credits 2,500 tokens to your IP every hour. A maximum limit of `perpage` to 50 and `page` to 10. If you need more than this, please [Contact contact us]. You can check the status of your credits with the following call:
+API requests are limited to 2,500 per hour per IP. Topsy credits 2,500 tokens to your IP every hour. A maximum limit of `perpage` to 50 and `page` to 10. If you need more than this, please [Contact contact us]. You can check the status of your credits with the following call:
+
 {{{
 http://otter.topsy.com/credit.json
 }}}

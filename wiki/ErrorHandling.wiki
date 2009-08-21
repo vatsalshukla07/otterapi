@@ -1,7 +1,7 @@
 #summary Error Handling
 #sidebar TOC
 
-== Error Handing: ==
+= Error Handing: =
 
 The following HTTP error codes are used to indicate an error condition and any app that uses the API should handle these.
 
@@ -9,4 +9,4 @@ The following HTTP error codes are used to indicate an error condition and any a
 
  * *400 Parameter check failed.* This error indicates that a required parameter is missing or a parameter has a value that is out of bounds.
 
- * *404 Action not supported. 
+ * *404 Action not supported.* This indicates that a [Resources resource] that does not exist has been requested.
