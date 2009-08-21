@@ -9,6 +9,7 @@ List of results for a query.
 || *Name*  || *Type* || *Description* ||
 || q       || string || Search query string. (required) ||
 || window  || string || Time window for results. (optional, default: `auto`) Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+
 Accepts [ResListParameters list parameters]
 
 === Example: ===
