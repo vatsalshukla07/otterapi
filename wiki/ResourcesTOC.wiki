@@ -1,11 +1,11 @@
-  * search
-  * profilesearch
-  * authorsearch
-  * searchcount
-  * linkposts
-  * trackbacks
-  * trackbackcount
-  * urlinfo
-  * authorinfo
-  * tags
-  * related
+  * [ResSearch search]
+  * [ResProfileSearch profilesearch]
+  * [ResAuthorSearch authorsearch]
+  * [ResSearchCount searchcount]
+  * [ResLinkPosts linkposts]
+  * [ResTrackbacks trackbacks]
+  * [ResTrackbackCount trackbackcount]
+  * [ResUrlInfo urlinfo]
+  * [ResAuthorInfo authorinfo]
+  * [ResTags tags]
+  * [ResRelated related]
