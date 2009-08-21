@@ -2,15 +2,13 @@
 
 = List Parameters =
 
-List parameters available to all list resources.
-
-=== Parameters: ===
+List parameters available to all list [Resources resources].
 
 || *Name*  || *Type* || *Description* ||
 || page    || int    || page number of the result set. (optional, default: `1`, max: `10`) ||
 || perpage || int    || limit number of results per page. (optional, default: `10`, max: `50`) ||
 
-=== Example: ===
+== Examples: ==
 {{{
 http://otter.topsy.com/search.json?q=New+York&page=2
 }}}
