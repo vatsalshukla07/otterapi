@@ -4,14 +4,15 @@
 
 List of related urls for another url.
 
-=== Parameters: ===
+== Parameters: ==
 
 || *Name*   || *Type* || *Description* ||
 || url      || string || URL string for the target. (required) ||
 
-Accepts [ResListParameters list parameters]
+Accepts [ResListParameters List Parameters]
 
-=== Example: ===
+== Example: ==
+
 {{{
 http://otter.topsy.com/related.json?url=http://techcrunch.com/
 }}}

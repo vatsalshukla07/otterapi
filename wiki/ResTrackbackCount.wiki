@@ -4,12 +4,13 @@
 
 Count of posts referencing an url.
 
-=== Parameters: ===
+== Parameters: ==
 
 || *Name*   || *Type* || *Description* ||
 || url      || string || URL string for the target. (required) ||
 
-=== Example: ===
+== Example: ==
+
 {{{
 http://otter.topsy.com/trackbackcount.json?url=http://twitter.com/
 }}}

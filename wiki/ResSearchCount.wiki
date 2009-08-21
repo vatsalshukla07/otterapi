@@ -4,12 +4,12 @@
 
 Count of results for a search query.
 
-=== Parameters: ===
+== Parameters: ==
 
 || *Name*   || *Type* || *Description* ||
 || q        || string || Search query string. (required) ||
 
-=== Example: ===
+== Example: ==
 
 {{{
 http://otter.topsy.com/searchcount.json?q=Barack+Obama

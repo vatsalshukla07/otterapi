@@ -1,17 +1,18 @@
 #sidebar TOC
 
-== profilesearch ==
+= profilesearch =
 
 List of author profiles.
 
-=== Parameters: ===
+== Parameters: ==
 
 || *Name*  || *Type* || *Description* ||
 || q       || string || Search query string. (required) ||
 
-Accepts [ResListParameters list parameters]
+Accepts [ResListParameters List Parameters]
 
-=== Example: ===
+== Example: ==
+
 {{{
 http://otter.topsy.com/profilesearch.json?q=Barack+Obama
 }}}

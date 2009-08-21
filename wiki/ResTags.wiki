@@ -4,15 +4,16 @@
 
 List of tags associated with an url.
 
-=== Parameters: ===
+== Parameters: ==
 
 || *Name*   || *Type* || *Description* ||
 || url      || string || URL string for the target. (required either _q_ or _url_) ||
 || q        || string || Query string. (required either _q_ or _url_) ||
 
-Accepts [ResListParameters list parameters]
+Accepts [ResListParameters List Parameters]
 
-=== Example: ===
+== Example: ==
+
 {{{
 http://otter.topsy.com/tags.json?url=http://twitter.com/
 }}}

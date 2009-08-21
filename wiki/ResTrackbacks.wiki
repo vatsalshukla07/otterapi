@@ -4,16 +4,17 @@
 
 List of posts referencing an url.
 
-=== Parameters: ===
+== Parameters: ==
 
 || *Name*   || *Type* || *Description* ||
 || url      || string || URL string for the target. (required) ||
 || contains || string || Query string to filter results. (optional) ||
 
-Accepts [ResListParameters list parameters]
+Accepts [ResListParameters List Parameters]
 
 
-=== Example: ===
+== Example: ==
+
 {{{
 http://otter.topsy.com/trackbacks.json?url=http://twitter.com/
 }}}
