@@ -11,6 +11,16 @@ Response formats are specified as a file-extension in the API request url. Topsy
 
 When an API request uses a JSON response format, the response body will be in the form of a JSON object. An HTTP Header Content-Type: application/json` will also be sent.
 
+==== Example Request: ====
+{{{
+http://otter.topsy.com/trackbackcount.json?url=http://blog.example.com/my-post
+}}}
+
+==== Example Response: ====
+{{{
+{'request':{'response_type':'js','parameters':{'url':'http://blog.example.com/my-post'}, ... }
+}}}
+
 ----
 
 == Javascript ==
