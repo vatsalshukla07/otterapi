@@ -3,7 +3,7 @@
 
 = Response Formats =
 
-Topsy provides resources in JSON format. A Javascript format is also available that wraps the response in a callback hook. This format is specified as a file-extension for the API request url.
+Response formats are specified as a file-extension in the API request url. Topsy provides resources in JSON format. A Javascript format is also available that wraps the response in a callback hook.
 
 || *Name* || *Description* ||
 ||json||JSON string of the response object.||
