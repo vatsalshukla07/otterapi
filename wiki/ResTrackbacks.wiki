@@ -16,7 +16,7 @@ Accepts [ResListParameters List Parameters]
 == Example: ==
 
 {{{
-http://otter.topsy.com/trackbacks.json?url=http://twitter.com/
+http://otter.topsy.com/trackbacks.json?url=http://topsy.com/
 }}}
 
-This will fetch posts in json format that reference Twitter's homepage.
+This will fetch posts in json format that reference Topsy's homepage.
