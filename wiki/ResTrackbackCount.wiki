@@ -12,7 +12,7 @@ Count of posts referencing an url.
 == Example: ==
 
 {{{
-http://otter.topsy.com/trackbackcount.json?url=http://twitter.com/
+http://otter.topsy.com/trackbackcount.json?url=http://topsy.com/
 }}}
 
-This will fetch only the trackback counts in json format that reference Twitter's homepage.
+This will fetch only the trackback counts in json format that reference Topsy's homepage.
