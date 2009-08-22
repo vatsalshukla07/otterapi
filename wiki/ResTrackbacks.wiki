@@ -10,6 +10,7 @@ List of posts referencing an url.
 || url       || required   || URL string for the target. ||
 || contains  || optional   || Query string to filter results. ||
 || tracktype || optional   || Type of trackbacks (defaults to "tweets") ||
+|| infonly   || optional   || Boolean value that filters trackbacks to influential only (default 0) ||
 
 Accepts [ResListParameters List Parameters]
 
