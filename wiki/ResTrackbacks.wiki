@@ -20,4 +20,6 @@ Accepts [ResListParameters List Parameters]
 http://otter.topsy.com/trackbacks.json?url=http://topsy.com/&tracktype=tweet
 }}}
 
-This will fetch posts (tweets) in json format that reference Topsy's homepage. It is advised that you explicitly specify tracktype=tweet, which is the only supported tracktype at present, but this will change in future to support other types of references. 
+This will fetch posts (tweets) in json format that reference Topsy's homepage. 
+
+It is advised that you explicitly specify tracktype=tweet, which is the only supported tracktype at present, but this will change in future to support other types of references. 
