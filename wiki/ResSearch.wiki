@@ -18,3 +18,8 @@ Accepts [ResListParameters List Parameters]
 http://otter.topsy.com/search.json?q=New+York
 }}}
 This will fetch search results in json format for the query new york.
+
+{{{
+http://otter.topsy.com/search.json?q=site:youtube.com&window=d
+}}}
+This will fetch the most popular youtube videos today.
