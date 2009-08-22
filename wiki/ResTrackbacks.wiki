@@ -6,17 +6,17 @@ List of posts referencing an url.
 
 == Parameters: ==
 
-|| *Name*   || *Required* || *Description* ||
-|| url      || required   || URL string for the target. ||
-|| contains || optional   || Query string to filter results. ||
+|| *Name*    || *Required* || *Description* ||
+|| url       || required   || URL string for the target. ||
+|| contains  || optional   || Query string to filter results. ||
+|| tracktype || optional   || Type of trackbacks (defaults to "tweets") ||
 
 Accepts [ResListParameters List Parameters]
-
 
 == Example: ==
 
 {{{
-http://otter.topsy.com/trackbacks.json?url=http://topsy.com/
+http://otter.topsy.com/trackbacks.json?url=http://topsy.com/&tracktype=tweet
 }}}
 
-This will fetch posts in json format that reference Topsy's homepage.
+This will fetch posts (tweets) in json format that reference Topsy's homepage. It is advised that you explicitly specify tracktype=tweet, which is the only supported tracktype at present, but this will change in future to support other types of references. 
