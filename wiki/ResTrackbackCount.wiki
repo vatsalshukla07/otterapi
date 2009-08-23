@@ -8,6 +8,7 @@ Count of posts referencing an url.
 
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the target. ||
+|| contains || optional   || A query filter for trackbacks (the trackbacks must contain this string). ||
 
 == Example: ==
 
