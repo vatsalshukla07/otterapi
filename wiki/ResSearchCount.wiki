@@ -8,6 +8,7 @@ Count of results for a search query.
 
 || *Name*   || *Required* || *Description* ||
 || q        || required   || Search query string. ||
+|| window  || optional   || Time window for results. (default: `a` Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
 
 == Example: ==
 
