@@ -2,7 +2,7 @@
 
 = authorsearch =
 
-List of authors that post about a query.
+List of authors that talk about the query. The list is sorted by frequency of posts and the influence of authors. 
 
 == Parameters: ==
 
@@ -15,7 +15,7 @@ Accepts [ResListParameters List Parameters]
 == Example: ==
 
 {{{
-http://otter.topsy.com/authorsearch.json?q=San+Francisco+Giants
+http://otter.topsy.com/authorsearch.json?q=nosql
 }}}
 
-This will fetch search results in json format for author that are most relevant to the query San Francisco Giants.
+This will fetch search results in json format for authors who talk about "nosql" the most.
