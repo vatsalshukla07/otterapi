@@ -2,7 +2,7 @@
 
 = related =
 
-List of related urls for another url.
+List of related urls for another url. 
 
 == Parameters: ==
 
@@ -14,7 +14,7 @@ Accepts [ResListParameters List Parameters]
 == Example: ==
 
 {{{
-http://otter.topsy.com/related.json?url=http://techcrunch.com/
+http://otter.topsy.com/related.json?url=http://powerset.com/
 }}}
 
-This will fetch all the related urls associated with Techcrunch.
+This will fetch all the related urls for http://powerset.com/
