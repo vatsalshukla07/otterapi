@@ -8,14 +8,14 @@ List of results for a query.
 
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ||
-|| window  || optional   || Time window for results. (default: `auto`) Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+|| window  || optional   || Time window for results. (default: `a` Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
 
 Accepts [ResListParameters List Parameters]
 
 == Example: ==
 
 {{{
-http://otter.topsy.com/search.json?q=barack+obama
+http://otter.topsy.com/search.json?q=barack+obama&window=auto
 }}}
 This will fetch search results in json format for the query "barack obama"
 
