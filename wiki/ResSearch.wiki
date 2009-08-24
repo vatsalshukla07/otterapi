@@ -15,9 +15,9 @@ Accepts [ResListParameters List Parameters]
 == Example: ==
 
 {{{
-http://otter.topsy.com/search.json?q=New+York
+http://otter.topsy.com/search.json?q=barack+obama
 }}}
-This will fetch search results in json format for the query new york.
+This will fetch search results in json format for the query "barack obama"
 
 {{{
 http://otter.topsy.com/search.json?q=site:youtube.com&window=d
