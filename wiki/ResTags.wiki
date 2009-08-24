@@ -2,17 +2,16 @@
 
 = tags =
 
-List of tags associated with an url.
+List of tags associated with a url.
 
 == Parameters: ==
 
 || *Name*   || *Required*  || *Description* ||
 || url      || required^1^ || URL string for the target. ||
-|| q        || required^1^ || Query string. ||
 
 Accepts [ResListParameters List Parameters]
 
-required^1^: Either _q_ or _url_ is required.
+required^1^: _url_ is required.
 
 == Example: ==
 
