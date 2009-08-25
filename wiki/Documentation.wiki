@@ -10,7 +10,7 @@ Otter API is an RESTful HTTP web service to Topsy. Topsy indexes Twitter posts t
 
 == Version 1.0 ==
 
-This is v1.0 of Otter API. This version of the api is accessible via the url: `http://otter.topsy.com/`. If you are creating an application that uses this API, subscribe to [http://groups.google.com/group/otterapi Otter API Discussion Group] or follow [http://twitter.com/topsyapi @topsyapi] on Twitter to get updates.
+This is v1.0 of Otter API. This version of the api is accessible via the url: `http://otter.topsy.com/`. If you are creating an application that uses this API, subscribe to [http://groups.google.com/group/otterapi Otter API Discussion Group] or follow [http://twitter.com/topsy @topsy] on Twitter to get updates.
 
 ----
 
