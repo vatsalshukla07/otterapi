@@ -2,4 +2,4 @@
 
 || *Format* || *Description* ||
 || `site:domain` || filter results to a base url. (eg: example.com/sports) ||
-|| `from:twitter-username || filter results to a Twitter username ||
+|| `from:twitter-username` || filter results to a Twitter username ||
