@@ -45,7 +45,7 @@ foobar({'request':{'response_type':'js','parameters':{'url':'http://blog.example
 
 == Txt ==
 
-This is for debug purposes only! The txt response type returns a Data::Dumper object version of the response.
+This is for debug purposes only! The TXT response type returns a Data::Dumper object version (a form of perl object serialization) of the response object.  This is useful for debugging / learning the API in the browser.  Please DO NOT parse this with a perl script. 
 
 ==== Example Request: ====
 {{{
