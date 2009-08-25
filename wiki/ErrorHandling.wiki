@@ -7,7 +7,7 @@ The following HTTP error codes are used to indicate an error condition and any a
 
  * *400 Parameter check failed.* This error indicates that a required parameter is missing or a parameter has a value that is out of bounds.
 
- * *403 Forbidden. You don't have access to this action. 
+ * *403 Forbidden*. You don't have access to this action. 
 
  * *404 Action not supported.* This indicates that a [Resources resource] that does not exist has been requested.
 
