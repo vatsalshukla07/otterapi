@@ -1,6 +1,5 @@
 #summary Table of Contents
 
-  * [Documentation Documentation Home]
   * [Requests Making API Requests]
   * [Resources]
       * [ResTrackbacks trackbacks]
