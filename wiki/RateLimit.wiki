@@ -3,19 +3,18 @@
 
 = Rate Limit =
 
-API requests are limited to 2,500 per hour per IP. Topsy credits 2,500 tokens to your IP every hour. A maximum limit of `perpage` to 50 and `page` to 10. If you need more than this, please [Contact contact us]. You can check the status of your credits with the following call:
+API requests are limited to 2,500 per hour per IP. Topsy credits 2,500 tokens to your IP every hour. You can check the status of your credits with the following call. 
 
 {{{
 http://otter.topsy.com/credit.json
 }}}
 
-Each request contains rate limit information in the HTTP response headers.
+In addition, each request contains rate limit information in the HTTP response headers.
 
 || *HTTP Header* || *Description ||
 || `X-RateLimit-Limit` || Total credits that can be allocated. ||
 || `X-RateLimit-Remaining` || Total credits available. ||
 || `X-RateLimit-Reset` || Timestamp (unix epoch) for when the credits will be reset. ||
-
 
 === Example HTTP Response Headers ===
 
@@ -25,7 +24,14 @@ X-RateLimit-Remaining: 2498
 X-RateLimit-Reset: 1250791200
 }}}
 
+= Paging Limits =
 
-== Client Identification ==
+All calls that support paging, limit `perpage` to 50 and `page` to 10. 
+
+= Client Identification =
 
 We request that you send you identify your application or service via the `User-Agent` HTTP header. This value should be the url to your service or application. This is not mandatory, but when under heavy load, we will give preference to clients that identify themselves. It is also possible to identify via `X-Topsy-UA` HTTP header, if modifying the `User-Agent` header is not possible.
+
+= Higher grade access = 
+
+We plan to support higher grade of access in the future.  If you need this, please [Contactus contact us]. 
