@@ -1,0 +1,15 @@
+#sidebar TOC
+
+= related =
+
+List of trending terms. 
+
+Accepts [ResListParameters List Parameters]
+
+== Example: ==
+
+{{{
+http://otter.topsy.com/trending.json
+}}}
+
+This will fetch trending terms.
