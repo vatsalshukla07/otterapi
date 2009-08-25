@@ -30,7 +30,7 @@ All calls that take [ResListParameters list parameters] limit `perpage` to 50 an
 
 = Client Identification =
 
-We request that you send you identify your application or service via the `User-Agent` HTTP header. This value should be the url to your service or application. This is not mandatory, but when under heavy load, we will give preference to clients that identify themselves. It is also possible to identify via `X-Topsy-UA` HTTP header, if modifying the `User-Agent` header is not possible.
+We request that you identify your application or service via the `User-Agent` HTTP header. This value should be the url to your service or application. This is not mandatory, but when under heavy load, we will give preference to clients that identify themselves. It is also possible to identify via `X-Topsy-UA` HTTP header, if modifying the `User-Agent` header is not possible.
 
 = Higher grade access = 
 
