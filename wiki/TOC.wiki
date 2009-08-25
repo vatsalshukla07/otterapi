@@ -13,6 +13,7 @@
       * [ResAuthorInfo authorinfo]
       * [ResTags tags]
       * [ResRelated related]
+      * [ResTrending trending]
   * [ResponseFormats Response Formats]
   * [ErrorHandling Error Handling]
   * [RateLimit Rate Limits]
