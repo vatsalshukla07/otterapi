@@ -17,3 +17,4 @@
   * [ResponseFormats Response Formats]
   * [ErrorHandling Error Handling]
   * [RateLimit Rate Limits]
+  * [Contact Contact Us]
