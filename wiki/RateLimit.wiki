@@ -34,4 +34,4 @@ We request that you send you identify your application or service via the `User-
 
 = Higher grade access = 
 
-We plan to support higher grade of access in the future.  If you need this, please [Contactus contact us]. 
+We plan to support higher grade of access in the future.  If you need this, please [Contact contact us]. 
