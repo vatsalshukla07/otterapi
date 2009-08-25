@@ -8,4 +8,4 @@ Otter API is an RESTful HTTP web service to Topsy. Topsy is a search engine that
 
 The Otter API provides access to topsy search results, url information and author information along with a the intermediate data (like author influence) that is used in creation of search rankings. Most of what you see on http://topsy.com/ is available through this API. 
 
-This is v1.0 of Otter API. This version of the api is accessible via the url: `http://otter.topsy.com/`. 
+To get started, see [Requests making requests].
