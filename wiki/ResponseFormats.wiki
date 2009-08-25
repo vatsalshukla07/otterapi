@@ -41,3 +41,33 @@ http://otter.topsy.com/trackbackcount.js?callback=foobar&url=http://blog.example
 {{{
 foobar({'request':{'response_type':'js','parameters':{'url':'http://blog.example.com/my-post'}, ... });
 }}}
+
+
+== Txt ==
+
+This is for debug purposes only! The txt response type returns a Data::Dumper object version of the response.
+
+==== Example Request: ====
+{{{
+http://otter.topsy.com/trackbackcount.txt?url=http://topsy.com/
+}}}
+
+==== Example Response: ====
+{{{
+### FOR DEBUG ONLY ###
+$VAR1 = {
+  'request' => {
+    'response_type' => 'txt',
+    'parameters' => {
+      'url' => 'http://topsy.com/'
+    },
+    'request_type' => 'trackbackcount',
+    'url' => 'http://otter.topsy.com:8006/trackbackcount.txt?url=http%3A%2F%2Ftopsy.com%2F'
+  },
+  'response' => {
+    'contains' => '1889',
+    'influential' => '464',
+    'all' => '1889'
+  }
+};
+}}}
