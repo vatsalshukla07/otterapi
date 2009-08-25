@@ -11,7 +11,7 @@ All requests are implemented via HTTP GET calls.  The url of the request can be 
 
 == Syntax: ==
 
-   `GET /`[Resources resource]`.`[ResponseFormats response-format]`?query=params HTTP/1.1`<br>
+   `GET /`[Resources resource]`.`[ResponseFormats response-format]`?beta=BETAKEY&query=params HTTP/1.1`<br>
    `Host: otter.topsy.com`
 
 = Next = 
