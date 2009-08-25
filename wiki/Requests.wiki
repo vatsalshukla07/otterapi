@@ -14,7 +14,7 @@ All requests are implemented via HTTP GET calls.  The url of the request can be 
    `GET /`[Resources resource]`.`[ResponseFormats response-format]`?query=params HTTP/1.1`<br>
    `Host: otter.topsy.com`
 
-= See Also = 
+= Next = 
 
  * [Resources]
  * [ResponseFormats]
