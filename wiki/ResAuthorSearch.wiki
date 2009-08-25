@@ -7,7 +7,7 @@ List of authors that talk about the query. The list is sorted by frequency of po
 == Parameters: ==
 
 || *Name*  || *Required* || *Description* ||
-|| q       || required   || Search query string. ||
+|| q       || required   || Search query string. ([QuerySyntax query syntax]) ||
 || window  || optional   || Time window for results. (default: 'a') Options: `auto` - automatically pick the most recent and relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
 
 Accepts [ResListParameters List Parameters]
