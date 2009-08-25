@@ -1,6 +1,6 @@
 #sidebar TOC
 
-= related =
+= trending =
 
 List of trending terms. 
 
@@ -11,5 +11,3 @@ Accepts [ResListParameters List Parameters]
 {{{
 http://otter.topsy.com/trending.json
 }}}
-
-This will fetch trending terms.
