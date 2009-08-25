@@ -4,16 +4,8 @@
 
 = Otter API to Topsy = 
 
-Otter API is an RESTful HTTP web service to Topsy. Topsy indexes Twitter posts that contain urls and provides a search engine over these urls. Topsy search results, url information (trackbacks) and author information (linkposts) are accessible through the Otter API - along with intermediate data (like author influence) that is used for creating search rankings. 
+Otter API is an RESTful HTTP web service to Topsy. Topsy is a search engine that ranks URLs by the number and quality of tweets that mention the URL. Topsy computes a reputation (influence score) for each twitter user (referred to as an author) - which is based on the who retweets the author. The influence factors in to search result rankings. 
 
-----
+The Otter API provides access to topsy search results, url information and author information along with a the intermediate data (like author influence) that is used in creation of search rankings. Most of what you see on http://topsy.com/ is available through this API. 
 
-== Version 1.0 ==
-
-This is v1.0 of Otter API. This version of the api is accessible via the url: `http://otter.topsy.com/`. If you are creating an application that uses this API, subscribe to [http://groups.google.com/group/otterapi Otter API Discussion Group] or follow [http://twitter.com/topsy @topsy] on Twitter to get updates.
-
-----
-
-== License ==
-
-The API is available under the "if it breaks you own both parts" licensing. If you run into problems, please write to us at api@topsy.com and we'll try to help soon as we can.
+This is v1.0 of Otter API. This version of the api is accessible via the url: `http://otter.topsy.com/`. 
