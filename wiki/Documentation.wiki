@@ -4,7 +4,7 @@
 
 = Otter API to Topsy = 
 
-Otter API is an RESTful HTTP web service to Topsy. Topsy indexes Twitter posts that contain urls and provides a search engine over based on these posts. Topsy search results, url information and author information is accessible through the Otter API. 
+Otter API is an RESTful HTTP web service to Topsy. Topsy indexes Twitter posts that contain urls and provides a search engine over these urls. Topsy search results, url information (trackbacks) and author information (linkposts) are accessible through the Otter API - along with intermediate data (like author influence) that is used for creating search rankings. 
 
 ----
 
