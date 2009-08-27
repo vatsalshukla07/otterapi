@@ -11,7 +11,7 @@ Information about an url.
 
 == Example: ==
 
-This will fetch information about Twitter's homepage.
+Fetch information about Twitter's homepage.
 
 {{{
 $ curl -i "http://otter.topsy.com/urlinfo.json?url=http://twitter.com/"
