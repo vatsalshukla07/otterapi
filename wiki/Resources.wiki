@@ -12,7 +12,7 @@ Otter API provides access to the following resources. These resources are read-o
 || [ResSearchCount searchcount]       || Count of results for a search query. ||
 || [ResLinkPosts linkposts]           || List of urls posted by an author. ||
 || [ResTrackbacks trackbacks]         || List of posts referencing an url. ||
-|| [ResTrackbackCount trackbackcount] || Count of posts referencing an url. ||
+|| [ResStats stats]                   || Count of posts referencing an url. ||
 || [ResUrlInfo urlinfo]               || Information about an url. ||
 || [ResAuthorInfo authorinfo]         || Information about an author. ||
 || [ResTags tags]                     || List of tags associated with an url. ||
