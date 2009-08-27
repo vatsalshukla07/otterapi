@@ -18,6 +18,7 @@ http://otter.topsy.com/stats.json?url=http://topsy.com/
 
 This will fetch only the trackback counts in json format that reference Topsy's homepage.
 
-== See Also 
+== See Also ==
 
  * [ResUrlInfo UrlInfo]
+ * [ResTrackbacks Trackbacks]
