@@ -14,8 +14,48 @@ Accepts [ResListParameters List Parameters]
 
 == Example: ==
 
-{{{
-http://otter.topsy.com/authorsearch.json?q=nosql
-}}}
+Fetch search results in json format for authors who talk about "nosql" the most.
 
-This will fetch search results in json format for authors who talk about "nosql" the most.
+{{{
+$ curl -i "http://otter.topsy.com/authorsearch.json?q=nosql"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:13:46 GMT
+Content-Length: 7473
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:18:45 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2494
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "q" : "nosql"
+      },
+      "response_type" : "json",
+      "resource" : "authorsearch",
+      "url" : "http://otter.topsy.com/authorsearch.json?q=nosql"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "1139",
+      "perpage" : 15,
+      "list" : [
+         {
+            "name" : "nosql topsy 5",
+            "nick" : "nosql_topsy_5",
+            "photo_url" : "",
+            "description" : "",
+            "influence_level" : "1",
+            "hits" : 72,
+            "url" : "http://twitter.com/nosql_topsy_5",
+            "topsy_author_url" : "http://topsy.com/twitter/nosql_topsy_5"
+         },
+         ...
+      ]
+   }
+}
+}}}
