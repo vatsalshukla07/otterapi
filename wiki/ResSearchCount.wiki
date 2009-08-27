@@ -12,7 +12,7 @@ Count of results for a search query.
 
 == Example: ==
 
-This will fetch only the search result counts in json format for a query of "Barack Obama".
+Fetch only the search result counts in json format for a query of "Barack Obama".
 
 {{{
 $ curl -i "http://otter.topsy.com/searchcount.json?q=Barack+Obama"
