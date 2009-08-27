@@ -12,6 +12,7 @@ Information about an author.
 === Example: ===
 {{{
 $ curl -i "http://otter.topsy.com/authorinfo.json?url=http://twitter.com/barackobama"
+
 HTTP/1.0 200 OK
 Connection: close
 Date: Thu, 27 Aug 2009 03:57:16 GMT
