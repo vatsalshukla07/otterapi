@@ -12,11 +12,38 @@ Count of tweets for a url.
 
 == Example: ==
 
-{{{
-http://otter.topsy.com/stats.json?url=http://topsy.com/
-}}}
-
 This will fetch only the trackback counts in json format that reference Topsy's homepage.
+
+{{{
+$ curl -i "http://otter.topsy.com/stats.json?url=http://topsy.com/"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:27:18 GMT
+Content-Length: 335
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:32:18 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2486
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://topsy.com/"
+      },
+      "response_type" : "json",
+      "resource" : "stats",
+      "url" : "http://otter.topsy.com/stats.json?url=http%3A%2F%2Ftopsy.com%2F"
+   },
+   "response" : {
+      "contains" : "1931",
+      "influential" : "874",
+      "all" : "1931"
+   }
+}
+}}}
 
 == See Also ==
 
