@@ -11,7 +11,7 @@ Information about an author.
 
 === Example: ===
 {{{
-curl "http://ci005:4040/authorinfo.json?url=http://twitter.com/barackobama&beta=monkey"
+curl "http://otter.topsy.com/authorinfo.json?url=http://twitter.com/barackobama"
 {
    "request" : {
       "parameters" : {
