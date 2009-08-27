@@ -20,7 +20,6 @@ Content-Length: 587
 Content-Type: application/json; charset=utf-8
 Expires: Wed, 26 Aug 2009 21:02:16 -0700
 Status: 200
-X-Catalyst: 5.71001
 X-RateLimit-Limit: 2500
 X-RateLimit-Remaining: 2468
 X-RateLimit-Reset: 1251345600
