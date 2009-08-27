@@ -15,7 +15,7 @@ Accepts [ResListParameters List Parameters]
 
 == Example: ==
 
-This will fetch posts (tweets) in json format that reference Topsy's homepage. 
+Fetch posts (tweets) in json format that reference Topsy's homepage. 
 
 {{{
 $ curl -i "http://otter.topsy.com/trackbacks.json?url=http://topsy.com/"
@@ -65,7 +65,8 @@ X-RateLimit-Reset: 1251345600
 }
 }}}
 
-
+== Example: ==
+Fetch posts (tweets) that reference Topsy's homepage from influential users only. 
 
 {{{
 curl -i "http://otter.topsy.com/trackbacks.json?url=http://topsy.com/&infonly=1&tracktype=tweet"
@@ -115,5 +116,3 @@ X-RateLimit-Reset: 1251349200
    }
 }
 }}}
-
-This will fetch posts (tweets) that reference Topsy's homepage from influential users only. 
