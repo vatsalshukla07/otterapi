@@ -34,4 +34,4 @@ We request that you identify your application or service via the `User-Agent` HT
 
 = Higher grade access = 
 
-We plan to support higher grade of access in the future.  If you need this, please [Contact contact us].
+We plan to support higher grade of access in the future.  If you need this, please [Contact contact us]..
