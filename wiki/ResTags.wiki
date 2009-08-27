@@ -57,10 +57,11 @@ X-RateLimit-Reset: 1251349200
 
 == Example: ==
 
-This will fetch tags associated with Barack Obama's Twitter profile.
+Fetch tags associated with Barack Obama's Twitter profile.
 
 {{{
 $ curl -i "http://otter.topsy.com/tags.json?url=http://twitter.com/barackobama"
+
 HTTP/1.0 200 OK
 Connection: close
 Date: Thu, 27 Aug 2009 04:20:33 GMT
