@@ -1,0 +1,19 @@
+#sidebar TOC
+
+= trackbackcount =
+
+Count of tweets for a url.
+
+== Parameters: ==
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the target. ||
+|| contains || optional   || A query filter for trackbacks (the trackbacks must contain this string). ||
+
+== Example: ==
+
+{{{
+http://otter.topsy.com/stats.json?url=http://topsy.com/
+}}}
+
+This will fetch only the trackback counts in json format that reference Topsy's homepage.
