@@ -2,7 +2,7 @@
 
 = Resource: search =
 
-*Format:* `http://otter.topsy.com/search.`[ResponseFormats response-format]`?query=parameters`
+*Format:* `http://otter.topsy.com/search.`[ResponseFormats format]`?query=parameters`
 
 *Description:* List of results for a query.
 
