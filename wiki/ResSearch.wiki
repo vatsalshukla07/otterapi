@@ -62,9 +62,13 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
+== Example: ==
+
+Fetch the most popular youtube videos today.
 
 {{{
 $ curl -i "http://otter.topsy.com/search.json?q=site:youtube.com&window=d"
+
 HTTP/1.0 200 OK
 Connection: close
 Date: Thu, 27 Aug 2009 04:09:09 GMT
@@ -75,10 +79,6 @@ Status: 200
 X-RateLimit-Limit: 2500
 X-RateLimit-Remaining: 2496
 X-RateLimit-Reset: 1251349200
-
-== Example: ==
-
-Fetch the most popular youtube videos today.
 
 {
    "request" : {
