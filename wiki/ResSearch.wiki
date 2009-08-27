@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= search =
+= Resource: search =
 
-List of results for a query.
+*Format:* http://otter.topsy.com/search.[ResponseFormat response-format]?query=parameters
+
+*Description:* List of results for a query.
 
 == Parameters: ==
 
