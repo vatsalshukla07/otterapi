@@ -16,3 +16,6 @@ http://otter.topsy.com/urlinfo.json?url=http://twitter.com/
 }}}
 
 This will fetch information about Twitter's homepage.
+
+== See Also ==
+ [ResStats Stats]
