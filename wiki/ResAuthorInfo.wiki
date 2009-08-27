@@ -10,6 +10,9 @@ Information about an author.
 || url      || required   || URL string for the author. ||
 
 === Example: ===
+
+Fetch information about Barack Obama's Twitter profile.
+
 {{{
 $ curl -i "http://otter.topsy.com/authorinfo.json?url=http://twitter.com/barackobama"
 
@@ -44,5 +47,3 @@ X-RateLimit-Reset: 1251345600
    }
 }
 }}}
-
-This will fetch information about Barack Obama's Twitter profile.
