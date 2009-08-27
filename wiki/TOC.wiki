@@ -3,7 +3,7 @@
   * [Requests Making API Requests]
   * [Resources]
       * [ResTrackbacks trackbacks] 
-      * [ResTrackbackCount stats] 
+      * [ResStats stats] 
       * [ResSearch search] 
       * [ResProfileSearch profilesearch]
       * [ResAuthorSearch authorsearch]
