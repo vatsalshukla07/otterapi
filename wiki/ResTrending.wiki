@@ -10,6 +10,7 @@ Accepts [ResListParameters List Parameters]
 
 {{{
 $ curl -i "http://otter.topsy.com/trending.json"
+
 HTTP/1.0 200 OK
 Connection: close
 Date: Thu, 27 Aug 2009 04:25:54 GMT
