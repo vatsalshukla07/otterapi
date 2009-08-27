@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= tags =
+= Resource: tags =
 
-List of tags associated with a url.
+*Description:* List of tags associated with a url.
+
+*URL Format:* `http://otter.topsy.com/tags.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 

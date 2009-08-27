@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= profilesearch =
+= Resource: profilesearch =
 
-List of author profiles.
+*Description:* List of author profiles.
+
+*URL Format:* `http://otter.topsy.com/profilesearch.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 

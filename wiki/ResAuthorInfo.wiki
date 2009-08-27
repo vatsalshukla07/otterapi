@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= authorinfo =
+= Resource: authorinfo =
 
-Information about an author.
+*Description:* Information about an author.
+
+*URL Format:* `http://otter.topsy.com/authorinfo.`[ResponseFormats format]`?query=parameters`
 
 === Parameters: ===
 

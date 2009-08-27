@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= stats =
+= Resource: stats =
 
-Count of tweets for a url.
+*Description:* Count of tweets for a url.
+
+*URL Format:* `http://otter.topsy.com/stats.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 

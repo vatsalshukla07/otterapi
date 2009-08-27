@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= trending =
+= Resource: trending =
 
-List of trending terms. 
+*Description:* List of trending terms.
+
+*URL Format:* `http://otter.topsy.com/trending.`[ResponseFormats format]`?query=parameters`
 
 Accepts [ResListParameters List Parameters]
 

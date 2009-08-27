@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= related =
+= Resource: related =
 
-List of related urls for another url. 
+*Description:* List of related urls for another url.
+
+*URL Format:* `http://otter.topsy.com/related.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 

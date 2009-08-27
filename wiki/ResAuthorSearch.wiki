@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= authorsearch =
+= Resource: authorsearch =
 
-List of authors that talk about the query. The list is sorted by frequency of posts and the influence of authors. 
+*Description:* List of authors that talk about the query. The list is sorted by frequency of posts and the influence of authors.
+
+*URL Format:* `http://otter.topsy.com/authorsearch.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 

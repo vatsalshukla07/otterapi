@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= trackbackcount =
+= Resource: trackbackcount =
 
-Count of posts referencing an url.
+*Description:* Count of posts referencing an url.
+
+*URL Format:* `http://otter.topsy.com/trackbackcount.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 

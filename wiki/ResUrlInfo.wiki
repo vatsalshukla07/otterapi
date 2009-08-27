@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= urlinfo =
+= Resource: urlinfo =
 
-Information about an url.
+*Description:* Information about an url.
+
+*URL Format:* `http://otter.topsy.com/urlinfo.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 

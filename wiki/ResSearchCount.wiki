@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= searchcount =
+= Resource: searchcount =
 
-Count of results for a search query.
+*Description:* Count of results for a search query.
+
+*URL Format:* `http://otter.topsy.com/searchcount.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 

@@ -1,8 +1,10 @@
 #sidebar TOC
 
-= linkposts =
+= Resource: linkposts =
 
-List of urls posted by an author.
+*Description:* List of urls posted by an author.
+
+*URL Format:* `http://otter.topsy.com/linkposts.`[ResponseFormats format]`?query=parameters`
 
 == Parameters: ==
 
