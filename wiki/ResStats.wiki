@@ -12,7 +12,7 @@ Count of tweets for a url.
 
 == Example: ==
 
-This will fetch only the trackback counts in json format that reference Topsy's homepage.
+Fetch only the trackback counts in json format that reference Topsy's homepage.
 
 {{{
 $ curl -i "http://otter.topsy.com/stats.json?url=http://topsy.com/"
