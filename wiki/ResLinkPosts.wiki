@@ -14,8 +14,50 @@ Accepts [ResListParameters List Parameters]
 
 == Example: ==
 
-{{{
-http://otter.topsy.com/linkposts.json?url=http://twitter.com/barackobama
-}}}
+Fetch links in json format posted by Barack Obama.
 
-This will fetch links in json format posted by Barack Obama.
+{{{
+$ curl -i "http://otter.topsy.com/linkposts.json?url=http://twitter.com/barackobama"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:16:29 GMT
+Content-Length: 6247
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:21:29 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2492
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://twitter.com/barackobama"
+      },
+      "response_type" : "json",
+      "resource" : "linkposts",
+      "url" : "http://otter.topsy.com/linkposts.json?url=http%3A%2F%2Ftwitter.com%2Fbarackobama"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "288",
+      "perpage" : 10,
+      "list" : [
+         {
+            "permalink_url" : "http://twitter.com/barackobama/status/3569838653",
+            "target" : {
+               "topsy_trackback_url" : "http://topsy.com/tb/my.barackobama.com/page/community/post/obamaforamerica/gGMPVm",
+               "url" : "http://my.barackobama.com/page/community/post/obamaforamerica/gGMPVm",
+               "trackback_total" : "43"
+            },
+            "date" : "1251337427",
+            "content" : "Highlights from the tribute to Sen. Kennedy's life and accomplishments from last year's Democratic National Convention: http://bit.ly/TJcyr",
+            "date_alpha" : "3 hours ago"
+         },
+         ...
+      ]
+   }
+}
+
+}}}
