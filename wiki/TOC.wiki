@@ -3,8 +3,7 @@
   * [Requests Making API Requests]
   * [Resources]
       * [ResTrackbacks trackbacks] 
-        List of all tweets for a URL
-      * [ResTrackbackCount stats] Count of tweets for a URL 
+      * [ResTrackbackCount stats] 
       * [ResSearch search] 
       * [ResProfileSearch profilesearch]
       * [ResAuthorSearch authorsearch]
