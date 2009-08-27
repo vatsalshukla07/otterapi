@@ -64,6 +64,50 @@ X-RateLimit-Reset: 1251349200
 
 
 {{{
-http://otter.topsy.com/search.json?q=site:youtube.com&window=d
+$ curl -i "http://otter.topsy.com/search.json?q=site:youtube.com&window=d"
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:09:09 GMT
+Content-Length: 7086
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:14:09 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2496
+X-RateLimit-Reset: 1251349200
+
+== Example: ==
+
+Fetch the most popular youtube videos today.
+
+{
+   "request" : {
+      "parameters" : {
+         "window" : "d",
+         "q" : "site:youtube.com"
+      },
+      "response_type" : "json",
+      "resource" : "search",
+      "url" : "http://otter.topsy.com/search.json?q=site%3Ayoutube.com&window=d"
+   },
+   "response" : {
+      "window" : "d",
+      "page" : 1,
+      "total" : "58258",
+      "perpage" : 10,
+      "list" : [
+         {
+            "trackback_permalink" : "http://twitter.com/danilogentili/status/3567528055",
+            "hits" : 2499,
+            "topsy_trackback_url" : "http://topsy.com/trackback?url=http://www.youtube.com/watch?v=i_KPsH7f3xo",
+            "url" : "http://www.youtube.com/watch?v=i_KPsH7f3xo",
+            "content" : "ApÃ³s ver isso http://bit.ly/xOl3b, eu, Danilo Zentili, peÃ§o perdÃ£o aos fÃ£s da Susxa que, como @Davis_Reimberg , sonhavam ser paquitas.",
+            "title" : "MEXEU COM A XUXA MEXEU COMIGO!!!",
+            "score" : 24.20444298,
+            "highlight" : "ApÃ³s ver isso http://bit.ly/xOl3b, eu, Danilo Zentili, peÃ§o perdÃ£o aos fÃ£s da Susxa que, como @Davis_Reimberg , sonhavam ser paquitas."
+         },
+         ...
+      ]
+   }
+}
 }}}
-This will fetch the most popular youtube videos today.
