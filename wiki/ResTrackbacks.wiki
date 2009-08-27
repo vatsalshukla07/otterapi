@@ -1,8 +1,11 @@
 #sidebar TOC
 
-= trackbacks =
+= Resource: trackbacks =
 
-A list of tweets (trackbacks) referencing a url, most recent first. 
+*Description:* List of tweets (trackbacks) referencing a url, most recent first.
+
+*URL Format:* `http://otter.topsy.com/trackbacks.`[ResponseFormats format]`?query=parameters`
+
 
 == Parameters: ==
 
