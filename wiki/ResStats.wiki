@@ -20,4 +20,4 @@ This will fetch only the trackback counts in json format that reference Topsy's 
 
 == See Also 
 
- * [ResUrlinfo Urlinfo]
+ * [ResUrlInfo UrlInfo]
