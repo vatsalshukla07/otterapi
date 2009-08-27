@@ -1,6 +1,6 @@
 #sidebar TOC
 
-= trackbackcount =
+= stats =
 
 Count of tweets for a url.
 
