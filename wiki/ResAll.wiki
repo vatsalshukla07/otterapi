@@ -4,7 +4,7 @@
 
 *Description:* Information about an author.
 
-*URL Format:* `http://otter.topsy.com/authorinfo.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/authorinfo.json?query=parameters`
 
 === Parameters: ===
 
@@ -54,13 +54,13 @@ X-RateLimit-Reset: 1251345600
 
 *Description:* List of authors that talk about the query. The list is sorted by frequency of posts and the influence of authors.
 
-*URL Format:* `http://otter.topsy.com/authorsearch.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/authorsearch.json?query=parameters`
 
 === Parameters: ===
 
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ([QuerySyntax query syntax]) ||
-|| window  || optional   || Time window for results. (default: 'a') Options: `auto` - automatically pick the most recent and relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+|| window  || optional   || Time window for results. (default: 'a') Options: `auto` - automatically pick the most recent and relevant window. `h` last hour, `d` last day, `w` last week, json last month, json all time ||
 
 Accepts [ResListParameters List Parameters]
 
@@ -116,7 +116,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* List of urls posted by an author.
 
-*URL Format:* `http://otter.topsy.com/linkposts.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/linkposts.json?query=parameters`
 
 === Parameters: ===
 
@@ -181,7 +181,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* List of author profiles.
 
-*URL Format:* `http://otter.topsy.com/profilesearch.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/profilesearch.json?query=parameters`
 
 === Parameters: ===
 
@@ -239,7 +239,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* List of related urls for another url.
 
-*URL Format:* `http://otter.topsy.com/related.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/related.json?query=parameters`
 
 === Parameters: ===
 
@@ -297,7 +297,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* Count of results for a search query.
 
-*URL Format:* `http://otter.topsy.com/searchcount.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/searchcount.json?query=parameters`
 
 === Parameters: ===
 
@@ -345,13 +345,13 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* List of results for a query.
 
-*URL Format:* `http://otter.topsy.com/search.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/search.json?query=parameters`
 
 === Parameters: ===
 
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ([QuerySyntax query syntax]) ||
-|| window  || optional   || Time window for results. (default: `a` Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+|| window  || optional   || Time window for results. (default: json Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, json last month, json all time ||
 
 Accepts [ResListParameters List Parameters]
 
@@ -460,7 +460,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* Count of tweets for a url.
 
-*URL Format:* `http://otter.topsy.com/stats.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/stats.json?query=parameters`
 
 === Parameters: ===
 
@@ -507,7 +507,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* List of tags associated with a url.
 
-*URL Format:* `http://otter.topsy.com/tags.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/tags.json?query=parameters`
 
 === Parameters: ===
 
@@ -606,7 +606,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* Count of posts referencing an url.
 
-*URL Format:* `http://otter.topsy.com/trackbackcount.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/trackbackcount.json?query=parameters`
 
 === Parameters: ===
 
@@ -626,7 +626,7 @@ This will fetch only the trackback counts in json format that reference Topsy's 
 
 *Description:* List of tweets (trackbacks) referencing a url, most recent first.
 
-*URL Format:* `http://otter.topsy.com/trackbacks.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/trackbacks.json?query=parameters`
 
 === Parameters: ===
 
@@ -748,7 +748,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* List of trending terms.
 
-*URL Format:* `http://otter.topsy.com/trending.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/trending.json?query=parameters`
 
 Accepts [ResListParameters List Parameters]
 
@@ -795,7 +795,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* Information about an url.
 
-*URL Format:* `http://otter.topsy.com/urlinfo.`[ResponseFormats format]`?query=parameters`
+*URL Format:* `http://otter.topsy.com/urlinfo.json?query=parameters`
 
 === Parameters: ===
 
