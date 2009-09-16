@@ -1,5 +1,23 @@
 #sidebar TOC
 
+= Resources =
+
+Otter API provides access to the following resources. These resources are read-only. All list resources can accept [ResListParameters list parameters].
+
+|| *Name*                             || *Description* ||
+|| [ResSearch search]                 || List of results for a query. ||
+|| [ResProfileSearch profilesearch]   || List of author profiles. ||
+|| [ResAuthorSearch authorsearch]     || List of authors that post about a query. ||
+|| [ResSearchCount searchcount]       || Count of results for a search query. ||
+|| [ResLinkPosts linkposts]           || List of urls posted by an author. ||
+|| [ResTrackbacks trackbacks]         || List of posts referencing an url. ||
+|| [ResStats stats]                   || Count of posts referencing an url. ||
+|| [ResUrlInfo urlinfo]               || Information about an url. ||
+|| [ResAuthorInfo authorinfo]         || Information about an author. ||
+|| [ResTags tags]                     || List of tags associated with an url. ||
+|| [ResRelated related]               || List of related urls for another url. ||#summary Response Formats
+
+
 = Resource: authorinfo =
 
 *Description:* Information about an author.
@@ -174,131 +192,6 @@ X-RateLimit-Reset: 1251349200
    }
 }
 
-}}}
-
-= List Parameters =
-
-List parameters available to all list [Resources resources].
-
-|| *Name*  || *Required* || *Description* ||
-|| page    || optional   || page number of the result set. (default: `1`, max: `10`) ||
-|| perpage || optional   || limit number of results per page. (default: `10`, max: `50`) ||
-
-== Examples: ==
-{{{
-http://otter.topsy.com/search.json?q=New+York&page=2
-}}}
-
-This query will fetch the second page of a search for "New York" and return a json object.
-
-{{{
-http://otter.topsy.com/search.json?q=New+York&perpage=25
-}}}
-
-This query will fetch the first 25 results of a search for "New York" and return a json object. * [Documentation Documentation Home]
- * [Requests Making API Requests]
- * [Resources]
-   * [ResSearch search]
-   * [ResProfileSearch profilesearch]
-   * [ResAuthorSearch authorsearch]
-   * [ResSearchCount searchcount]
-   * [ResLinkPosts linkposts]
-   * [ResTrackbacks trackbacks]
-   * [ResTrackbackCount trackbackcount]
-   * [ResUrlInfo urlinfo]
-   * [ResAuthorInfo authorinfo]
-   * [ResTags tags]
-   * [ResRelated related]
- * [ResponseFormats Response Formats]
- * [ErrorHandling Error Handling]
- * [RateLimit Rate Limits]#summary Resources
-
-= Resources =
-
-Otter API provides access to the following resources. These resources are read-only. All list resources can accept [ResListParameters list parameters].
-
-|| *Name*                             || *Description* ||
-|| [ResSearch search]                 || List of results for a query. ||
-|| [ResProfileSearch profilesearch]   || List of author profiles. ||
-|| [ResAuthorSearch authorsearch]     || List of authors that post about a query. ||
-|| [ResSearchCount searchcount]       || Count of results for a search query. ||
-|| [ResLinkPosts linkposts]           || List of urls posted by an author. ||
-|| [ResTrackbacks trackbacks]         || List of posts referencing an url. ||
-|| [ResStats stats]                   || Count of posts referencing an url. ||
-|| [ResUrlInfo urlinfo]               || Information about an url. ||
-|| [ResAuthorInfo authorinfo]         || Information about an author. ||
-|| [ResTags tags]                     || List of tags associated with an url. ||
-|| [ResRelated related]               || List of related urls for another url. ||#summary Response Formats
-
-= Response Formats =
-
-Response formats are specified as a file-extension in the API request url. Topsy provides resources in [#JSON JSON format] (".json") and [#Javascript Javascript format] (".js"). There's also a [#Txt txt] format for debugging. 
-
-----
-
-== JSON ==
-
-When an API request uses a JSON response format, the response body will be in the form of a JSON object. An HTTP Header Content-Type: application/json` will also be sent.
-
-==== Example Request: ====
-{{{
-http://otter.topsy.com/trackbackcount.json?url=http://blog.example.com/my-post
-}}}
-
-==== Example Response: ====
-{{{
-{'request':{'response_type':'json','parameters':{'url':'http://blog.example.com/my-post'}, ... }
-}}}
-
-----
-
-== Javascript ==
-
-When an API request uses a Javascript response format, the response body will be a javascript function call that takes one parameter containing the response object. An HTTP Header Content-Type: application/javascript` will also be sent.
-
-=== Parameters: ===
-
-|| *Name*  || *Type* || *Description* ||
-|| callback       || string || Javascript callback function name. (required) ||
-
-==== Example Request: ====
-{{{
-http://otter.topsy.com/trackbackcount.js?callback=foobar&url=http://blog.example.com/my-post
-}}}
-
-==== Example Response: ====
-{{{
-foobar({'request':{'response_type':'js','parameters':{'url':'http://blog.example.com/my-post'}, ... });
-}}}
-
-
-== Txt ==
-
-This is for debug purposes only! The TXT response type returns a Data::Dumper object version (a form of perl object serialization) of the response object.  This is useful for debugging / learning the API in the browser.  Please DO NOT parse this with a perl script. 
-
-==== Example Request: ====
-{{{
-http://otter.topsy.com/trackbackcount.txt?url=http://topsy.com/
-}}}
-
-==== Example Response: ====
-{{{
-### FOR DEBUG ONLY ###
-$VAR1 = {
-  'request' => {
-    'response_type' => 'txt',
-    'parameters' => {
-      'url' => 'http://topsy.com/'
-    },
-    'request_type' => 'trackbackcount',
-    'url' => 'http://otter.topsy.com:8006/trackbackcount.txt?url=http%3A%2F%2Ftopsy.com%2F'
-  },
-  'response' => {
-    'contains' => '1889',
-    'influential' => '464',
-    'all' => '1889'
-  }
-};
 }}}
 
 = Resource: profilesearch =
