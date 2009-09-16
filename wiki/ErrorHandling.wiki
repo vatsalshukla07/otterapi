@@ -3,23 +3,23 @@
 
 <wiki:toc max_depth="2" />
 
-= Error Handing =
+A successful Otter call returns with the HTTP code 200. Everything else
+is an error or special condition and all well-written apps must handle
+these gracefully.
 
-A successful Otter call returns with the HTTP code 200.  Everything else is an error or special condition and all well-written apps must handle these gracefully. 
-
-== 400 == 
+= 400 =
 
 *Parameter check failed.* This error indicates that a required parameter is missing or a parameter has a value that is out of bounds.
 
-== 403 ==
+= 403 =
 
 *Forbidden.* You don't have access to this action. 
 
-== 404 == 
+= 404 =
 
 *Action not supported.* This indicates you have requested a [Resources resource] that does not exist. 
 
-== 503 == 
+= 503 = 
 
 *Temporarily unavailable.* This is an important error condition and your app MUST handle it. A 503 is returned for two different reasons: 
 
