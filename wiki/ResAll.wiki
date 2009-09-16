@@ -1,5 +1,7 @@
 #sidebar TOC
 
+<wiki:toc max_depth="1" />
+
 = /authorinfo =
 
 *Description:* Information about an author.
