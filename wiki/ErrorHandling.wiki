@@ -3,8 +3,8 @@
 
 <wiki:toc max_depth="2" />
 
-A successful Otter call returns with the HTTP code 200. Everything else
-is an error or special condition and all well-written apps must handle
+A successful Otter call returns with the *HTTP code 200*. Everything else
+is an error or a special condition and all well-written apps must handle
 these gracefully.
 
 = 400 =
@@ -18,6 +18,11 @@ these gracefully.
 = 404 =
 
 *Action not supported.* This indicates you have requested a [Resources resource] that does not exist. 
+
+= 500 = 
+
+*Unexpected internal error.* What it says. We'll strive NOT to return
+these but your app should be prepared to see it.
 
 = 503 = 
 
