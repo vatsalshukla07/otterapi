@@ -4,7 +4,9 @@
 
 = /authorinfo =
 
-*Description:* Information about an author.
+*Description:* Profile information about an author (a twitter profile
+indexed by Topsy). The response contains the latest name, bio and
+influence information about the author.
 
 *URL Format:* `http://otter.topsy.com/authorinfo.json?query=parameters`
 
@@ -844,4 +846,3 @@ X-RateLimit-Reset: 1251349200
    }
 }
 }}}
-
