@@ -468,7 +468,7 @@ X-RateLimit-Reset: 1251349200
       "m" : 9122
    }
 }
-}}}#sidebar TOC
+}}}
 
 = Resource: search =
 
@@ -582,7 +582,7 @@ X-RateLimit-Reset: 1251349200
       ]
    }
 }
-}}}#sidebar TOC
+}}}
 
 = Resource: stats =
 
