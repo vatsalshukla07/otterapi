@@ -1,8 +1,27 @@
 #sidebar TOC
 
-<wiki:toc max_depth="1" />
+<wiki:toc max_depth="2" />
 
-= /authorinfo =
+= The Otter URI = 
+
+The api is accessible via the uri: http://otter.topsy.com/
+
+= Request Syntax =
+
+All requests are implemented via HTTP GET calls. The url of the request
+can be broken down into three parts: [Resources resource],
+[ResponseFormats response-format], and query parameters. A malformed
+request will return a response with HTTP 400 status.
+
+=== Syntax ===
+
+   `GET /`[Resources resource]`.`[ResponseFormats response-format]`?beta=BETAKEY&query=params HTTP/1.1`<br>
+   `Host: otter.topsy.com`
+
+
+= Resources = 
+
+== /authorinfo ==
 
 *Description:* Profile information for an author (a twitter profile
 indexed by Topsy). The response contains the name, description (biography) and
@@ -54,7 +73,7 @@ X-RateLimit-Reset: 1251345600
 }
 }}}
 
-= /authorsearch =
+== /authorsearch ==
 
 *Description:* List of authors that talk about the query. The list is
 sorted by frequency of posts and the influence of authors.
@@ -117,7 +136,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= /linkposts =
+== /linkposts ==
 
 *Description:* List of urls posted by an author.
 
@@ -182,7 +201,7 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
-= /profilesearch =
+== /profilesearch ==
 
 *Description:* A list of author profiles that match the query. The query
 is matched against the nick, name and biography information and the
@@ -242,7 +261,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= /related =
+== /related ==
 
 *Description:* List of related urls for another url.
 
@@ -300,7 +319,7 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
-= /searchcount =
+== /searchcount ==
 
 *Description:* Count of results for a search query.
 
@@ -348,7 +367,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= /search =
+== /search ==
 
 *Description:* List of results for a query.
 
@@ -465,7 +484,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= /stats =
+== /stats ==
 
 *Description:* Count of tweets for a url.
 
@@ -512,7 +531,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= /tags =
+== /tags ==
 
 *Description:* List of tags associated with a url.
 
@@ -611,7 +630,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= /trackbackcount =
+== /trackbackcount ==
 
 *Description:* Count of posts referencing an url.
 
@@ -631,7 +650,7 @@ http://otter.topsy.com/trackbackcount.json?url=http://topsy.com/
 
 This will fetch only the trackback counts in json format that reference Topsy's homepage.
 
-= /trackbacks =
+== /trackbacks ==
 
 *Description:* List of tweets (trackbacks) referencing a url, most recent first.
 
@@ -753,7 +772,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= /trending =
+== /trending ==
 
 *Description:* List of trending terms.
 
@@ -800,7 +819,7 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
-= /urlinfo =
+== /urlinfo ==
 
 *Description:* Information about an url.
 
