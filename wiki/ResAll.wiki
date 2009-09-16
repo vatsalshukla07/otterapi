@@ -48,7 +48,7 @@ X-RateLimit-Reset: 1251345600
       "influence_level" : "5"
    }
 }
-}}}#sidebar TOC
+}}}
 
 = Resource: authorsearch =
 
@@ -111,7 +111,6 @@ X-RateLimit-Reset: 1251349200
    }
 }
 }}}
-#sidebar TOC
 
 = Resource: linkposts =
 
@@ -176,7 +175,6 @@ X-RateLimit-Reset: 1251349200
 }
 
 }}}
-#sidebar TOC
 
 = List Parameters =
 
@@ -214,7 +212,6 @@ This query will fetch the first 25 results of a search for "New York" and return
  * [ResponseFormats Response Formats]
  * [ErrorHandling Error Handling]
  * [RateLimit Rate Limits]#summary Resources
-#sidebar TOC
 
 = Resources =
 
@@ -232,7 +229,6 @@ Otter API provides access to the following resources. These resources are read-o
 || [ResAuthorInfo authorinfo]         || Information about an author. ||
 || [ResTags tags]                     || List of tags associated with an url. ||
 || [ResRelated related]               || List of related urls for another url. ||#summary Response Formats
-#sidebar TOC
 
 = Response Formats =
 
@@ -303,7 +299,7 @@ $VAR1 = {
     'all' => '1889'
   }
 };
-}}}#sidebar TOC
+}}}
 
 = Resource: profilesearch =
 
@@ -361,7 +357,7 @@ X-RateLimit-Reset: 1251349200
       ]
    }
 }
-}}}#sidebar TOC
+}}}
 
 = Resource: related =
 
@@ -420,7 +416,6 @@ X-RateLimit-Reset: 1251349200
 }
 
 }}}
-#sidebar TOC
 
 = Resource: searchcount =
 
@@ -634,7 +629,7 @@ X-RateLimit-Reset: 1251349200
 == See Also ==
 
  * [ResUrlInfo UrlInfo]
- * [ResTrackbacks Trackbacks]#sidebar TOC
+ * [ResTrackbacks Trackbacks]
 
 = Resource: tags =
 
@@ -733,7 +728,7 @@ X-RateLimit-Reset: 1251349200
       ]
    }
 }
-}}}#sidebar TOC
+}}}
 
 = Resource: trackbackcount =
 
@@ -753,7 +748,7 @@ X-RateLimit-Reset: 1251349200
 http://otter.topsy.com/trackbackcount.json?url=http://topsy.com/
 }}}
 
-This will fetch only the trackback counts in json format that reference Topsy's homepage.#sidebar TOC
+This will fetch only the trackback counts in json format that reference Topsy's homepage.
 
 = Resource: trackbacks =
 
@@ -874,7 +869,7 @@ X-RateLimit-Reset: 1251349200
       ]
    }
 }
-}}}#sidebar TOC
+}}}
 
 = Resource: trending =
 
@@ -921,7 +916,7 @@ X-RateLimit-Reset: 1251349200
    }
 }
 
-}}}#sidebar TOC
+}}}
 
 = Resource: urlinfo =
 
