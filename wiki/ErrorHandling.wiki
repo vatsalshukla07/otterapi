@@ -21,6 +21,6 @@ A successful Otter call returns with the HTTP code 200.  Everything else is an e
 
 *Temporarily unavailable.* This is an important error condition and your app MUST handle it. A 503 is returned for two different reasons: 
 
-  * The client has run out of its token allocation.  See RateLimits section for more details.  
+  * The client has run out of its token allocation.  See RateLimit section for details.  
 
  * The API is unavailable for scheduled or unscheduled downtime.  If something is wrong on our end, we'll try our best to return a 503 error code so you know whatever it is will be fixed shortly. 
