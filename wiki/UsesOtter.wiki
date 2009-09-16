@@ -1,0 +1,16 @@
+#summary Applications, libraries and tools that use the Otter API
+
+= Libraries =
+
+== python-otter ==
+
+A python client library to the Topsy Otter API.
+
+http://otterapi.googlecode.com/svn/trunk/
+
+== Net::Topsy ==
+
+A perl module that implements a client interface to the Topsy Otter API. 
+
+http://github.com/leto/Net-Topsy
+
