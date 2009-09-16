@@ -9,7 +9,7 @@ The api is accessible via the uri: http://otter.topsy.com/
 = Request Syntax =
 
 All requests are implemented via HTTP GET calls. The url of the request
-can be broken down into three parts: [Resources Resources#Resources],
+can be broken down into three parts: [Resources Resources (described below)],
 [ResponseFormats response format], and query parameters. A malformed
 request will return a response with HTTP 400 status. 
 
