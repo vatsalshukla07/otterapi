@@ -1,8 +1,8 @@
 #summary Table of Contents
 
-  * [Requests Making API Requests]
   * [Resources]
   * [ResponseFormats Response Formats]
   * [ErrorHandling Error Handling]
   * [RateLimit Rate Limits]
+  * [Glossary Glossary of Terms]
   * [Contact Contact Us]
