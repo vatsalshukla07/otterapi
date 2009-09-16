@@ -14,10 +14,6 @@ All requests are implemented via HTTP GET calls.  The url of the request can be 
    `GET /`[Resources resource]`.`[ResponseFormats response-format]`?beta=BETAKEY&query=params HTTP/1.1`<br>
    `Host: otter.topsy.com`
 
-= Beta Key = 
-
- While Otter is in beta, you need to add a beta=KEY parameter to every call. Please see [Contact contact us] section on how to obtain a beta key.
-
 = Next = 
 
  * [Resources]
