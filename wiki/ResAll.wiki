@@ -1,0 +1,977 @@
+#sidebar TOC
+
+= Resource: authorinfo =
+
+*Description:* Information about an author.
+
+*URL Format:* `http://otter.topsy.com/authorinfo.`[ResponseFormats format]`?query=parameters`
+
+=== Parameters: ===
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the author. ||
+
+=== Example: ===
+
+Fetch information about Barack Obama's Twitter profile.
+
+{{{
+$ curl -i "http://otter.topsy.com/authorinfo.json?url=http://twitter.com/barackobama"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 03:57:16 GMT
+Content-Length: 587
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:02:16 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2468
+X-RateLimit-Reset: 1251345600
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://twitter.com/barackobama"
+      },
+      "response_type" : "json",
+      "resource" : "authorinfo",
+      "url" : "http://otter.topsy.com/authorinfo.json?url=http%3A%2F%2Ftwitter.com%2Fbarackobama"
+   },
+   "response" : {
+      "name" : "Barack Obama",
+      "url" : "http://twitter.com/barackobama",
+      "type" : "twitter",
+      "nick" : "barackobama",
+      "description" : "44th President of the United States",
+      "topsy_author_url" : "http://topsy.com/twitter/barackobama",
+      "influence_level" : "5"
+   }
+}
+}}}#sidebar TOC
+
+= Resource: authorsearch =
+
+*Description:* List of authors that talk about the query. The list is sorted by frequency of posts and the influence of authors.
+
+*URL Format:* `http://otter.topsy.com/authorsearch.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*  || *Required* || *Description* ||
+|| q       || required   || Search query string. ([QuerySyntax query syntax]) ||
+|| window  || optional   || Time window for results. (default: 'a') Options: `auto` - automatically pick the most recent and relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+
+Accepts [ResListParameters List Parameters]
+
+== Example: ==
+
+Fetch search results in json format for authors who talk about "nosql" the most.
+
+{{{
+$ curl -i "http://otter.topsy.com/authorsearch.json?q=nosql"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:13:46 GMT
+Content-Length: 7473
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:18:45 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2494
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "q" : "nosql"
+      },
+      "response_type" : "json",
+      "resource" : "authorsearch",
+      "url" : "http://otter.topsy.com/authorsearch.json?q=nosql"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "1139",
+      "perpage" : 15,
+      "list" : [
+         {
+            "name" : "nosql topsy 5",
+            "nick" : "nosql_topsy_5",
+            "photo_url" : "",
+            "description" : "",
+            "influence_level" : "1",
+            "hits" : 72,
+            "url" : "http://twitter.com/nosql_topsy_5",
+            "topsy_author_url" : "http://topsy.com/twitter/nosql_topsy_5"
+         },
+         ...
+      ]
+   }
+}
+}}}
+#sidebar TOC
+
+= Resource: linkposts =
+
+*Description:* List of urls posted by an author.
+
+*URL Format:* `http://otter.topsy.com/linkposts.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the author. ||
+|| contains || optional   || Query string to filter results. ||
+
+Accepts [ResListParameters List Parameters]
+
+== Example: ==
+
+Fetch links in json format posted by Barack Obama.
+
+{{{
+$ curl -i "http://otter.topsy.com/linkposts.json?url=http://twitter.com/barackobama"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:16:29 GMT
+Content-Length: 6247
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:21:29 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2492
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://twitter.com/barackobama"
+      },
+      "response_type" : "json",
+      "resource" : "linkposts",
+      "url" : "http://otter.topsy.com/linkposts.json?url=http%3A%2F%2Ftwitter.com%2Fbarackobama"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "288",
+      "perpage" : 10,
+      "list" : [
+         {
+            "permalink_url" : "http://twitter.com/barackobama/status/3569838653",
+            "target" : {
+               "topsy_trackback_url" : "http://topsy.com/tb/my.barackobama.com/page/community/post/obamaforamerica/gGMPVm",
+               "url" : "http://my.barackobama.com/page/community/post/obamaforamerica/gGMPVm",
+               "trackback_total" : "43"
+            },
+            "date" : "1251337427",
+            "content" : "Highlights from the tribute to Sen. Kennedy's life and accomplishments from last year's Democratic National Convention: http://bit.ly/TJcyr",
+            "date_alpha" : "3 hours ago"
+         },
+         ...
+      ]
+   }
+}
+
+}}}
+#sidebar TOC
+
+= List Parameters =
+
+List parameters available to all list [Resources resources].
+
+|| *Name*  || *Required* || *Description* ||
+|| page    || optional   || page number of the result set. (default: `1`, max: `10`) ||
+|| perpage || optional   || limit number of results per page. (default: `10`, max: `50`) ||
+
+== Examples: ==
+{{{
+http://otter.topsy.com/search.json?q=New+York&page=2
+}}}
+
+This query will fetch the second page of a search for "New York" and return a json object.
+
+{{{
+http://otter.topsy.com/search.json?q=New+York&perpage=25
+}}}
+
+This query will fetch the first 25 results of a search for "New York" and return a json object. * [Documentation Documentation Home]
+ * [Requests Making API Requests]
+ * [Resources]
+   * [ResSearch search]
+   * [ResProfileSearch profilesearch]
+   * [ResAuthorSearch authorsearch]
+   * [ResSearchCount searchcount]
+   * [ResLinkPosts linkposts]
+   * [ResTrackbacks trackbacks]
+   * [ResTrackbackCount trackbackcount]
+   * [ResUrlInfo urlinfo]
+   * [ResAuthorInfo authorinfo]
+   * [ResTags tags]
+   * [ResRelated related]
+ * [ResponseFormats Response Formats]
+ * [ErrorHandling Error Handling]
+ * [RateLimit Rate Limits]#summary Resources
+#sidebar TOC
+
+= Resources =
+
+Otter API provides access to the following resources. These resources are read-only. All list resources can accept [ResListParameters list parameters].
+
+|| *Name*                             || *Description* ||
+|| [ResSearch search]                 || List of results for a query. ||
+|| [ResProfileSearch profilesearch]   || List of author profiles. ||
+|| [ResAuthorSearch authorsearch]     || List of authors that post about a query. ||
+|| [ResSearchCount searchcount]       || Count of results for a search query. ||
+|| [ResLinkPosts linkposts]           || List of urls posted by an author. ||
+|| [ResTrackbacks trackbacks]         || List of posts referencing an url. ||
+|| [ResStats stats]                   || Count of posts referencing an url. ||
+|| [ResUrlInfo urlinfo]               || Information about an url. ||
+|| [ResAuthorInfo authorinfo]         || Information about an author. ||
+|| [ResTags tags]                     || List of tags associated with an url. ||
+|| [ResRelated related]               || List of related urls for another url. ||#summary Response Formats
+#sidebar TOC
+
+= Response Formats =
+
+Response formats are specified as a file-extension in the API request url. Topsy provides resources in [#JSON JSON format] (".json") and [#Javascript Javascript format] (".js"). There's also a [#Txt txt] format for debugging. 
+
+----
+
+== JSON ==
+
+When an API request uses a JSON response format, the response body will be in the form of a JSON object. An HTTP Header Content-Type: application/json` will also be sent.
+
+==== Example Request: ====
+{{{
+http://otter.topsy.com/trackbackcount.json?url=http://blog.example.com/my-post
+}}}
+
+==== Example Response: ====
+{{{
+{'request':{'response_type':'json','parameters':{'url':'http://blog.example.com/my-post'}, ... }
+}}}
+
+----
+
+== Javascript ==
+
+When an API request uses a Javascript response format, the response body will be a javascript function call that takes one parameter containing the response object. An HTTP Header Content-Type: application/javascript` will also be sent.
+
+=== Parameters: ===
+
+|| *Name*  || *Type* || *Description* ||
+|| callback       || string || Javascript callback function name. (required) ||
+
+==== Example Request: ====
+{{{
+http://otter.topsy.com/trackbackcount.js?callback=foobar&url=http://blog.example.com/my-post
+}}}
+
+==== Example Response: ====
+{{{
+foobar({'request':{'response_type':'js','parameters':{'url':'http://blog.example.com/my-post'}, ... });
+}}}
+
+
+== Txt ==
+
+This is for debug purposes only! The TXT response type returns a Data::Dumper object version (a form of perl object serialization) of the response object.  This is useful for debugging / learning the API in the browser.  Please DO NOT parse this with a perl script. 
+
+==== Example Request: ====
+{{{
+http://otter.topsy.com/trackbackcount.txt?url=http://topsy.com/
+}}}
+
+==== Example Response: ====
+{{{
+### FOR DEBUG ONLY ###
+$VAR1 = {
+  'request' => {
+    'response_type' => 'txt',
+    'parameters' => {
+      'url' => 'http://topsy.com/'
+    },
+    'request_type' => 'trackbackcount',
+    'url' => 'http://otter.topsy.com:8006/trackbackcount.txt?url=http%3A%2F%2Ftopsy.com%2F'
+  },
+  'response' => {
+    'contains' => '1889',
+    'influential' => '464',
+    'all' => '1889'
+  }
+};
+}}}#sidebar TOC
+
+= Resource: profilesearch =
+
+*Description:* List of author profiles.
+
+*URL Format:* `http://otter.topsy.com/profilesearch.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*  || *Required* || *Description* ||
+|| q       || required   || Search query string. ||
+
+Accepts [ResListParameters List Parameters]
+
+== Example: ==
+
+Fetch search results in json format for author profiles that match Barack Obama.
+
+{{{
+$ curl -i "http://otter.topsy.com/profilesearch.json?q=Barack+Obama"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:12:03 GMT
+Content-Length: 4475
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:17:02 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2495
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "q" : "Barack Obama"
+      },
+      "response_type" : "json",
+      "resource" : "profilesearch",
+      "url" : "http://otter.topsy.com/profilesearch.json?q=Barack+Obama"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "237",
+      "perpage" : 10,
+      "list" : [
+         {
+            "url" : "http://twitter.com/barackobama",
+            "name" : "Barack Obama",
+            "topsy_author_url" : "http://topsy.com/twitter/barackobama",
+            "photo_url" : "http://a1.twimg.com/profile_images/219314140/obama_4color_omark_normal.jpg",
+            "description" : "44th President of the United States",
+            "influence_level" : "5"
+         },
+      ]
+   }
+}
+}}}#sidebar TOC
+
+= Resource: related =
+
+*Description:* List of related urls for another url.
+
+*URL Format:* `http://otter.topsy.com/related.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the target. ||
+
+Accepts [ResListParameters List Parameters]
+
+== Example: ==
+
+Fetch all the related urls for [http://powerset.com/]
+
+{{{
+$ curl -i "http://otter.topsy.com/related.json?url=http://powerset.com/"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:21:56 GMT
+Content-Length: 2581
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:26:56 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2488
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://powerset.com/"
+      },
+      "response_type" : "json",
+      "resource" : "related",
+      "url" : "http://otter.topsy.com/related.json?url=http%3A%2F%2Fpowerset.com%2F"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "9",
+      "perpage" : 10,
+      "list" : [
+         {
+            "topsy_trackback_url" : "http://topsy.com/tb/rubyurl.com/Hvui",
+            "url" : "http://rubyurl.com/Hvui",
+            "title" : "awesome, our  iphone webapp is featured in an article on the nytimes site today",
+            "trackback_total" : "1"
+         },
+         ...
+      ]
+   }
+}
+
+}}}
+#sidebar TOC
+
+= Resource: searchcount =
+
+*Description:* Count of results for a search query.
+
+*URL Format:* `http://otter.topsy.com/searchcount.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*   || *Required* || *Description* ||
+|| q        || required   || Search query string. ([QuerySyntax query syntax]) ||
+
+== Example: ==
+
+Fetch only the search result counts in json format for a query of "Barack Obama".
+
+{{{
+$ curl -i "http://otter.topsy.com/searchcount.json?q=Barack+Obama"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:15:16 GMT
+Content-Length: 335
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:20:16 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2493
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "q" : "Barack Obama"
+      },
+      "response_type" : "json",
+      "resource" : "searchcount",
+      "url" : "http://otter.topsy.com/searchcount.json?q=Barack+Obama"
+   },
+   "response" : {
+      "w" : 2085,
+      "h" : 6,
+      "a" : 572027,
+      "d" : 330,
+      "m" : 9122
+   }
+}
+}}}#sidebar TOC
+
+= Resource: search =
+
+*Description:* List of results for a query.
+
+*URL Format:* `http://otter.topsy.com/search.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*  || *Required* || *Description* ||
+|| q       || required   || Search query string. ([QuerySyntax query syntax]) ||
+|| window  || optional   || Time window for results. (default: `a` Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+
+Accepts [ResListParameters List Parameters]
+
+== Example: ==
+
+Fetch search results in json format for the query "barack obama"
+
+{{{
+$ curl -i "http://otter.topsy.com/search.json?q=barack+obama&window=auto"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:06:32 GMT
+Content-Length: 9097
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:11:31 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2498
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "window" : "auto",
+         "q" : "barack obama"
+      },
+      "response_type" : "json",
+      "resource" : "search",
+      "url" : "http://otter.topsy.com/search.json?q=barack+obama&window=auto"
+   },
+   "response" : {
+      "window" : "d",
+      "page" : 1,
+      "total" : "809",
+      "perpage" : 10,
+      "list" : [
+         {
+            "trackback_permalink" : "http://twitter.com/ewerickson/status/3562164195",
+            "hits" : 38,
+            "topsy_trackback_url" : "http://topsy.com/tb/www.redstate.com/erick/2009/08/26/breaking-rumors-surface-that-leon-panetta-is-resigning/",
+            "url" : "http://www.redstate.com/erick/2009/08/26/breaking-rumors-surface-that-leon-panetta-is-resigning/",
+            "content" : "Panetta is rumored to have sent a resignation letter to Barack Obama today:  http://bit.ly/CDMg9",
+            "title" : "BREAKING: Rumors Surface That Leon Panetta is Resigning - Erickâs blog - RedState",
+            "score" : 0.75521481,
+            "highlight" : "Panetta is rumored to have sent a resignation letter to <span class=\"highlight-term\">Barack</span> <span class=\"highlight-term\">Obama</span> today:  http://bit.ly/CDMg9"
+         },
+         ...
+      ]
+   }
+}
+}}}
+
+== Example: ==
+
+Fetch the most popular youtube videos today.
+
+{{{
+$ curl -i "http://otter.topsy.com/search.json?q=site:youtube.com&window=d"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:09:09 GMT
+Content-Length: 7086
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:14:09 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2496
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "window" : "d",
+         "q" : "site:youtube.com"
+      },
+      "response_type" : "json",
+      "resource" : "search",
+      "url" : "http://otter.topsy.com/search.json?q=site%3Ayoutube.com&window=d"
+   },
+   "response" : {
+      "window" : "d",
+      "page" : 1,
+      "total" : "58258",
+      "perpage" : 10,
+      "list" : [
+         {
+            "trackback_permalink" : "http://twitter.com/danilogentili/status/3567528055",
+            "hits" : 2499,
+            "topsy_trackback_url" : "http://topsy.com/trackback?url=http://www.youtube.com/watch?v=i_KPsH7f3xo",
+            "url" : "http://www.youtube.com/watch?v=i_KPsH7f3xo",
+            "content" : "ApÃ³s ver isso http://bit.ly/xOl3b, eu, Danilo Zentili, peÃ§o perdÃ£o aos fÃ£s da Susxa que, como @Davis_Reimberg , sonhavam ser paquitas.",
+            "title" : "MEXEU COM A XUXA MEXEU COMIGO!!!",
+            "score" : 24.20444298,
+            "highlight" : "ApÃ³s ver isso http://bit.ly/xOl3b, eu, Danilo Zentili, peÃ§o perdÃ£o aos fÃ£s da Susxa que, como @Davis_Reimberg , sonhavam ser paquitas."
+         },
+         ...
+      ]
+   }
+}
+}}}#sidebar TOC
+
+= Resource: stats =
+
+*Description:* Count of tweets for a url.
+
+*URL Format:* `http://otter.topsy.com/stats.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the target. ||
+|| contains || optional   || A query filter for trackbacks (the trackbacks must contain this string). ||
+
+== Example: ==
+
+Fetch only the trackback counts in json format that reference Topsy's homepage.
+
+{{{
+$ curl -i "http://otter.topsy.com/stats.json?url=http://topsy.com/"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:27:18 GMT
+Content-Length: 335
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:32:18 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2486
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://topsy.com/"
+      },
+      "response_type" : "json",
+      "resource" : "stats",
+      "url" : "http://otter.topsy.com/stats.json?url=http%3A%2F%2Ftopsy.com%2F"
+   },
+   "response" : {
+      "contains" : "1931",
+      "influential" : "874",
+      "all" : "1931"
+   }
+}
+}}}
+
+== See Also ==
+
+ * [ResUrlInfo UrlInfo]
+ * [ResTrackbacks Trackbacks]#sidebar TOC
+
+= Resource: tags =
+
+*Description:* List of tags associated with a url.
+
+*URL Format:* `http://otter.topsy.com/tags.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*   || *Required*  || *Description* ||
+|| url      || required^1^ || URL string for the target. ||
+
+Accepts [ResListParameters List Parameters]
+
+required^1^: _url_ is required.
+
+== Example: ==
+Fetch tags associated with Twitter's homepage.
+
+{{{
+$ curl -i "http://otter.topsy.com/tags.json?url=http://twitter.com/"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:19:05 GMT
+Content-Length: 1422
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:24:05 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2490
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://twitter.com/"
+      },
+      "response_type" : "json",
+      "resource" : "tags",
+      "url" : "http://otter.topsy.com/tags.json?url=http%3A%2F%2Ftwitter.com%2F"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "1091",
+      "perpage" : 10,
+      "list" : [
+         {
+            "url" : "http://topsy.com/s?q=current",
+            "name" : "current"
+         },
+         ...
+      ]
+   }
+}
+
+}}}
+
+== Example: ==
+
+Fetch tags associated with Barack Obama's Twitter profile.
+
+{{{
+$ curl -i "http://otter.topsy.com/tags.json?url=http://twitter.com/barackobama"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:20:33 GMT
+Content-Length: 1408
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:25:33 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2489
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://twitter.com/barackobama"
+      },
+      "response_type" : "json",
+      "resource" : "tags",
+      "url" : "http://otter.topsy.com/tags.json?url=http%3A%2F%2Ftwitter.com%2Fbarackobama"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "13",
+      "perpage" : 10,
+      "list" : [
+         {
+            "url" : "http://topsy.com/s?q=obama",
+            "name" : "obama"
+         },
+         ...
+      ]
+   }
+}
+}}}#sidebar TOC
+
+= Resource: trackbackcount =
+
+*Description:* Count of posts referencing an url.
+
+*URL Format:* `http://otter.topsy.com/trackbackcount.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the target. ||
+|| contains || optional   || A query filter for trackbacks (the trackbacks must contain this string). ||
+
+== Example: ==
+
+{{{
+http://otter.topsy.com/trackbackcount.json?url=http://topsy.com/
+}}}
+
+This will fetch only the trackback counts in json format that reference Topsy's homepage.#sidebar TOC
+
+= Resource: trackbacks =
+
+*Description:* List of tweets (trackbacks) referencing a url, most recent first.
+
+*URL Format:* `http://otter.topsy.com/trackbacks.`[ResponseFormats format]`?query=parameters`
+
+
+== Parameters: ==
+
+|| *Name*    || *Required* || *Description* ||
+|| url       || required   || URL for the target. ||
+|| contains  || optional   || Query string to filter results. ||
+|| infonly   || optional   || Boolean value that filters trackbacks to influential only (default 0) ||
+
+Accepts [ResListParameters List Parameters]
+
+== Example: ==
+
+Fetch posts (tweets) in json format that reference Topsy's homepage. 
+
+{{{
+$ curl -i "http://otter.topsy.com/trackbacks.json?url=http://topsy.com/"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 03:59:23 GMT
+Content-Length: 7363
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:04:23 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2467
+X-RateLimit-Reset: 1251345600
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://topsy.com/"
+      },
+      "response_type" : "json",
+      "resource" : "trackbacks",
+      "url" : "http://otter.topsy.com/trackbacks.json?url=http%3A%2F%2Ftopsy.com%2F"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "1931",
+      "perpage" : 10,
+      "list" : [
+         {
+            "permalink_url" : "http://twitter.com/imadnaffa/status/3565855201",
+            "date" : "1251324809",
+            "content" : "TOPSY - A search engine powered by tweets: http://topsy.com (this Search Engine can be powerful for sifting through Twitter- love it)!",
+            "type" : "tweet",
+            "author" : {
+               "url" : "http://twitter.com/imadnaffa",
+               "name" : "Imad Naffa",
+               "photo_url" : "http://a3.twimg.com/profile_images/378575667/imad_blue_shirt_normal.jpg",
+               "topsy_author_url" : "http://topsy.com/twitter/imadnaffa",
+               "influence_level" : "4"
+            },
+            "date_alpha" : "6 hours ago"
+         },
+         ...
+      ]
+   }
+}
+}}}
+
+== Example: ==
+Fetch posts (tweets) that reference Topsy's homepage from influential users only. 
+
+{{{
+curl -i "http://otter.topsy.com/trackbacks.json?url=http://topsy.com/&infonly=1&tracktype=tweet"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:03:25 GMT
+Content-Length: 7413
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:08:20 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2499
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "infonly" : "1",
+         "tracktype" : "tweet",
+         "url" : "http://topsy.com/"
+      },
+      "response_type" : "json",
+      "resource" : "trackbacks",
+      "url" : "http://otter.topsy.com/trackbacks.json?infonly=1&tracktype=tweet&url=http%3A%2F%2Ftopsy.com%2F"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "874",
+      "perpage" : 10,
+      "list" : [
+         {
+            "permalink_url" : "http://twitter.com/imadnaffa/status/3565855201",
+            "date" : "1251324809",
+            "content" : "TOPSY - A search engine powered by tweets: http://topsy.com (this Search Engine can be powerful for sifting through Twitter- love it)!",
+            "type" : "tweet",
+            "author" : {
+               "url" : "http://twitter.com/imadnaffa",
+               "name" : "Imad Naffa",
+               "photo_url" : "http://a3.twimg.com/profile_images/378575667/imad_blue_shirt_normal.jpg",
+               "topsy_author_url" : "http://topsy.com/twitter/imadnaffa",
+               "influence_level" : "4"
+            },
+            "date_alpha" : "6 hours ago"
+         },
+         ...
+      ]
+   }
+}
+}}}#sidebar TOC
+
+= Resource: trending =
+
+*Description:* List of trending terms.
+
+*URL Format:* `http://otter.topsy.com/trending.`[ResponseFormats format]`?query=parameters`
+
+Accepts [ResListParameters List Parameters]
+
+== Example: ==
+
+{{{
+$ curl -i "http://otter.topsy.com/trending.json"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:25:54 GMT
+Content-Length: 1375
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:30:54 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2487
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {},
+      "response_type" : "json",
+      "resource" : "trending",
+      "url" : "http://otter.topsy.com/trending.json"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : "216",
+      "perpage" : 10,
+      "list" : [
+         {
+            "url" : "http://topsy.com/s?q=dominick",
+            "term" : "dominick"
+         },
+         ...
+      ]
+   }
+}
+
+}}}#sidebar TOC
+
+= Resource: urlinfo =
+
+*Description:* Information about an url.
+
+*URL Format:* `http://otter.topsy.com/urlinfo.`[ResponseFormats format]`?query=parameters`
+
+== Parameters: ==
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the target. ||
+
+== Example: ==
+
+Fetch information about Twitter's homepage.
+
+{{{
+$ curl -i "http://otter.topsy.com/urlinfo.json?url=http://twitter.com/"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:17:51 GMT
+Content-Length: 694
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:22:51 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2491
+X-RateLimit-Reset: 1251349200
+
+{
+   "request" : {
+      "parameters" : {
+         "url" : "http://twitter.com/"
+      },
+      "response_type" : "json",
+      "resource" : "urlinfo",
+      "url" : "http://otter.topsy.com/urlinfo.json?url=http%3A%2F%2Ftwitter.com%2F"
+   },
+   "response" : {
+      "description_attribution" : "From DMOZ",
+      "topsy_trackback_url" : "http://topsy.com/tb/twitter.com/",
+      "oneforty" : "Twitter: What are you doing? http://twurl.nl/pd8k44",
+      "url" : "http://twitter.com/",
+      "title" : "Twitter: What are you doing?",
+      "trackback_total" : "24152",
+      "description" : "Social networking and microblogging service utilising instant messaging, SMS or a web interface."
+   }
+}
+}}}
+
+== See Also ==
+ [ResStats Stats]
