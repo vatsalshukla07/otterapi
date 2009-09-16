@@ -632,26 +632,6 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-== /trackbackcount ==
-
-*Description:* Count of posts referencing an url.
-
-*URL Format:* `http://otter.topsy.com/trackbackcount.json?query=parameters`
-
-=== Parameters: ===
-
-|| *Name*   || *Required* || *Description* ||
-|| url      || required   || URL string for the target. ||
-|| contains || optional   || A query filter for trackbacks (the trackbacks must contain this string). ||
-
-=== Example: ===
-
-{{{
-http://otter.topsy.com/trackbackcount.json?url=http://topsy.com/
-}}}
-
-This will fetch only the trackback counts in json format that reference Topsy's homepage.
-
 == /trackbacks ==
 
 *Description:* List of tweets (trackbacks) referencing a url, most recent first.
