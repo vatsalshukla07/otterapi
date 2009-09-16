@@ -1,15 +1,18 @@
 #summary API Request Format
 #sidebar TOC
 
-= URL = 
+= The Otter URI = 
 
-The api is accessible via the url: http://otter.topsy.com/. 
+The api is accessible via the uri: http://otter.topsy.com/
 
 = API Request Format =
 
-All requests are implemented via HTTP GET calls.  The url of the request can be broken down into three parts: [Resources resource], [ResponseFormats response-format], and query parameters. Malformed requests return with an HTTP 400 status.
+All requests are implemented via HTTP GET calls. The url of the request
+can be broken down into three parts: [Resources resource],
+[ResponseFormats response-format], and query parameters. A malformed
+request will return a response with HTTP 400 status.
 
-== Syntax: ==
+=== Syntax ===
 
    `GET /`[Resources resource]`.`[ResponseFormats response-format]`?beta=BETAKEY&query=params HTTP/1.1`<br>
    `Host: otter.topsy.com`
