@@ -1,6 +1,8 @@
 #summary Error Handling
 #sidebar TOC
 
+<wiki:toc max_depth="2" />
+
 = Error Handing =
 
 A successful Otter call returns with the HTTP code 200.  Everything else is an error or special condition and all well-written apps must handle these gracefully. 
