@@ -3,7 +3,7 @@
 
 = Error Handing =
 
- A successful Otter call returns with the HTTP code 200.  Everything else is an error or special condition and all robust apps should handle these gracefully. 
+A successful Otter call returns with the HTTP code 200.  Everything else is an error or special condition and all well-written apps must handle these gracefully. 
 
  * *400 Parameter check failed.* This error indicates that a required parameter is missing or a parameter has a value that is out of bounds.
 
