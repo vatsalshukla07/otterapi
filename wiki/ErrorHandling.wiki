@@ -1,9 +1,9 @@
 #summary Error Handling
 #sidebar TOC
 
-= Error Handing: =
+= Error Handing =
 
-The following HTTP error codes are used to indicate an error condition and any app that uses the API should handle these.
+ A successful Otter call returns with the HTTP code 200.  Everything else is an error or special condition and all robust apps should handle these gracefully. 
 
  * *400 Parameter check failed.* This error indicates that a required parameter is missing or a parameter has a value that is out of bounds.
 
