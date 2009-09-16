@@ -4,9 +4,9 @@
 
 = /authorinfo =
 
-*Description:* Profile information about an author (a twitter profile
-indexed by Topsy). The response contains the latest name, bio and
-influence information about the author.
+*Description:* Profile information for an author (a twitter profile
+indexed by Topsy). The response contains the name, description (biography) and
+the influence level of the author.
 
 *URL Format:* `http://otter.topsy.com/authorinfo.json?query=parameters`
 
@@ -56,7 +56,8 @@ X-RateLimit-Reset: 1251345600
 
 = /authorsearch =
 
-*Description:* List of authors that talk about the query. The list is sorted by frequency of posts and the influence of authors.
+*Description:* List of authors that talk about the query. The list is
+sorted by frequency of posts and the influence of authors.
 
 *URL Format:* `http://otter.topsy.com/authorsearch.json?query=parameters`
 
@@ -183,7 +184,9 @@ X-RateLimit-Reset: 1251349200
 
 = /profilesearch =
 
-*Description:* List of author profiles.
+*Description:* A list of author profiles that match the query. The query
+is matched against the nick, name and biography information and the
+results are sorted by closeness of match and the influence of authors.
 
 *URL Format:* `http://otter.topsy.com/profilesearch.json?query=parameters`
 
