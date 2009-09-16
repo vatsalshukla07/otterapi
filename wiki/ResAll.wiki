@@ -56,7 +56,7 @@ X-RateLimit-Reset: 1251345600
 
 *URL Format:* `http://otter.topsy.com/authorsearch.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ([QuerySyntax query syntax]) ||
@@ -64,7 +64,7 @@ X-RateLimit-Reset: 1251345600
 
 Accepts [ResListParameters List Parameters]
 
-== Example: ==
+=== Example: ===
 
 Fetch search results in json format for authors who talk about "nosql" the most.
 
@@ -118,7 +118,7 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/linkposts.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the author. ||
@@ -126,7 +126,7 @@ X-RateLimit-Reset: 1251349200
 
 Accepts [ResListParameters List Parameters]
 
-== Example: ==
+=== Example: ===
 
 Fetch links in json format posted by Barack Obama.
 
@@ -182,14 +182,14 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/profilesearch.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ||
 
 Accepts [ResListParameters List Parameters]
 
-== Example: ==
+=== Example: ===
 
 Fetch search results in json format for author profiles that match Barack Obama.
 
@@ -240,14 +240,14 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/related.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the target. ||
 
 Accepts [ResListParameters List Parameters]
 
-== Example: ==
+=== Example: ===
 
 Fetch all the related urls for [http://powerset.com/]
 
@@ -298,12 +298,12 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/searchcount.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
 || q        || required   || Search query string. ([QuerySyntax query syntax]) ||
 
-== Example: ==
+=== Example: ===
 
 Fetch only the search result counts in json format for a query of "Barack Obama".
 
@@ -346,7 +346,7 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/search.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ([QuerySyntax query syntax]) ||
@@ -354,7 +354,7 @@ X-RateLimit-Reset: 1251349200
 
 Accepts [ResListParameters List Parameters]
 
-== Example: ==
+=== Example: ===
 
 Fetch search results in json format for the query "barack obama"
 
@@ -460,13 +460,13 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/stats.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the target. ||
 || contains || optional   || A query filter for trackbacks (the trackbacks must contain this string). ||
 
-== Example: ==
+=== Example: ===
 
 Fetch only the trackback counts in json format that reference Topsy's homepage.
 
@@ -507,7 +507,7 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/tags.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*   || *Required*  || *Description* ||
 || url      || required^1^ || URL string for the target. ||
@@ -516,7 +516,7 @@ Accepts [ResListParameters List Parameters]
 
 required^1^: _url_ is required.
 
-== Example: ==
+=== Example: ===
 Fetch tags associated with Twitter's homepage.
 
 {{{
@@ -558,7 +558,7 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
-== Example: ==
+=== Example: ===
 
 Fetch tags associated with Barack Obama's Twitter profile.
 
@@ -606,13 +606,13 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/trackbackcount.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the target. ||
 || contains || optional   || A query filter for trackbacks (the trackbacks must contain this string). ||
 
-== Example: ==
+=== Example: ===
 
 {{{
 http://otter.topsy.com/trackbackcount.json?url=http://topsy.com/
@@ -626,8 +626,7 @@ This will fetch only the trackback counts in json format that reference Topsy's 
 
 *URL Format:* `http://otter.topsy.com/trackbacks.`[ResponseFormats format]`?query=parameters`
 
-
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*    || *Required* || *Description* ||
 || url       || required   || URL for the target. ||
@@ -636,7 +635,7 @@ This will fetch only the trackback counts in json format that reference Topsy's 
 
 Accepts [ResListParameters List Parameters]
 
-== Example: ==
+=== Example: ===
 
 Fetch posts (tweets) in json format that reference Topsy's homepage. 
 
@@ -688,7 +687,7 @@ X-RateLimit-Reset: 1251345600
 }
 }}}
 
-== Example: ==
+=== Example: ===
 Fetch posts (tweets) that reference Topsy's homepage from influential users only. 
 
 {{{
@@ -749,7 +748,7 @@ X-RateLimit-Reset: 1251349200
 
 Accepts [ResListParameters List Parameters]
 
-== Example: ==
+=== Example: ===
 
 {{{
 $ curl -i "http://otter.topsy.com/trending.json"
@@ -794,12 +793,12 @@ X-RateLimit-Reset: 1251349200
 
 *URL Format:* `http://otter.topsy.com/urlinfo.`[ResponseFormats format]`?query=parameters`
 
-== Parameters: ==
+=== Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the target. ||
 
-== Example: ==
+=== Example: ===
 
 Fetch information about Twitter's homepage.
 
