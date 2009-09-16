@@ -57,7 +57,7 @@ $VAR1 = {
       'url' => 'http://topsy.com/'
     },
     'request_type' => 'stats',
-    'url' => 'http://otter.topsy.com:8006/stats.txt?url=http%3A%2F%2Ftopsy.com%2F'
+    'url' => 'http://otter.topsy.com/stats.txt?url=http%3A%2F%2Ftopsy.com%2F'
   },
   'response' => {
     'contains' => '1889',
