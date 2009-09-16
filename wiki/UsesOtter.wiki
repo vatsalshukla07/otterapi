@@ -1,5 +1,7 @@
 #summary Applications, libraries and tools that use the Otter API
 
+<wiki:toc max_depth="2" />
+
 = Libraries =
 
 == python-otter ==
