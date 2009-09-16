@@ -1,6 +1,6 @@
 #sidebar TOC
 
-= Resource: authorinfo =
+= /authorinfo =
 
 *Description:* Information about an author.
 
@@ -50,7 +50,7 @@ X-RateLimit-Reset: 1251345600
 }
 }}}
 
-= Resource: authorsearch =
+= /authorsearch =
 
 *Description:* List of authors that talk about the query. The list is sorted by frequency of posts and the influence of authors.
 
@@ -112,7 +112,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= Resource: linkposts =
+= /linkposts =
 
 *Description:* List of urls posted by an author.
 
@@ -176,7 +176,7 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
-= Resource: profilesearch =
+= /profilesearch =
 
 *Description:* List of author profiles.
 
@@ -234,7 +234,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= Resource: related =
+= /related =
 
 *Description:* List of related urls for another url.
 
@@ -292,7 +292,7 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
-= Resource: searchcount =
+= /searchcount =
 
 *Description:* Count of results for a search query.
 
@@ -340,7 +340,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= Resource: search =
+= /search =
 
 *Description:* List of results for a query.
 
@@ -454,7 +454,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= Resource: stats =
+= /stats =
 
 *Description:* Count of tweets for a url.
 
@@ -501,12 +501,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-== See Also ==
-
- * [ResUrlInfo UrlInfo]
- * [ResTrackbacks Trackbacks]
-
-= Resource: tags =
+= /tags =
 
 *Description:* List of tags associated with a url.
 
@@ -605,7 +600,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= Resource: trackbackcount =
+= /trackbackcount =
 
 *Description:* Count of posts referencing an url.
 
@@ -625,7 +620,7 @@ http://otter.topsy.com/trackbackcount.json?url=http://topsy.com/
 
 This will fetch only the trackback counts in json format that reference Topsy's homepage.
 
-= Resource: trackbacks =
+= /trackbacks =
 
 *Description:* List of tweets (trackbacks) referencing a url, most recent first.
 
@@ -746,7 +741,7 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-= Resource: trending =
+= /trending =
 
 *Description:* List of trending terms.
 
@@ -793,7 +788,7 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
-= Resource: urlinfo =
+= /urlinfo =
 
 *Description:* Information about an url.
 
@@ -843,5 +838,3 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
-== See Also ==
- [ResStats Stats]
