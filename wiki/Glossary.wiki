@@ -4,4 +4,4 @@
 
 == Influence Levels == 
 
-Influence is an [http://labs.topsy.com/influence attention measure] computed by Topsy.  The influence level goes from 0-10 and represent Topsy influence of an author.  Influence of 9 and greater corresponds to the "Highly Influential" tag and influence of 3 and great corresponds to the "Influential" tag o Topsy.com. 
+Influence is an [http://labs.topsy.com/influence attention measure] computed by Topsy.  The influence level goes from *0 to 10*. Influence of 9 and greater corresponds to the "Highly Influential" tag and influence of 3 and greater corresponds to the "Influential" tag on Topsy.com. 
