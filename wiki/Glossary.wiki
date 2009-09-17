@@ -1,7 +1,9 @@
 #summary Glossary of concepts and abstractions represented by Topsy Resources.
 
-= Introduction =
-
 == Influence Levels == 
 
 Influence is an [http://labs.topsy.com/influence attention measure] computed by Topsy.  The influence level goes from *0 to 10*. Influence of 9 and greater corresponds to the "Highly Influential" tag and influence of 3 and greater corresponds to the "Influential" tag on Topsy.com. 
+
+== Trackback == 
+
+On Topsy a trackback is used loosely to mean a reference to a link by an author.  A tweet with an URL is a Twitter Trackback. This is slightly more expansive usage of the term compared to its [http://en.wikipedia.org/wiki/Trackback original meaning].
