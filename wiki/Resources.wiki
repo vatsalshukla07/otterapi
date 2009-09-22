@@ -70,6 +70,8 @@ X-RateLimit-Reset: 1251345600
 }
 }}}
 
+----
+
 == /authorsearch ==
 
 *Description:* List of authors that talk about the query. The list is
@@ -133,6 +135,8 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
+----
+
 == /linkpostcount ==
 
 *Description:* Count of links for an author. This is an efficient way
@@ -179,6 +183,8 @@ Date: Tue, 22 Sep 2009 20:46:10 GMT
 }
 
 }}}
+
+----
 
 == /linkposts ==
 
@@ -245,6 +251,8 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
+----
+
 == /profilesearch ==
 
 *Description:* A list of author profiles that match the query. The query
@@ -305,6 +313,8 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
+----
+
 == /related ==
 
 *Description:* List of related urls for another url.
@@ -362,6 +372,8 @@ X-RateLimit-Reset: 1251349200
 }
 
 }}}
+
+----
 
 == /search ==
 
@@ -428,6 +440,8 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
+----
+
 === Example: ===
 
 Fetch the most popular youtube videos today.
@@ -480,6 +494,8 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
+----
+
 == /searchcount ==
 
 *Description:* Count of results for a search query.
@@ -527,6 +543,8 @@ X-RateLimit-Reset: 1251349200
    }
 }
 }}}
+
+----
 
 == /stats ==
 
@@ -576,6 +594,8 @@ X-RateLimit-Reset: 1251349200
    }
 }
 }}}
+
+----
 
 == /tags ==
 
@@ -634,6 +654,8 @@ X-RateLimit-Reset: 1251349200
 
 }}}
 
+----
+
 === Example: ===
 
 Fetch tags associated with Barack Obama's Twitter profile.
@@ -675,6 +697,8 @@ X-RateLimit-Reset: 1251349200
    }
 }
 }}}
+
+----
 
 == /toplinkcount ==
 
@@ -718,6 +742,8 @@ Date: Tue, 22 Sep 2009 20:50:49 GMT
 }
 
 }}}
+
+----
 
 == /toplinks ==
 
@@ -777,6 +803,8 @@ X-RateLimit-Reset: 1253653200
 }
 
 }}}
+
+----
 
 == /trackbacks ==
 
@@ -847,6 +875,7 @@ X-RateLimit-Reset: 1251345600
 }}}
 
 === Example: ===
+
 Fetch posts (tweets) that reference Topsy's homepage from influential users only. 
 
 {{{
@@ -900,6 +929,8 @@ X-RateLimit-Reset: 1251349200
 }
 }}}
 
+----
+
 == /trending ==
 
 *Description:* List of trending terms.
@@ -946,6 +977,8 @@ X-RateLimit-Reset: 1251349200
 }
 
 }}}
+
+----
 
 == /urlinfo ==
 
