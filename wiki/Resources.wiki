@@ -11,7 +11,7 @@ The api is accessible via the uri: http://otter.topsy.com/
 All requests are implemented via HTTP GET calls. The url of the request
 can be broken down into three parts: [Resources Resources (described below)],
 [ResponseFormats response format], and query parameters. A malformed
-request will return a response with HTTP 400 status. 
+request will return a response with HTTP 400 status.
 
    `GET /`[Resources resource]`.`[ResponseFormats response-format]`?&query=parameterss HTTP/1.1`<br>
    `Host: otter.topsy.com`
@@ -131,6 +131,53 @@ X-RateLimit-Reset: 1251349200
       ]
    }
 }
+}}}
+
+== /linkpostcount ==
+
+*Description:* Count of links for an author. This is an efficient way
+of getting the counts only.
+
+*URL Format:* `http://otter.topsy.com/linkpostcount.json?query=parameters`
+
+=== Parameters: ===
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the author. ||
+|| contains || optional   || A query filter for linkposts (the content must contain this string). ||
+
+=== Example: ===
+
+Fetch only the linkpost counts in json format that reference Topsy's Twitter account.
+
+{{{
+$ curl -i "http://otter.topsy.com/linkpostcount.json?url=http://twitter.com/topsy"
+
+
+HTTP/1.1 200 OK
+Content-Length: 234
+Content-Type: application/json; charset=utf-8
+Expires: Tue, 22 Sep 2009 13:51:10 -0700
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2490
+X-RateLimit-Reset: 1253653200
+Date: Tue, 22 Sep 2009 20:46:10 GMT
+
+{
+    "request" : {
+        "parameters" : {
+            "url" : "http://twitter.com/topsy"
+        },
+        "response_type" : "json",
+        "resource" : "linkpostcount",
+        "url" : "http://otter.topsy.com/linkpostcount.json?url=http%3A%2F%2Ftwitter.com%2Ftopsy"
+    },
+    "response" : {
+        "contains" : 0,
+        "all" : 46
+    }
+}
+
 }}}
 
 == /linkposts ==
@@ -627,6 +674,108 @@ X-RateLimit-Reset: 1251349200
       ]
    }
 }
+}}}
+
+== /toplinkcount ==
+
+*Description:* Count of links for Top links. This is an efficient way
+of getting the counts only.
+
+*URL Format:* `http://otter.topsy.com/toplinkcount.json?query=parameters`
+
+=== Parameters: ===
+
+|| *Name*   || *Required* || *Description* ||
+|| contains || optional   || A query filter for toplinks (the content must contain this string). ||
+
+=== Example: ===
+
+Fetch top new links determined by Topsy.
+
+{{{
+$ curl -i "http://otter.topsy.com/toplinkcount.json"
+
+HTTP/1.1 200 OK
+Content-Length: 166
+Content-Type: application/json; charset=utf-8
+Expires: Tue, 22 Sep 2009 13:55:49 -0700
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2489
+X-RateLimit-Reset: 1253653200
+Date: Tue, 22 Sep 2009 20:50:49 GMT
+
+{
+    "request" : {
+        "parameters" : { },
+        "response_type" : "json",
+        "resource" : "toplinkcount",
+        "url" : "http://otter.topsy.com/toplinkcount.json"
+    },
+    "response" : {
+        "contains" : 0,
+        "all" : 11674
+    }
+}
+
+}}}
+
+== /toplinks ==
+
+*Description:* List of top new links determined by Topsy.
+
+*URL Format:* `http://otter.topsy.com/toplinks.json?query=parameters`
+
+=== Parameters: ===
+
+|| *Name*   || *Required* || *Description* ||
+|| contains || optional   || Query string to filter results. ||
+
+Accepts [ResListParameters List Parameters]
+
+=== Example: ===
+
+Fetch top new links in json format determined by Topsy.
+
+{{{
+$ curl -i "http://otter.topsy.com/toplinks.json"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Tue, 22 Sep 2009 20:52:58 GMT
+Content-Length: 5475
+Content-Type: application/json; charset=utf-8
+Expires: Tue, 22 Sep 2009 13:57:58 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2498
+X-RateLimit-Reset: 1253653200
+
+{
+   "request" : {
+      "parameters" : {},
+      "response_type" : "json",
+      "resource" : "toplinks",
+      "url" : "http://otter.topsy.com/toplinks.json"
+   },
+   "response" : {
+      "page" : 1,
+      "total" : 11487,
+      "perpage" : 10,
+      "list" : [
+         {
+            "target" : {
+               "topsy_trackback_url" : "http://topsy.com/tb/www.businessinsider.com/paypals-peter-thiel-funded-acorn-sting-2009-9",
+               "url" : "http://www.businessinsider.com/paypals-peter-thiel-funded-acorn-sting-2009-9",
+               "trackback_total" : 11
+            },
+            "date" : 1253652756,
+            "content" : "PayPal's Peter Thiel Funded ACORN Sting http://bit.ly/XsGn",
+            "date_alpha" : "22 seconds ago"
+         },
+         ...
+    }
+}
+
 }}}
 
 == /trackbacks ==
