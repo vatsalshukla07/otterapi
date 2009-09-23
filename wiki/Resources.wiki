@@ -137,55 +137,6 @@ X-RateLimit-Reset: 1251349200
 
 ----
 
-== /linkpostcount ==
-
-*Description:* Count of links for an author. This is an efficient way
-of getting the counts only.
-
-*URL Format:* `http://otter.topsy.com/linkpostcount.json?query=parameters`
-
-=== Parameters: ===
-
-|| *Name*   || *Required* || *Description* ||
-|| url      || required   || URL string for the author. ||
-|| contains || optional   || A query filter for linkposts (the content must contain this string). ||
-
-=== Example: ===
-
-Fetch only the linkpost counts in json format that reference Topsy's Twitter account.
-
-{{{
-$ curl -i "http://otter.topsy.com/linkpostcount.json?url=http://twitter.com/topsy"
-
-
-HTTP/1.1 200 OK
-Content-Length: 234
-Content-Type: application/json; charset=utf-8
-Expires: Tue, 22 Sep 2009 13:51:10 -0700
-X-RateLimit-Limit: 2500
-X-RateLimit-Remaining: 2490
-X-RateLimit-Reset: 1253653200
-Date: Tue, 22 Sep 2009 20:46:10 GMT
-
-{
-    "request" : {
-        "parameters" : {
-            "url" : "http://twitter.com/topsy"
-        },
-        "response_type" : "json",
-        "resource" : "linkpostcount",
-        "url" : "http://otter.topsy.com/linkpostcount.json?url=http%3A%2F%2Ftwitter.com%2Ftopsy"
-    },
-    "response" : {
-        "contains" : 0,
-        "all" : 46
-    }
-}
-
-}}}
-
-----
-
 == /linkposts ==
 
 *Description:* List of urls posted by an author.
@@ -247,6 +198,55 @@ X-RateLimit-Reset: 1251349200
          ...
       ]
    }
+}
+
+}}}
+
+----
+
+== /linkpostcount ==
+
+*Description:* Count of links posted by an author. This is the efficient, 
+count-only version of /linkposts
+
+*URL Format:* `http://otter.topsy.com/linkpostcount.json?query=parameters`
+
+=== Parameters: ===
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the author. ||
+|| contains || optional   || A query filter for linkposts (the content must contain this string). ||
+
+=== Example: ===
+
+Fetch only the linkpost counts in json format that reference Topsy's Twitter account.
+
+{{{
+$ curl -i "http://otter.topsy.com/linkpostcount.json?url=http://twitter.com/topsy"
+
+
+HTTP/1.1 200 OK
+Content-Length: 234
+Content-Type: application/json; charset=utf-8
+Expires: Tue, 22 Sep 2009 13:51:10 -0700
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2490
+X-RateLimit-Reset: 1253653200
+Date: Tue, 22 Sep 2009 20:46:10 GMT
+
+{
+    "request" : {
+        "parameters" : {
+            "url" : "http://twitter.com/topsy"
+        },
+        "response_type" : "json",
+        "resource" : "linkpostcount",
+        "url" : "http://otter.topsy.com/linkpostcount.json?url=http%3A%2F%2Ftwitter.com%2Ftopsy"
+    },
+    "response" : {
+        "contains" : 0,
+        "all" : 46
+    }
 }
 
 }}}
@@ -317,7 +317,8 @@ X-RateLimit-Reset: 1251349200
 
 == /related ==
 
-*Description:* List of related urls for another url.
+*Description:* List of related URLs. This list is derived by tracking 
+other URLs that are mentioned in the same tweet as the query URL.
 
 *URL Format:* `http://otter.topsy.com/related.json?query=parameters`
 
