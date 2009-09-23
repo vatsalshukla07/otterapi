@@ -701,54 +701,9 @@ X-RateLimit-Reset: 1251349200
 
 ----
 
-== /toplinkcount ==
-
-*Description:* Count of links for Top links. This is an efficient way
-of getting the counts only.
-
-*URL Format:* `http://otter.topsy.com/toplinkcount.json?query=parameters`
-
-=== Parameters: ===
-
-|| *Name*   || *Required* || *Description* ||
-|| contains || optional   || A query filter for toplinks (the content must contain this string). ||
-
-=== Example: ===
-
-Fetch top new links determined by Topsy.
-
-{{{
-$ curl -i "http://otter.topsy.com/toplinkcount.json"
-
-HTTP/1.1 200 OK
-Content-Length: 166
-Content-Type: application/json; charset=utf-8
-Expires: Tue, 22 Sep 2009 13:55:49 -0700
-X-RateLimit-Limit: 2500
-X-RateLimit-Remaining: 2489
-X-RateLimit-Reset: 1253653200
-Date: Tue, 22 Sep 2009 20:50:49 GMT
-
-{
-    "request" : {
-        "parameters" : { },
-        "response_type" : "json",
-        "resource" : "toplinkcount",
-        "url" : "http://otter.topsy.com/toplinkcount.json"
-    },
-    "response" : {
-        "contains" : 0,
-        "all" : 11674
-    }
-}
-
-}}}
-
-----
-
 == /toplinks ==
 
-*Description:* List of top new links determined by Topsy.
+*Description:* List of top new links determined by Topsy. 
 
 *URL Format:* `http://otter.topsy.com/toplinks.json?query=parameters`
 
@@ -807,9 +762,54 @@ X-RateLimit-Reset: 1253653200
 
 ----
 
+== /toplinkcount ==
+
+*Description:* Count of links for Top links. This is an efficient way
+of getting the counts only.
+
+*URL Format:* `http://otter.topsy.com/toplinkcount.json?query=parameters`
+
+=== Parameters: ===
+
+|| *Name*   || *Required* || *Description* ||
+|| contains || optional   || A query filter for toplinks (the content must contain this string). ||
+
+=== Example: ===
+
+Fetch top new links determined by Topsy.
+
+{{{
+$ curl -i "http://otter.topsy.com/toplinkcount.json"
+
+HTTP/1.1 200 OK
+Content-Length: 166
+Content-Type: application/json; charset=utf-8
+Expires: Tue, 22 Sep 2009 13:55:49 -0700
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2489
+X-RateLimit-Reset: 1253653200
+Date: Tue, 22 Sep 2009 20:50:49 GMT
+
+{
+    "request" : {
+        "parameters" : { },
+        "response_type" : "json",
+        "resource" : "toplinkcount",
+        "url" : "http://otter.topsy.com/toplinkcount.json"
+    },
+    "response" : {
+        "contains" : 0,
+        "all" : 11674
+    }
+}
+
+}}}
+
+----
+
 == /trackbacks ==
 
-*Description:* List of tweets (trackbacks) referencing a url, most recent first.
+*Description:* List of tweets (trackbacks) that mention the query URL, most recent first.
 
 *URL Format:* `http://otter.topsy.com/trackbacks.json?query=parameters`
 
