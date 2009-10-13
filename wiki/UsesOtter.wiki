@@ -14,7 +14,7 @@ Releases: http://pypi.python.org/pypi/python-otter/
 
 == erlang-otter ==
 
-Requires mochijson2.erl and mochiweb_util.erl
+Requires mochijson2.erl and mochiweb_util.erl from http://mochiweb.googlecode.com/svn/trunk/src/
 
 http://cornsyrup.org/~jason/otter.erl
 
