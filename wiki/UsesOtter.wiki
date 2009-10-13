@@ -8,9 +8,14 @@
 
 A python client library to the Topsy Otter API.
 
-http://otterapi.googlecode.com/svn/trunk/
+Source: http://otterapi.googlecode.com/svn/trunk/
+
+Releases: http://pypi.python.org/pypi/python-otter/
 
 == erlang-otter ==
+
+Requires mochijson2.erl and mochiweb_util.erl
+
 http://cornsyrup.org/~jason/otter.erl
 
 == Net::Topsy ==
