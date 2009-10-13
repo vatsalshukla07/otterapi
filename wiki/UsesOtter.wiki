@@ -10,6 +10,9 @@ A python client library to the Topsy Otter API.
 
 http://otterapi.googlecode.com/svn/trunk/
 
+== erlang-otter ==
+http://cornsyrup.org/~jason/otter.erl
+
 == Net::Topsy ==
 
 A perl module that implements a client interface to the Topsy Otter API. 
