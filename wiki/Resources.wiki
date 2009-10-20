@@ -386,7 +386,7 @@ X-RateLimit-Reset: 1251349200
 
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ([QuerySyntax query syntax]) ||
-|| window  || optional   || Time window for results. (default: json Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, json last month, json all time ||
+|| window  || optional   || Time window for results. (default: json Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
 
 Accepts [ResListParameters List Parameters]
 
