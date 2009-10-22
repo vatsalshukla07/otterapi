@@ -589,6 +589,7 @@ X-RateLimit-Reset: 1251349200
       "url" : "http://otter.topsy.com/stats.json?url=http%3A%2F%2Ftopsy.com%2F"
    },
    "response" : {
+      "topsy_trackback_url" : "http://topsy.com/tb/topsy.com/",
       "contains" : "1931",
       "influential" : "874",
       "all" : "1931"
