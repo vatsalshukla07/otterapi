@@ -850,6 +850,7 @@ X-RateLimit-Reset: 1251345600
       "url" : "http://otter.topsy.com/trackbacks.json?url=http%3A%2F%2Ftopsy.com%2F"
    },
    "response" : {
+      "topsy_trackback_url": "http://topsy.com/tb/topsy.com/",
       "page" : 1,
       "total" : "1931",
       "perpage" : 10,
@@ -905,6 +906,7 @@ X-RateLimit-Reset: 1251349200
       "url" : "http://otter.topsy.com/trackbacks.json?infonly=1&tracktype=tweet&url=http%3A%2F%2Ftopsy.com%2F"
    },
    "response" : {
+      "topsy_trackback_url": "http://topsy.com/tb/topsy.com/",
       "page" : 1,
       "total" : "874",
       "perpage" : 10,
