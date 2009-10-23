@@ -3,7 +3,10 @@
 
 = Rate Limit =
 
-API requests are limited to 2,500 per hour per IP. Topsy credits 2,500 tokens to your IP every hour. You can check the status of your credits with the following call. 
+The Otter API uses a credit allocation system to ensure fair 
+distribution of capacity. Each IP is allocated 10,000 credits 
+per hour.  You can check the status of your credits with the 
+following call:
 
 {{{
 http://otter.topsy.com/credit.json
@@ -15,6 +18,10 @@ In addition, each request contains rate limit information in the HTTP response h
 || `X-RateLimit-Limit`      || Total credits that can be allocated. ||
 || `X-RateLimit-Remaining`  || Total credits available. ||
 || `X-RateLimit-Reset`      || Timestamp (unix epoch) for when the credits will be reset. ||
+
+== Cost of API calls ==
+
+Unless otherwise noted, an API call deducts 1 credit from your allocation.  Search based API calls (/search, /searchcount, /authorsearch, /profilesearch) have a significantly higher computational cost on our backend, and deduct 10 credits per call.
 
 === Example HTTP Response Headers ===
 
