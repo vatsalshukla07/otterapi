@@ -26,7 +26,7 @@ Unless otherwise noted, an API call deducts 1 credit from your allocation.  Sear
 === Example HTTP Response Headers ===
 
 {{{
-X-RateLimit-Limit: 2500
+X-RateLimit-Limit: 10000
 X-RateLimit-Remaining: 2498
 X-RateLimit-Reset: 1250791200
 }}}
