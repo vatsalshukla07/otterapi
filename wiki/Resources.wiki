@@ -126,6 +126,7 @@ X-RateLimit-Reset: 1251349200
             "description" : "",
             "influence_level" : "1",
             "hits" : 72,
+            "trackback_total" : 104,
             "url" : "http://twitter.com/nosql_topsy_5",
             "topsy_author_url" : "http://topsy.com/twitter/nosql_topsy_5"
          },
@@ -427,6 +428,7 @@ X-RateLimit-Reset: 1251349200
          {
             "trackback_permalink" : "http://twitter.com/ewerickson/status/3562164195",
             "hits" : 38,
+            "trackback_total" : 157,
             "topsy_trackback_url" : "http://topsy.com/tb/www.redstate.com/erick/2009/08/26/breaking-rumors-surface-that-leon-panetta-is-resigning/",
             "url" : "http://www.redstate.com/erick/2009/08/26/breaking-rumors-surface-that-leon-panetta-is-resigning/",
             "content" : "Panetta is rumored to have sent a resignation letter to Barack Obama today:  http://bit.ly/CDMg9",
@@ -480,6 +482,7 @@ X-RateLimit-Reset: 1251349200
          {
             "trackback_permalink" : "http://twitter.com/danilogentili/status/3567528055",
             "hits" : 2499,
+            "trackback_total" : 3450,
             "topsy_trackback_url" : "http://topsy.com/trackback?url=http://www.youtube.com/watch?v=i_KPsH7f3xo",
             "url" : "http://www.youtube.com/watch?v=i_KPsH7f3xo",
             "content" : "ApÃ³s ver isso http://bit.ly/xOl3b, eu, Danilo Zentili, 
