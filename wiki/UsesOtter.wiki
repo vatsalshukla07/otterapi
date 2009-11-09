@@ -22,7 +22,7 @@ http://cornsyrup.org/~jason/otter.erl
 
 A perl module that implements a client interface to the Topsy Otter API. 
 
-http://github.com/leto/Net-Topsy
+http://search.cpan.org/dist/Net-Topsy/
 
 == Ruby Gem == 
 
