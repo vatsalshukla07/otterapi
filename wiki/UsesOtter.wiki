@@ -24,6 +24,12 @@ A perl module that implements a client interface to the Topsy Otter API.
 
 http://github.com/leto/Net-Topsy
 
+== Ruby Gem == 
+
+A Ruby Gem for Otter. 
+
+http://etagwerker.github.com/rtopsy
+
 = Apps =
 
 == Topsy Wordpress Plugin == 
