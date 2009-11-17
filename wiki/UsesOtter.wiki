@@ -24,11 +24,15 @@ A perl module that implements a client interface to the Topsy Otter API.
 
 http://search.cpan.org/dist/Net-Topsy/
 
-== Ruby Gem == 
+== Ruby Gems == 
 
-A Ruby Gem for Otter. 
+Ruby Gem for Otter by Ernesto Tagwerker
 
 http://etagwerker.github.com/rtopsy
+
+Ruby Gem for Otter by Jeff Smick
+
+http://gemcutter.org/gems/otter-rb
 
 = Apps =
 
