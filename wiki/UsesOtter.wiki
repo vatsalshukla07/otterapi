@@ -41,3 +41,9 @@ http://gemcutter.org/gems/otter-rb
 Plugin to add Twitter trackbacks to a WordPress blog.
  
 http://labs.topsy.com/widgets/wordpress/
+
+== Twitter Trackbacks Widget == 
+
+Highly customizable Twitter trackbacks widget to integrate tweets that mention your post into your blog. Each tweet comes with reply & retweet links to get more readers engaged in your story conversation.
+
+http://www.moretechtips.net/2009/11/twitter-trackbacks-widget-jquery-plugin.html
