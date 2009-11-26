@@ -38,8 +38,8 @@ http://gemcutter.org/gems/otter-rb
 
 == Topsy Wordpress Plugin == 
 
-Plugin to add Twitter trackbacks to a WordPress blog.
- 
+This plugin queries Otter to automatically generate retweet buttons and trackback comments on your posts. 
+
 http://labs.topsy.com/widgets/wordpress/
 
 == Twitter Trackbacks Widget == 
