@@ -36,19 +36,19 @@ http://gemcutter.org/gems/otter-rb
 
 = Apps =
 
-== Topsy WordPress Plugin ==
+== Topsy Wordpress Plugin ==
 
 This plugin queries Otter to automatically generate retweet buttons and trackback comments on your posts. 
 
 http://labs.topsy.com/widgets/wordpress/
 
-== WordPress Widget by Vasileios Kerasiotis ==
+== Wordpress Widget by Vasileios Kerasiotis ==
 
 WordPress development tutorial for an Otter based widget that supports /linkposts, /authorinfo, /authorsearch, /related, and /search. 
 
 http://jeez.eu/2009/12/02/creating-a-useful-wordpress-widget-using-topsy/
 
-== Twitter Trackbacks Widget ==
+== Twitter Trackbacks Widget by Mike More ==
 
 Highly customizable Twitter trackbacks javascript widget to integrate tweets that mention your post into your blog. Each tweet comes with reply & retweet links to get more readers engaged in your story conversation.
 
