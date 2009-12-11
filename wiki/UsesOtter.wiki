@@ -57,5 +57,7 @@ http://www.moretechtips.net/2009/11/twitter-trackbacks-widget-jquery-plugin.html
 Mike created another cool remix of the Topsy retweet button that displays the Twitter pictures of the folks that tweeted about your site in the button itself. Check out the code and the demos below!
 
 Code: http://www.moretechtips.net/2009/12/who-tweet-button-fancy-jquery-plugin.html
+
 Demo1: http://who-tweet-button.googlecode.com/svn/v1/demo1.htm
+
 Demo2: http://who-tweet-button.googlecode.com/svn/v1/demo2.htm
