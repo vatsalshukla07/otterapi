@@ -34,6 +34,10 @@ http://etagwerker.github.com/rtopsy
 
 http://gemcutter.org/gems/otter-rb
 
+== Ruby Gem for Otter by Ernesto Tagwerker and Wynn Netherland ==
+
+http://gemcutter.org/gems/topsy
+
 = Apps =
 
 == Topsy Plugin for Wordpress ==
