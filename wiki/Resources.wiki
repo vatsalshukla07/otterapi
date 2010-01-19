@@ -24,6 +24,8 @@ request will return a response with HTTP 400 status.
 indexed by Topsy). The response contains the name, description (biography) and
 the influence level of the author.
 
+*Explanation of Influence:* [http://code.google.com/p/otterapi/wiki/Glossary TopsyGlossary]
+
 *URL Format:* `http://otter.topsy.com/authorinfo.json?query=parameters`
 
 === Parameters: ===
