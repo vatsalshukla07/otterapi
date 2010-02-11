@@ -75,3 +75,9 @@ Demo2: http://who-tweet-button.googlecode.com/svn/v1/demo2.htm
 Twoolbar has integrated Topsy Retweet Button support into their browser plugin. 
 
 http://twoolbar.blogspot.com/
+
+== Twitter Pulse Chrome extension by Michael Benezra == 
+
+The Twitter Pulse Chrome extension displays the most retweeted URLs in the current domain allowing the user to discover hot spots in their favorite blogs and news sites.
+
+https://chrome.google.com/extensions/detail/biakjffhfkpgngkaojmmeomahknpnkoe.
