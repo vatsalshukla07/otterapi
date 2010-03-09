@@ -33,7 +33,7 @@ X-RateLimit-Reset: 1250791200
 
 = Paging Limits =
 
-All calls that take [ResListParameters list parameters] limit `perpage` to 100 and `page` to 10. This gives you access to top 1000 items on any list.
+All calls that take [ResListParameters list parameters] limit `perpage` to 100 and `page` to 15. This gives you access to top 1500 items on any list.
 
 = Client Identification =
 
