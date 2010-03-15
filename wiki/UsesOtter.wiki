@@ -12,6 +12,12 @@ Source: http://otterapi.googlecode.com/svn/trunk/
 
 Releases: http://pypi.python.org/pypi/python-otter/
 
+== collective.portlet.twittertrackback 1.0 ==
+
+A Plone portlet that displays mentions of the current page's url via Topsy. Written by Matt Hamilton.
+
+http://plone.org/products/collective.portlet.twittertrackback/
+
 == erlang-otter ==
 
 Requires mochijson2.erl and mochiweb_util.erl from http://mochiweb.googlecode.com/svn/trunk/src/
