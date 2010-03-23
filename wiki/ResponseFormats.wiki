@@ -3,7 +3,7 @@
 
 <wiki:toc max_depth="2" />
 
-Response formats are specified as a file-extension in the API request url. Topsy provides resources in [#JSON JSON format] (".json") and [#Javascript Javascript format] (".js"). There's also a [#Txt txt] format for debugging. 
+Response formats are specified as a file-extension in the API request url. Topsy provides resources in [#JSON JSON format] (".json") and [#Javascript Javascript format (JSONP)] (".js"). There's also a [#Txt txt] format for debugging. 
 
 = JSON =
 
@@ -19,7 +19,7 @@ http://otter.topsy.com/stats.json?url=http://blog.example.com/my-post
 {'request':{'response_type':'json','parameters':{'url':'http://blog.example.com/my-post'}, ... }
 }}}
 
-= Javascript =
+= Javascript (JSONP) =
 
 When an API request uses a Javascript response format, the response body will be a javascript function call that takes one parameter containing the response object. An HTTP Header Content-Type: application/javascript` will also be sent.
 
