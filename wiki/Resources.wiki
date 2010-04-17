@@ -325,8 +325,6 @@ other URLs that are mentioned in the same tweet as the query URL.
 
 *URL Format:* `http://otter.topsy.com/related.json?query=parameters`
 
-=== Parameters: ===
-
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the target. ||
 
@@ -390,6 +388,7 @@ X-RateLimit-Reset: 1251349200
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ([QuerySyntax query syntax]) ||
 || window  || optional   || Time window for results. (default: json Options: `auto` - automatically pick the most relevant window. `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time ||
+|| type || optional   || The type of result.  Default is nothing, which includes all types.  Other supported values are `image` and `tweet` ||
 
 Accepts [ResListParameters List Parameters]
 
@@ -551,6 +550,10 @@ X-RateLimit-Reset: 1251349200
 }}}
 
 ----
+
+== /searchdate ==
+
+*Description:* Returns time-sorted (reverse chronology) search results.  All options are the same as that of /search.
 
 == /stats ==
 
