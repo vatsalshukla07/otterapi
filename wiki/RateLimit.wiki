@@ -37,7 +37,7 @@ All calls that take [ResListParameters list parameters] limit `perpage` to 100 a
 
 = Attribution =
 
-If you use Otter API in your application or service, we'd appreciate if you tell your users about the API.  A message like: 
+If you use Otter API in your application or service, we'd appreciate if you tell your users about the API in the About section of your website or app, with a message like:
 
     "!YourAppName uses the [http://otter.topsy.com/ Otter API] from [http://topsy.com/ Topsy]."
 
