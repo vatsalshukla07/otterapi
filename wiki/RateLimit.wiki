@@ -35,6 +35,10 @@ X-RateLimit-Reset: 1250791200
 
 All calls that take [ResListParameters list parameters] limit `perpage` to 100 and `page` to 15. This gives you access to top 1500 items on any list.
 
+= Attribution =
+
+If you use Otter API in your application or service, we'd appreciate if you tell your users about the API.  A message like: "This application/service uses the [http://otter.topsy.com/ Otter API from Topsy Labs]."
+
 = Client Identification =
 
 We request that you identify your application or service via the `User-Agent` HTTP header. This value should be the url to your service or application. This is not mandatory, but when under heavy load, we will give preference to clients that identify themselves. It is also possible to identify via `X-Topsy-UA` HTTP header, if modifying the `User-Agent` header is not possible.
