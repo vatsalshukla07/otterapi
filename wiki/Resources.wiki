@@ -555,6 +555,8 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* Returns time-sorted (reverse chronology) search results.  All options are the same as that of /search.
 
+----
+
 == /stats ==
 
 *Description:* Count of tweets for a url. This is an efficient way
