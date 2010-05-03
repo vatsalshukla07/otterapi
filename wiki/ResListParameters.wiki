@@ -7,6 +7,8 @@ List parameters available to all list [Resources resources].
 || *Name*  || *Required* || *Description* ||
 || page    || optional   || page number of the result set. (default: `1`, max: `10`) ||
 || perpage || optional   || limit number of results per page. (default: `10`, max: `50`) ||
+|| mintime || optional   || earliest date/time to restrict a result set. unix-timestamp format. ||
+|| maxtime || optional   || most recent date/time to restrict a result set. unix-timestamp format. ||
 
 == Examples: ==
 {{{
