@@ -618,11 +618,9 @@ X-RateLimit-Reset: 1251349200
 === Parameters: ===
 
 || *Name*   || *Required*  || *Description* ||
-|| url      || required^1^ || URL string for the target. ||
+|| url      || required    || URL string for the target. ||
 
 Accepts [ResListParameters List Parameters]
-
-required^1^: _url_ is required.
 
 === Example: ===
 Fetch tags associated with Twitter's homepage.
