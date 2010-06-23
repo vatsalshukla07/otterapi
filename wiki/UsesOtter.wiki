@@ -87,3 +87,9 @@ http://twoolbar.blogspot.com/
 The Twitter Pulse Chrome extension displays the most retweeted URLs in the current domain allowing the user to discover hot spots in their favorite blogs and news sites.
 
 https://chrome.google.com/extensions/detail/biakjffhfkpgngkaojmmeomahknpnkoe.
+
+== Hubs ==
+
+http://hubs.twtlr.com/
+
+HUBS.twtlr.com is a service that helps you to find the hottest links posted on Twitter. Written by @yuanhao. Powered by Topsy and Otter. 
