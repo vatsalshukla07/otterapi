@@ -74,12 +74,13 @@ X-RateLimit-Reset: 1251345600
 
 ----
 
-== /authorsearch ==
+== /experts ==
 
 *Description:* List of authors that talk about the query. The list is
-sorted by frequency of posts and the influence of authors.
+sorted by frequency of posts and the influence of authors. 
+(Note: for backwards compatibility, the /authorsearch api method is an alias to /experts.) 
 
-*URL Format:* `http://otter.topsy.com/authorsearch.json?query=parameters`
+*URL Format:* `http://otter.topsy.com/experts.json?query=parameters`
 
 === Parameters: ===
 
@@ -94,7 +95,7 @@ Accepts [ResListParameters List Parameters]
 Fetch search results in json format for authors who talk about "nosql" the most.
 
 {{{
-$ curl -i "http://otter.topsy.com/authorsearch.json?q=nosql"
+$ curl -i "http://otter.topsy.com/experts.json?q=nosql"
 
 HTTP/1.0 200 OK
 Connection: close
@@ -113,8 +114,8 @@ X-RateLimit-Reset: 1251349200
          "q" : "nosql"
       },
       "response_type" : "json",
-      "resource" : "authorsearch",
-      "url" : "http://otter.topsy.com/authorsearch.json?q=nosql"
+      "resource" : "experts",
+      "url" : "http://otter.topsy.com/experts.json?q=nosql"
    },
    "response" : {
       "page" : 1,
