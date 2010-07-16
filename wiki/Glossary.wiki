@@ -2,7 +2,7 @@
 
 == Influence Levels == 
 
-Influence is an [http://labs.topsy.com/influence attention measure] computed by Topsy.  The influence level goes from *0 to 10*. Influence of 10 corresponds to the "Highly Influential" tag and influence of 8 and greater corresponds to the "Influential" tag on Topsy.com. 
+Topsy Influence is described here: http://labs.topsy.com/influence/
 
 == Trackback == 
 
