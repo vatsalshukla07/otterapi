@@ -15,7 +15,7 @@ List parameters available to all list [Resources resources].
 
 == Examples: ==
 {{{
-http://otter.topsy.com/search.json?q=New+York&page=2
+http://otter.topsy.com/search.json?q=New+York&page=2&offset=24
 }}}
 
 This query will fetch the second page of a search for "New York" and return a json object.
