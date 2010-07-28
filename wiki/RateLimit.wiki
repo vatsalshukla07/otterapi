@@ -5,7 +5,7 @@
 
 The Otter API is provided free-of-charge to the Internet community.  If your application uses the Otter API, we appreciate a link back to Topsy with the following message: 
 
-    "Powered by [http://topsy.com/ Topsy]."
+    "[http://topsy.com/ Powered by Topsy]."
 
 = Rate Limit =
 
