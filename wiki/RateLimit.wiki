@@ -1,6 +1,12 @@
 #summary Rate Limits
 #sidebar TOC
 
+= Usage Terms =
+
+The Otter API is provided free-of-charge to the Internet community.  If your application uses the Otter API, we appreciate a link back to Topsy with the following message: 
+
+    "Powered by [http://topsy.com/ Topsy]."
+
 = Rate Limit =
 
 The Otter API uses a credit allocation system to ensure fair 
@@ -35,16 +41,10 @@ X-RateLimit-Reset: 1250791200
 
 All calls that take [ResListParameters list parameters] limit `perpage` to 100 and `page` to 15. This gives you access to top 1500 items on any list.
 
-= Attribution =
-
-If you use Otter API in your application or service, we'd appreciate a link back to Topsy, with the following message: 
-
-    "Powered by [http://topsy.com/ Topsy]."
-
 = Client Identification =
 
 We request that you identify your application or service via the `User-Agent` HTTP header. This value should be the url to your service or application. This is not mandatory, but when under heavy load, we will give preference to clients that identify themselves. It is also possible to identify via `X-Topsy-UA` HTTP header, if modifying the `User-Agent` header is not possible.
 
 = Higher grade access = 
 
-We plan to support higher grade of access in the future.  If you need this, please [Contact contact us].
+We support commercial, higher grade access large-scale applications.  If you need this, please [Contact contact us].
