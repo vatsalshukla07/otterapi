@@ -3,6 +3,6 @@
   * [Resources]
   * [ResponseFormats Response Formats]
   * [ErrorHandling Error Handling]
-  * [RateLimit Rate Limits & Usage Terms]
+  * [RateLimit Usage Terms & Rate Limits]
   * [Glossary Glossary]
   * [Contact Contact Us]
