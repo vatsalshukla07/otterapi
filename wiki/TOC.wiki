@@ -2,6 +2,7 @@
 
   * [Resources]
   * [ResponseFormats Response Formats]
+  * [ListParameters List Parameters]
   * [ErrorHandling Error Handling]
   * [RateLimit Usage Terms & Rate Limits]
   * [Glossary Glossary]
