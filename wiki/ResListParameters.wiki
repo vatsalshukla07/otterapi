@@ -10,6 +10,7 @@ List parameters available to all list [Resources resources].
 || offset  || optional   || offset from which to start the results, should be set to *last_offset* parameter returned in the previous page. ||  
 || mintime || optional   || earliest date/time to restrict a result set. unix-timestamp format. ||
 || maxtime || optional   || most recent date/time to restrict a result set. unix-timestamp format. ||
+|| nohidden || optional   || toggles hiding of duplicate results. default is 1, which means no results are hidden. nohidden=0 will return unique results only ||
 || order || optional   || the order in which to return results. Options are "influence", "date" and "-date". Only available on /trackbacks  ||
 
 
