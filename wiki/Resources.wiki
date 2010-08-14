@@ -151,6 +151,7 @@ X-RateLimit-Reset: 1251349200
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the author. ||
 || contains || optional   || Query string to filter results. ||
+|| tracktype || optional   || Type of posts. Options include: `image`, `tweet__various` (tweets and retweets) and `self__tweet` (tweets by user). ||
 
 Accepts [ResListParameters List Parameters]
 
@@ -219,6 +220,7 @@ count-only version of /linkposts
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the author. ||
 || contains || optional   || A query filter for linkposts (the content must contain this string). ||
+|| tracktype || optional   || Type of posts. Options include: `image`, `tweet__various` (tweets and retweets) and `self__tweet` (tweets by user). ||
 
 === Example: ===
 
@@ -252,68 +254,6 @@ Date: Tue, 22 Sep 2009 20:46:10 GMT
     }
 }
 
-}}}
-
-----
-
-== /profilesearch ==
-
-*Description:* A list of author profiles that match the query. The query
-is matched against the nick, name and biography information and the
-results are sorted by closeness of match and the influence of authors.
-
-*URL Format:* `http://otter.topsy.com/profilesearch.json?query=parameters`
-
-=== Parameters: ===
-
-|| *Name*  || *Required* || *Description* ||
-|| q       || required   || Search query string. ||
-
-Accepts [ResListParameters List Parameters]
-
-=== Example: ===
-
-Fetch search results in json format for author profiles that match Barack Obama.
-
-{{{
-$ curl -i "http://otter.topsy.com/profilesearch.json?q=Barack+Obama"
-
-HTTP/1.0 200 OK
-Connection: close
-Date: Thu, 27 Aug 2009 04:12:03 GMT
-Content-Length: 4475
-Content-Type: application/json; charset=utf-8
-Expires: Wed, 26 Aug 2009 21:17:02 -0700
-Status: 200
-X-RateLimit-Limit: 2500
-X-RateLimit-Remaining: 2495
-X-RateLimit-Reset: 1251349200
-
-{
-   "request" : {
-      "parameters" : {
-         "q" : "Barack Obama"
-      },
-      "response_type" : "json",
-      "resource" : "profilesearch",
-      "url" : "http://otter.topsy.com/profilesearch.json?q=Barack+Obama"
-   },
-   "response" : {
-      "page" : 1,
-      "total" : "237",
-      "perpage" : 10,
-      "list" : [
-         {
-            "url" : "http://twitter.com/barackobama",
-            "name" : "Barack Obama",
-            "topsy_author_url" : "http://topsy.com/twitter/barackobama",
-            "photo_url" : "http://a1.twimg.com/profile_images/219314140/obama_4color_omark_normal.jpg",
-            "description" : "44th President of the United States",
-            "influence_level" : "5"
-         },
-      ]
-   }
-}
 }}}
 
 ----
