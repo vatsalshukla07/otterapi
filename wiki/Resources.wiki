@@ -451,7 +451,7 @@ X-RateLimit-Reset: 1251349200
 
 || *Name*   || *Required* || *Description* ||
 || q        || required   || Search query string. ([QuerySyntax query syntax]) ||
-|| dynamic  || optional   || If the value equals 1, the response will contain an extra window that is the best window for the given query. The possible responses are h1 through h23, or d1 through d100. These represent hourly or daily increments. ||
+|| dynamic  || optional   || If the value equals 1, the response will contain an extra window that is the best window for the given query. The possible responses are h1 through h23, or d1 through d100. These represent hourly or daily increments. NOTE: the output format of the response will change when this parameter is used. ||
 
 === Example: ===
 
