@@ -337,7 +337,7 @@ Accepts [ResListParameters List Parameters]
 Fetch search results in json format for the query "barack obama"
 
 {{{
-$ curl -i "http://otter.topsy.com/search.json?q=barack+obama&window=auto"
+$ curl -i "http://otter.topsy.com/search.json?q=barack+obama&window=dynamic"
 
 HTTP/1.0 200 OK
 Connection: close
@@ -361,7 +361,7 @@ X-RateLimit-Reset: 1251349200
       "url" : "http://otter.topsy.com/search.json?q=barack+obama&window=auto"
    },
    "response" : {
-      "window" : "d",
+      "window" : "d2",
       "page" : 1,
       "total" : "809",
       "perpage" : 10,
