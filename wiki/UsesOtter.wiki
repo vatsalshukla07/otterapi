@@ -93,3 +93,15 @@ https://chrome.google.com/extensions/detail/biakjffhfkpgngkaojmmeomahknpnkoe.
 http://hubs.twtlr.com/
 
 HUBS.twtlr.com is a service that helps you to find the hottest links posted on Twitter. Written by @yuanhao. Powered by Topsy and Otter. 
+
+== Twittrd == 
+
+http://twittrd.ericson.net/
+
+Twittrd uses the Topsy API to show the number of times that links on a site have been twittered. 
+
+== Topsy Instant == 
+
+http://vgrichina.github.com/topsy_instant/
+
+Hacked together my own response to Google Instant – search of links popular on Twitter http://bit.ly/dBRpo4 Thanks to #jquery and @Topsy
