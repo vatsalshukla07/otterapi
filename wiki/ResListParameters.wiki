@@ -12,6 +12,8 @@ List parameters available to all list [Resources resources].
 || maxtime || optional   || most recent date/time to restrict a result set. unix-timestamp format. ||
 || nohidden || optional   || toggles hiding of duplicate results. default is 1, which means no results are hidden. nohidden=0 will return unique results only ||
 || order || optional   || the order in which to return results. Options are "influence", "date" and "-date". Only available on /trackbacks  ||
+|| allow_lang || optional   || Language filter which lets you specify the languages you would like to see results in. Currently supports ja, zh, ko and en.  Option also takes a comma separated list of languages.  ||
+|| family_filter || optional   || Filters all content containing profanity. Should be set to 1 ||
 
 
 
