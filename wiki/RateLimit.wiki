@@ -5,11 +5,11 @@
 
 The Otter API is provided free-of-charge to the Internet community.  We ask for two things: 
 
-1. We ask you to link back to Topsy with the following "Powered by Topsy" logo: 
+1. ... link back to Topsy with the following "Powered by Topsy" logo: 
 
  [http://topsy.com/ http://corp.topsy.com/wp-content/uploads/2010/10/powered_v3_92.png]
 
-2. We ask you to allow us to say that you use Topsy.  In legal speak, we ask that you agree to grant Topsy a non-exclusive, royalty-free, license to use your trade names, trademarks, service marks, logos, domain names in presentations, marketing materials, customer lists and press releases.
+2. ... allow us to say that you use Topsy.  In legal speak, we ask that you agree to grant Topsy a non-exclusive, royalty-free, license to use your trade names, trademarks, service marks, logos, domain names in presentations, marketing materials, customer lists and press releases.
 
 = Rate Limit =
 
