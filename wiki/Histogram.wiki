@@ -1,6 +1,6 @@
 == /searchhistogram ==
 
-*Description:* A histogram for the number of results for a query over a period of time.
+*Description:* A time-series of the frequency of results for a query over a period of time.
 
 *URL Format:* `http://otter.topsy.com/searchcount.json?query=parameters`
 
