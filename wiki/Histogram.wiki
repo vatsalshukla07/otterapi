@@ -16,7 +16,7 @@ A searchhistorgram is a time-series of the number of distinct social media posts
 
 SearchHistograms have applications in analytics, trend detection, query freshness determination and social media monitoring. The [http://analytics.topsy.com Topsy Analytics] application is built on this API call.
 
-SearchHistograms are generated from Topsy's real-time search index and are available ad-hoc for any query.  It should be noted that because the search index performs "sub-sampling", it underestimates counts for older time periods. In general, counts are accruate upto 3 months for most terms and upto 1 month for very popular terms (like iPhone, Twitter, etc). 
+SearchHistograms are generated from Topsy's real-time search index and are available ad-hoc for any query.  It should be noted that because the search index performs "sub-sampling", it underestimates counts for older time periods. In general, counts are accruate upto 3 months for most terms and upto 1 month for very popular terms (like iPhone and Justin Bieber). 
 
 === Example: ===
 
