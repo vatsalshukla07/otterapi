@@ -12,7 +12,7 @@
 || period   || optional   || The number of slices.  Defaults to 30 (1 month) ||
 || count_method || options || This has two possible values, the default is "target" and the other possible value is "citation".  This define what is being counted, "target" means the number of unique links and "citation" means the number of unique tweets about links. ||
 
-A searchhistorgram is an histogram of the count of links or tweets for a query.  The granularity and the length of the histogram can be specified with the slice and period parameters.
+A searchhistorgram is a time-series of the number of distinct social media posts (tweets or links) that match a given query, over a defined time scale. The granularity and the length of the time-series can be specified with the slice and period parameters.
 
 SearchHistograms have applications in analytics, trend detection, query freshness determination and social media monitoring. The [http://analytics.topsy.com Topsy Analytics] application is built on this API call.
 
