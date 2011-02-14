@@ -10,17 +10,17 @@
 || q        || required   || Search query string. ([QuerySyntax query syntax]) ||
 || slice    || optional   || The number of seconds for each slice. Defaults to 86400 (1 day) ||
 || period   || optional   || The number of slices.  Defaults to 30 (1 month) ||
-|| count_method || options || This has two possible values, the default is "target" and the other possible value is "citation".  This define what is being counted, "target" means the number of unique links and "citation" means the number of unique tweets about links. ||
+|| count_method || options || This has two possible values, the default is "target" and the other possible value is "citation".  count_method specifies what is being counted, "target" means the number of unique links and "citation" means the number of unique tweets about links. ||
 
 A searchhistorgram is a time-series of the number of distinct social media posts (tweets or links) that match a given query, over a defined time period. The granularity and the length of the time-series can be specified with the slice and period parameters.
 
 SearchHistograms have applications in analytics, trend detection, query freshness determination and social media monitoring. The [http://analytics.topsy.com Topsy Analytics] application is built on this API call.
 
-SearchHistograms are generated from Topsy's real-time search index and are available ad-hoc for any query.  It should be noted that because the search index performs "sub-sampling", it underestimates counts for older time periods. In general, counts are accruate upto 3 months for most terms and upto 1 month for very popular terms (like iPhone and Justin Bieber). 
+SearchHistograms are generated from Topsy's real-time search index and are available ad-hoc for any query.  It should be noted that because the search index performs "sub-sampling", it underestimates counts for older time periods. In general, counts are accurate up to 3 months for most terms and up to 1 month for very popular terms (like iPhone and Justin Bieber). 
 
 === Example: ===
 
-Fetch only the search result counts in json format for a query of "Barack Obama".
+Fetch only the search result counts in json format for a query of "kindle".
 
 {{{
 $ curl -i "http://otter.topsy.com/searchhistogram.json?q=kindle"
