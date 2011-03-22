@@ -709,7 +709,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* List of tweets (trackbacks) that mention the query URL, most recent first.  
 
-NOTE: If you are only interested in the counts, call the more efficient method /urlinfo instead. 
+NOTE: If you are only interested in the counts, call the more efficient method /stats instead. 
 
 *URL Format:* `http://otter.topsy.com/trackbacks.json?query=parameters`
 
