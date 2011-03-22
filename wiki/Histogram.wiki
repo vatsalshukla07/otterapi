@@ -1,6 +1,6 @@
 == /searchhistogram ==
 
-*Description:* A time-series of the frequency of results for a query over a period of time.
+*Description:* The searchhistogram provides information to determine when a particular keyword peaked in the past days. 
 
 *URL Format:* `http://otter.topsy.com/searchcount.json?query=parameters`
 

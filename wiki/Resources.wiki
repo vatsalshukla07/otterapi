@@ -492,6 +492,60 @@ X-RateLimit-Reset: 1251349200
 
 ----
 
+== /searchhistogram ==
+
+*Description:* The searchhistogram provides information to determine when a particular keyword peaked in the past days. 
+
+*URL Format:* `http://otter.topsy.com/searchcount.json?query=parameters`
+
+=== Parameters: ===
+
+|| *Name*   || *Required* || *Description* ||
+|| q        || required   || Search query string. ([QuerySyntax query syntax]) ||
+|| slice    || optional   || The number of seconds for each slice. Defaults to 86400 (1 day) ||
+|| period   || optional   || The number of slices.  Defaults to 30 (1 month) ||
+|| count_method || options || This has two possible values, the default is "target" and the other possible value is "citation".  count_method specifies what is being counted, "target" means the number of unique links and "citation" means the number of unique tweets about links. ||
+
+A searchhistorgram is a time-series of the number of distinct social media posts (tweets or links) that match a given query, over a defined time period. The granularity and the length of the time-series can be specified with the slice and period parameters.
+
+SearchHistograms have applications in analytics, trend detection, query freshness determination and social media monitoring. The [http://analytics.topsy.com Topsy Analytics] application is built on this API call.
+
+SearchHistograms are generated from Topsy's real-time search index and are available ad-hoc for any query.  It should be noted that because the search index performs "sub-sampling", it underestimates counts for older time periods. In general, counts are accurate up to 3 months for most terms and up to 1 month for very popular terms (like iPhone and Justin Bieber). 
+
+=== Example: ===
+
+Fetch only the search result counts in json format for a query of "kindle".
+
+{{{
+$ curl -i "http://otter.topsy.com/searchhistogram.json?q=kindle"
+
+HTTP/1.1 200 OK
+Cache-Control: max-age=5
+Content-Type: application/json; charset=utf-8
+Expires: Mon, 14 Feb 2011 21:35:05 GMT
+Last-Modified: Mon, 14 Feb 2011 21:35:00 GMT
+Server: lighttpd/1.4.26
+Content-Length: 1675
+Date: Mon, 14 Feb 2011 21:35:00 GMT
+X-RateLimit-Limit: 10000
+X-RateLimit-Remaining: 9998
+X-RateLimit-Reset: 1297722896
+Connection: close
+
+{"request":{"parameters":{"q":"kindle","type":"cited"},"response_type":"json","resource":"searchhistogram","url":"http://otter.topsy.com/searchhistogram.json?q=kindle&type=cited"},"response":
+{"histogram":[2839,3748,4223,3530,5104,5439,5302,5192,5630,4935,4560,3687,4963,6003,6191,5068,5387,6273,4831,5069,4578,4530,5774,5918,4655,5072,5434,5086,5112,5589,5173,4751,5185,4749,5246,47
+97,4917,4901,5168,5429,6291,5646,5184,5436,4995,6385,5932,5945,7589,7697,6535,4619,3774,3944,4682,3672,3515,3068,3496,5457,5491,5496,4157,3571,3125,3187,3552,5233,5561,5753,4556,3960,4118,461
+3,5257,5619,4073,4240,3744,3784,4762,5053,4418,4293,4065,4061,4337,4421,3969,3909,4077,3889,3711,3968,4381,5130,5027,5249,4142,3844,3796,4245,4069,4080,4893,4512,3883,3986,4840,4641,4615,5088
+,5321,4006,4834,4391,4188,3930,4211,4192,3267,2668,3285,3533,3756,3877,3337,2620,2715,3106,2833,3635,3783,3107,3018,3012,3357,3528,3998,4808,3564,5103,6132,6944,7914,7297,6831,6081,4982,5467,
+6656,5724,7360,8795,5517,4521,4384,5913,6587,6021,6927,5323,4495,4641,5529,5847,6780,7274,4061,4966,4140,3034,4854,4498,3035,3188,2665,2616,3012,2697,3181,2559,2401,2217,2380,2388,2806,3772,3
+724,3018,2888,2900,2812,3417,2922,3972,2985,2206,2336,3949,8987,1933,1831,1445,1517,1230,1386,1282,1069,1919,651,663,583,694,697,794,901,726,764,654,729,895,958,986,885,718,692,975,1790,1081,
+1725,1239,525,592,542,605,766,1637,1064,353,341,363,507,653,743,330,48,112,318,390,477,537,506,407,345,389,442,597,758,557,411,582,520,500,703,572,521,385,354,385,422,726,1092,458,293,217,374
+,418,738,822,438,366,416,542,509,591,603,431,354,589,614,736,509,617,573,385,599,660,580,581],"period":300,"count_method":"target","slice":86400}}
+
+}}}
+
+----
+
 == /searchdate ==
 
 *Description:* Returns time-sorted (reverse chronology) search results.  All options are the same as that of /search.
