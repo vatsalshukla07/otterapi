@@ -550,6 +550,8 @@ Connection: close
 
 *Description:* Returns search results sorted by reverse chronology.  All options are the same as that of /search.
 
+This method performs regular search as /search, picks top N results based on relevance, then sort them by the timesstamp of the first citation. In other words, it is a timeline of high quality results. The quality level is controlled by parameter "zoom", the default value 10 will pick up to 100 results.
+
 === Parameters: ===
 
 || *Name*  || *Required* || *Description* ||
@@ -557,8 +559,6 @@ Connection: close
 || window  || optional   || See /search documentation. ||
 || type    || optional   || See /search documentation. ||
 || zoom    || optional   || Zoom-level for depth / quality.  Default is 10, which picks 100 results ||
-
-This method performs regular search as /search, picks top N results based on relevance, then sort them by the timesstamp of the first citation. In other words, it is a timeline of high quality results. The quality level is controlled by parameter "zoom", the default value 10 will pick up to 100 results.
 
 ----
 
