@@ -1,6 +1,6 @@
 == /top ==
 
-*Description:* A feed of Top 100, 1K, 5K and 20K links, photos, tweets & videos posted on Twitter everyday.
+*Description:* A feed of Top 100, 1K, 5K and 20K links, photos, tweets & videos posted on the social web everyday.
 
 *URL Format:* `http://otter.topsy.com/toplinks.json?query=parameters`
 
@@ -12,6 +12,7 @@
 || allow_lang || optional || defaults to all.  Other values:  en, ja, kr, de, pt, es, th, fr ||
 
 This method returns a feed of Top 100, or 1K (1000), 5K (5000), 20K (20,000) items posted on Twitter everyday.  The list is computed using a predictive algorithm, which dynamically adjusts ranking criteria to determine the threshold number of items everyday.  You can select a particular threshold with the `thresh` parameter. 
+
 When `type` is not specified, the list includes all types of items.  There are independent lists for type image, video and tweet, that can be accessed with the `type` parameter.
 
 Several langauges are supported by /top, described in the table above.
@@ -19,7 +20,7 @@ Several langauges are supported by /top, described in the table above.
 
 === Example: ===
 
-Fetch only the search result counts in json format for a query of "Barack Obama".
+Fetch the Top 100 tweets in English. 
 
 {{{
 $ curl -i "http://otter.topsy.com/toplinks.json?thresh=top100&type=tweet&allow_lang=en"
