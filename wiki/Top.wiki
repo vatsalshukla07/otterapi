@@ -2,7 +2,7 @@
 
 *Description:* A feed of Top 100, 1K, 5K and 20K links, photos, tweets & videos posted on the social web everyday.
 
-*URL Format:* `http://otter.topsy.com/toplinks.json?query=parameters`
+*URL Format:* `http://otter.topsy.com/top.json?query=parameters`
 
 === Parameters: ===
 
@@ -23,7 +23,7 @@ Several langauges are supported by /top, described in the table above.
 Fetch the Top 100 tweets in English. 
 
 {{{
-$ curl -i "http://otter.topsy.com/toplinks.json?thresh=top100&type=tweet&allow_lang=en"
+$ curl -i "http://otter.topsy.com/top.json?thresh=top100&type=tweet&allow_lang=en"
 
 HTTP/1.1 200 OK
 Cache-Control: max-age=5
@@ -42,14 +42,14 @@ Connection: close
 
 {
    "request" : {
-      "resource" : "toplinks",
+      "resource" : "top",
       "response_type" : "json",
       "parameters" : {
          "allow_lang" : "en",
          "type" : "tweet",
          "thresh" : "top100"
       },
-      "url" : "http://otter.topsy.com/toplinks.json?allow_lang=en&thresh=top100&type=tweet"
+      "url" : "http://otter.topsy.com/top.json?allow_lang=en&thresh=top100&type=tweet"
    },
    "response" : {
       "page" : 1,
