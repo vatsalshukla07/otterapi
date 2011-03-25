@@ -496,7 +496,7 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* The searchhistogram provides information to determine when a particular keyword peaked in the past days. 
 
-*URL Format:* `http://otter.topsy.com/searchcount.json?query=parameters`
+*URL Format:* `http://otter.topsy.com/searchhistogram.json?query=parameters`
 
 === Parameters: ===
 
