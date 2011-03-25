@@ -1,4 +1,4 @@
-== /linkposts ==
+== /populartrackbacks ==
 
 *Description:* List of most popular and unique tweets (trackbacks) that mention the query URL.
 
