@@ -220,7 +220,7 @@ count-only version of /linkposts
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the author. ||
 || contains || optional   || A query filter for linkposts (the content must contain this string). ||
-|| tracktype || optional   || Type of posts. Options include: `image`, `tweet__various` (tweets and retweets) and `self__tweet` (tweets by user). ||
+|| tracktype || optional   || Type of posts. Options include: `tweet__various` (tweets and retweets) and `self__tweet` (tweets by user). ||
 
 === Example: ===
 
