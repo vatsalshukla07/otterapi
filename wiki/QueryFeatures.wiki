@@ -24,7 +24,7 @@ $ curl -i http://otter.topsy.com/search.json?window=dynamic&q=iphone&query_featu
          "topsy_window_count" : 3127
       },
 
-
+}}}
 
 == Picked window values ==
 
