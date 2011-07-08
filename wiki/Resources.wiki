@@ -329,7 +329,7 @@ X-RateLimit-Reset: 1251349200
 || q       || required   || Search query string. ([QuerySyntax query syntax]) ||
 || window  || optional   || Time window for results. (default: json Options: `dynamic` - will pick the most relevant window. Possible responses are 1-23 hours or 1-100 days. (For example: h6 or d10). `h` last hour, `d` last day, `w` last week, `m` last month, `a` all time. (DEPRECATED: `auto` - automatically pick the most relevant window. This will return one of the standard h,d,w,m,a window values.).  ||
 || type || optional   || The type of result.  Default is nothing, which includes all types.  Other supported values are `image`, `tweet` and `video`||
-|| query_features || optional || Enables QueryFeatures described in the wiki ||
+|| query_features || optional || Enables QueryFeatures described in the wiki. Only works when window=dynamic ||
 
 Accepts [ResListParameters List Parameters]
 
