@@ -1,4 +1,4 @@
-Otter provides features for a query when the search.json method is called with query_features=1 and window=dynamic.  These features can be used to train query classifiers that want to understand freshness & quality of Topsy results for query.  
+Otter provides *features* for a query when the search.json method is called with query_features=1 and window=dynamic.  These features describe second-order statistics about the level of supply of the query in Topsy's corpus.  The features can be used to train robust classifiers for fresh & trending queries.
 
 The features are described below, using the following example:
 
