@@ -2,7 +2,29 @@ Otter provides features for a query when the search.json method is called with q
 
 The features are described below, using the following example:
 
-http://otter.topsy.com/search.json?window=dynamic&q=iphone&query_features=1&rankcount_maxdays=14
+{{{
+$ curl -i http://otter.topsy.com/search.json?window=dynamic&q=iphone&query_features=1&rankcount_maxdays=14
+
+      "query_features" : {
+         "topsy_momentum_d1" : 77630,
+         "topsy_count_d14" : 3069383,
+         "topsy_window_picked" : 1,
+         "topsy_peak_height_stddevs_d14" : 3.0209111645379,
+         "topsy_normalized_sum_d14" : 1641.55063526661,
+         "topsy_count_d1" : 143766,
+         "topsy_stddev_d14" : 83.2568605857359,
+         "topsy_window_picked_method" : 1,
+         "topsy_top_link_in_cnt_influential" : 309,
+         "topsy_peak_position_d14" : 7,
+         "topsy_top_link_qius" : 1.78786e-07,
+         "topsy_velocity_d1" : 54,
+         "topsy_top_link_score" : 14.3181,
+         "topsy_total_count" : 26908148,
+         "topsy_top_link_in_cnt" : 2538,
+         "topsy_window_count" : 3127
+      },
+
+
 
 == Picked window values ==
 
