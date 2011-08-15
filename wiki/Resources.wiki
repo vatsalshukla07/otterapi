@@ -257,7 +257,78 @@ Date: Tue, 22 Sep 2009 20:46:10 GMT
 }}}
 
 ----
+== /populartrackbacks ==
 
+*Description:* List of most popular and unique tweets (trackbacks) that mention the query URL.
+
+*URL Format:* ` http://otter.topsy.com/populartrackbacks.json?query=parameters
+
+=== Parameters: ===
+
+|| *Name*   || *Required* || *Description* ||
+|| url      || required   || URL string for the target. ||
+
+
+Accepts [ResListParameters List Parameters]
+
+=== Example: ===
+
+Fetch most popular posts (tweets) in json format that reference Topsy's homepage.
+
+{{{
+$ curl -i "http://otter.topsy.com/linkposts.json?url=http://twitter.com/barackobama"
+
+HTTP/1.0 200 OK
+Connection: close
+Date: Thu, 27 Aug 2009 04:16:29 GMT
+Content-Length: 6247
+Content-Type: application/json; charset=utf-8
+Expires: Wed, 26 Aug 2009 21:21:29 -0700
+Status: 200
+X-RateLimit-Limit: 2500
+X-RateLimit-Remaining: 2492
+X-RateLimit-Reset: 1251349200
+
+{
+    'request' => {
+    'resource' => 'populartrackbacks',
+    'response_type' => 'txt',
+    'parameters' => {
+      'orig_url' => 'http://google.com',
+      'redirected_url' => 'http://www.google.com/',
+      'url' => 'http://www.google.com/'
+    },
+    'url' => 'http://otter.topsy.com/populartrackbacks.txt?orig_url=http%3A%2F%2Fgoogle.com&redirected_url=http%3A%2F%2Fwww.google.com%2F&url=http%3A%2F%2Fwww.google.com%2F'
+  },
+  'response' => {
+    'topsy_trackback_url' => 'http://topsy.com/google.com/',
+    'page' => 1,
+    'total' => 0,
+    'trackback_total' => 125,
+    'list' => [
+      {
+        'similar_total' => 8,
+        'date' => 1274459250,
+        'content' => 'RT @kevinrose: wow, http://google.com, click &#39;insert coin&#39;',
+        'type' => 'tweet',
+        'author' => {
+          'url' => 'http://twitter.com/frsh_',
+          'name' => 'Chris Boyd',
+          'nick' => 'frsh_',
+          'photo_url' => 'http://a3.twimg.com/profile_images/564119011/16450_358726020331_903405331_9898493_4059510_n_normal.jpg',
+          'topsy_author_url' => 'http://topsy.com/twitter/frsh_?utm_source=otter'
+        },
+        'date_alpha' => 'May 21, 2010',
+        'highlight' => 'RT @kevinrose: wow, http://google.com, click &#39;insert coin&#39; '
+      },
+         ...
+      ]
+   }
+}
+
+}}}
+
+----
 == /related ==
 
 *Description:* List of related URLs. This list is derived by tracking 
