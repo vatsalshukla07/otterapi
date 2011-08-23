@@ -4,6 +4,12 @@
 
 = Libraries =
 
+== php-otter ==
+
+A php wrapper to the Topsy Otter API.
+
+Source: https://github.com/rowanmanning/topsy-php
+
 == python-otter ==
 
 A python client library to the Topsy Otter API.
