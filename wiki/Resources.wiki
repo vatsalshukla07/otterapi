@@ -13,7 +13,7 @@ can be broken down into three parts: [Resources Resources (described below)],
 [ResponseFormats response format], and query parameters. A malformed
 request will return a response with HTTP 400 status.
 
-   `GET /`[Resources resource]`.`[ResponseFormats response-format]`?&query=parameterss HTTP/1.1`<br>
+   `GET /`[Resources resource]`.`[ResponseFormats response-format]`?keys=values HTTP/1.1`<br>
    `Host: otter.topsy.com`
 
 = Resources = 
@@ -25,8 +25,6 @@ indexed by Topsy). The response contains the name, description (biography) and
 the influence level of the author.
 
 *Explanation of Influence:* [http://code.google.com/p/otterapi/wiki/Glossary TopsyGlossary]
-
-*URL Format:* `http://otter.topsy.com/authorinfo.json?query=parameters`
 
 === Parameters: ===
 
@@ -79,8 +77,6 @@ X-RateLimit-Reset: 1251345600
 *Description:* List of authors that talk about the query. The list is
 sorted by frequency of posts and the influence of authors. 
 (Note: for backwards compatibility, the /authorsearch api method is an alias to /experts.) 
-
-*URL Format:* `http://otter.topsy.com/experts.json?query=parameters`
 
 === Parameters: ===
 
@@ -143,8 +139,6 @@ X-RateLimit-Reset: 1251349200
 == /linkposts ==
 
 *Description:* List of urls posted by an author.
-
-*URL Format:* `http://otter.topsy.com/linkposts.json?query=parameters`
 
 === Parameters: ===
 
@@ -213,8 +207,6 @@ X-RateLimit-Reset: 1251349200
 *Description:* Count of links posted by an author. This is the efficient, 
 count-only version of /linkposts
 
-*URL Format:* `http://otter.topsy.com/linkpostcount.json?query=parameters`
-
 === Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
@@ -260,8 +252,6 @@ Date: Tue, 22 Sep 2009 20:46:10 GMT
 == /populartrackbacks ==
 
 *Description:* List of most popular and unique tweets (trackbacks) that mention the query URL.
-
-*URL Format:* ` http://otter.topsy.com/populartrackbacks.json?query=parameters
 
 === Parameters: ===
 
@@ -334,8 +324,6 @@ X-RateLimit-Reset: 1251349200
 *Description:* List of related URLs. This list is derived by tracking 
 other URLs that are mentioned in the same tweet as the query URL.
 
-*URL Format:* `http://otter.topsy.com/related.json?query=parameters`
-
 || *Name*   || *Required* || *Description* ||
 || url      || required   || URL string for the target. ||
 
@@ -391,8 +379,6 @@ X-RateLimit-Reset: 1251349200
 == /search ==
 
 *Description:* List of results for a query.
-
-*URL Format:* `http://otter.topsy.com/search.json?query=parameters`
 
 === Parameters: ===
 
@@ -517,8 +503,6 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* Count of results for a search query.
 
-*URL Format:* `http://otter.topsy.com/searchcount.json?query=parameters`
-
 === Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
@@ -567,8 +551,6 @@ X-RateLimit-Reset: 1251349200
 == /searchhistogram ==
 
 *Description:* The searchhistogram provides information to determine when a particular keyword peaked in the past days. 
-
-*URL Format:* `http://otter.topsy.com/searchhistogram.json?query=parameters`
 
 === Parameters: ===
 
@@ -640,8 +622,6 @@ This method performs regular search as /search, picks top N results based on rel
 of getting the counts only. For detailed information about a URL,
 use urlinfo.
 
-*URL Format:* `http://otter.topsy.com/stats.json?query=parameters`
-
 === Parameters: ===
 
 || *Name*   || *Required* || *Description* ||
@@ -689,8 +669,6 @@ X-RateLimit-Reset: 1251349200
 == /top ==
 
 *Description:* A feed of Top 100, 1K, 5K and 20K links, photos, tweets & videos posted on the social web everyday.
-
-*URL Format:* `http://otter.topsy.com/top.json?query=parameters`
 
 === Parameters: ===
 
@@ -931,8 +909,6 @@ Connection: close
 
 *Description:* List of tags associated with a url.
 
-*URL Format:* `http://otter.topsy.com/tags.json?query=parameters`
-
 === Parameters: ===
 
 || *Name*   || *Required*  || *Description* ||
@@ -1033,8 +1009,6 @@ X-RateLimit-Reset: 1251349200
 *Description:* List of tweets (trackbacks) that mention the query URL, most recent first.  
 
 NOTE: If you are only interested in the counts, call the more efficient method /stats instead. 
-
-*URL Format:* `http://otter.topsy.com/trackbacks.json?query=parameters`
 
 === Parameters: ===
 
@@ -1161,8 +1135,6 @@ X-RateLimit-Reset: 1251349200
 
 *Description:* List of trending terms.
 
-*URL Format:* `http://otter.topsy.com/trending.json?query=parameters`
-
 Accepts [ResListParameters List Parameters]
 
 === Example: ===
@@ -1209,8 +1181,6 @@ X-RateLimit-Reset: 1251349200
 == /urlinfo ==
 
 *Description:* Information about an url.
-
-*URL Format:* `http://otter.topsy.com/urlinfo.json?query=parameters`
 
 === Parameters: ===
 
