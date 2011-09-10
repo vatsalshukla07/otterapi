@@ -16,9 +16,9 @@ The Otter API is provided free-of-charge to the Internet community.  We ask for 
 The Otter API uses a credit allocation system to ensure fair 
 distribution of capacity and support multiple tiers of usage, both free and commercial. The allocation scheme will allow for:
 
-# 3000 queries per day for free IP based credit limits
-# 7000 queries per day for free API based credits with an API key ( requires a simple sign-up via our API key sign-up interface http://manage.topsy.com/app )
-# Commercial grade API based limits for larger volumes.  If your app requires larger volumes and you wish to get commercial access now, please send us a note at api@topsy.com. 
+  # 3000 queries per day for free IP based credit limits
+  # 7000 queries per day for free API based credits with an API key ( requires a simple sign-up via our API key sign-up interface http://manage.topsy.com/app )
+  # Commercial grade API based limits for larger volumes.  If your app requires larger volumes and you wish to get commercial access now, please send us a note at api@topsy.com. 
 
  You can check the status of your queries with the 
 following call:
