@@ -20,8 +20,7 @@ distribution of capacity and support multiple tiers of usage, both free and comm
   # 7000 queries per day for free API based credits with an API key ( requires a simple sign-up via our API key sign-up interface http://manage.topsy.com/app )
   # Commercial grade API based limits for larger volumes.  If your app requires larger volumes and you wish to get commercial access now, please send us a note at api@topsy.com. 
 
- You can check the status of your queries with the 
-following call:
+ You can check the status of your queries with the following call:
 
 {{{
 http://otter.topsy.com/credit.json
