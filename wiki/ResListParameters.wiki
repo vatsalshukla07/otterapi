@@ -6,7 +6,7 @@ List parameters available to all list [Resources resources].
 
 || *Name*  || *Required* || *Description* ||
 || page    || optional   || page number of the result set. (default: `1`, max: `10`) ||
-|| perpage || optional   || limit number of results per page. (default: `10`, max: `50`) ||
+|| perpage || optional   || limit number of results per page. (default: `10`, max: `100`) ||
 || offset  || optional   || offset from which to start the results, should be set to *last_offset* parameter returned in the previous page. ||  
 || mintime || optional   || earliest date/time to restrict a result set. unix-timestamp format. ( Note - search.json can be used with either "window" or "mintime" and/or "maxtime" but not both. Using "window" as well as "mintime"/"maxtime" can provide 0 or incorrect results) ||
 || maxtime || optional   || most recent date/time to restrict a result set. unix-timestamp format. (Note - search.json can be used with either "window" or "mintime" and/or "maxtime" but not both. Using "window" as well as "mintime"/"maxtime" can provide 0 or incorrect results) ||
