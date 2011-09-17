@@ -3,7 +3,7 @@
 
 = Usage Terms =
 
-The Otter API is provided free-of-charge to the Internet community.  We ask for two things: 
+The Otter API is provided free-of-charge upto 7000 queries per day.  If you are using free access, we ask for two things: 
 
 1. ... link back to Topsy with the following "Powered by Topsy" logo: 
 
@@ -13,8 +13,7 @@ http://cdn.topsy.com/img/powered.png
 
 = Rate Limit =
 
-The Otter API uses a credit allocation system to ensure fair 
-distribution of capacity and support multiple tiers of usage, both free and commercial. The allocation scheme allows for:
+The Otter API uses a credit allocation system to ensure fair distribution of capacity and support multiple tiers of usage, both free and commercial. The allocation scheme allows for:
 
   # 3000 queries per day for free IP based credit limits
   # 7000 queries per day for free API based credits with an API key ( requires a simple sign-up via our API key sign-up interface http://manage.topsy.com/app )
