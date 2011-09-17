@@ -14,7 +14,7 @@ http://cdn.topsy.com/img/powered.png
 = Rate Limit =
 
 The Otter API uses a credit allocation system to ensure fair 
-distribution of capacity and support multiple tiers of usage, both free and commercial. The allocation scheme will allow for:
+distribution of capacity and support multiple tiers of usage, both free and commercial. The allocation scheme allows for:
 
   # 3000 queries per day for free IP based credit limits
   # 7000 queries per day for free API based credits with an API key ( requires a simple sign-up via our API key sign-up interface http://manage.topsy.com/app )
@@ -33,14 +33,10 @@ In addition, each request contains rate limit information in the HTTP response h
 || `X-RateLimit-Remaining`  || Total credits available. ||
 || `X-RateLimit-Reset`      || Timestamp (unix epoch) for when the credits will be reset. ||
 
-== Cost of API calls ==
-
-Unless otherwise noted, an API call deducts 1 credit from your allocation.  Search based API calls (/search, /searchcount, /authorsearch, /profilesearch) have a significantly higher computational cost on our backend, and deduct 10 credits per call.
-
 === Example HTTP Response Headers ===
 
 {{{
-X-RateLimit-Limit: 10000
+X-RateLimit-Limit: 7000
 X-RateLimit-Remaining: 2498
 X-RateLimit-Reset: 1250791200
 }}}
@@ -51,8 +47,4 @@ All calls that take [ResListParameters list parameters] limit `perpage` to 100 a
 
 = Client Identification =
 
-We request that you identify your application or service via the `User-Agent` HTTP header. This value should be the url to your service or application. This is not mandatory, but when under heavy load, we will give preference to clients that identify themselves. It is also possible to identify via `X-Topsy-UA` HTTP header, if modifying the `User-Agent` header is not possible.
-
-= Higher grade access = 
-
-We support commercial, higher grade access large-scale applications.  If you need this, please [Contact contact us].
+If you are using IP based credit limits, we request that you identify your application or service via the `User-Agent` HTTP header. This value should be the url to your service or application. This is not mandatory, but when under heavy load, we will give preference to clients that identify themselves. It is also possible to identify via `X-Topsy-UA` HTTP header, if modifying the `User-Agent` header is not possible.
