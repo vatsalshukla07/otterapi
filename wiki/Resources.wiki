@@ -6,7 +6,7 @@
 
 The api is accessible via the uri: http://otter.topsy.com/
 
-*bold* Otter API Key *bold*
+*Otter API Key*
 
 You can obtain a free API key for the Otter API by creating an account at http://manage.topsy.com/app
 
