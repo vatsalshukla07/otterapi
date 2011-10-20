@@ -270,7 +270,7 @@ Accepts [ResListParameters List Parameters]
 Fetch most popular posts (tweets) in json format that reference Topsy's homepage.
 
 {{{
-$ curl -i "http://otter.topsy.com/linkposts.json?url=http://twitter.com/barackobama"
+$ curl -i "http://otter.topsy.com/populartrackbacks.json?url=http%3A%2F%2Fwww.google.com%2F"
 
 HTTP/1.0 200 OK
 Connection: close
