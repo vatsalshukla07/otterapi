@@ -86,11 +86,10 @@ sorted by frequency of posts and the influence of authors.
 
 || *Name*  || *Required* || *Description* ||
 || q       || required   || Search query string. ([QuerySyntax query syntax]) ||
-|| a||
-|| InfFilter ||  optional || Only influential people are shown. Default value is 1. ||
-|| CountFilter || optional || Only people with n or more citations  are shown. Default value of n is 2. ||
-|| BotFilter || optional || Bots are not shown. Default value is 1. || 
-|| NoFilters || optional || Setting this to 1, would turn off all other filters. Default value is 0. ||
+|| !InfFilter ||  optional || Only influential people are shown. Default value is 1. ||
+|| !CountFilter || optional || Only people with n or more citations  are shown. Default value of n is 2. ||
+|| !BotFilter || optional || Bots are not shown. Default value is 1. || 
+|| !NoFilters || optional || Setting this to 1, would turn off all other filters. Default value is 0. ||
 
 Accepts [ResListParameters List Parameters]
 
