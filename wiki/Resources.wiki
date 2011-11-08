@@ -961,10 +961,11 @@ NOTE: If you are only interested in the counts, call the more efficient method /
 
 === Parameters: ===
 
-|| *Name*    || *Required* || *Description* ||
-|| url       || required   || URL for the target. ||
-|| contains  || optional   || Query string to filter results. ||
-|| infonly   || optional   || Boolean value that filters trackbacks to influential only (default 0) ||
+|| *Name*       || *Required* || *Description* ||
+|| url          || required   || URL for the target. ||
+|| contains     || optional   || Query string to filter results. ||
+|| infonly      || optional   || Boolean value that filters trackbacks to influential only (default 0) ||
+|| sort_method  || optional   || the order in which to return results. Options are "influence", "date" and "-date". ||
 
 Accepts [ResListParameters List Parameters]
 
