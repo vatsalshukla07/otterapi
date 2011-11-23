@@ -639,7 +639,7 @@ Several langauges are supported by /top, described in the table above.
 Fetch the Top 100 tweets in English. 
 
 {{{
-$ curl -i "http://otter.topsy.com/top.json?thresh=top100&type=tweet&allow_lang=en"
+$ curl -i "http://otter.topsy.com/top.json?thresh=top100&type=tweet&locale=en"
 
 HTTP/1.1 200 OK
 Cache-Control: max-age=5
@@ -661,14 +661,15 @@ Connection: close
       "resource" : "top",
       "response_type" : "json",
       "parameters" : {
-         "allow_lang" : "en",
+         "locale" : "en",
          "type" : "tweet",
          "thresh" : "top100"
       },
-      "url" : "http://otter.topsy.com/top.json?allow_lang=en&thresh=top100&type=tweet"
+      "url" : "http://otter.topsy.com/top.json?locale=en&thresh=top100&type=tweet"
    },
    "response" : {
       "page" : 1,
+      "locale" : "en",
       "total" : 500,
       "perpage" : 10,
       "last_offset" : 14,
