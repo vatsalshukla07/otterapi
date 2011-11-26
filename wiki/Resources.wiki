@@ -6,10 +6,6 @@
 
 The api is accessible via the uri: http://otter.topsy.com/
 
-*Otter API Key*
-
-You can obtain a free API key for the Otter API by creating an account at http://manage.topsy.com/app
-
 = Request Syntax =
 
 All requests are implemented via HTTP GET calls. The url of the request
@@ -19,6 +15,14 @@ request will return a response with HTTP 400 status.
 
    `GET /`[Resources resource]`.`[ResponseFormats response-format]`?keys=values HTTP/1.1`<br>
    `Host: otter.topsy.com`
+
+== apikey == 
+
+You can obtain a free API key for the Otter API by creating an account at [http://manage.topsy.com/app http://manage.topsy.com/app]. 
+
+All requests accept the API key via the `apikey` parameter. 
+
+   `GET /`[Resources resource]`.`[ResponseFormats response-format]`?apikey=KEY&keys=values HTTP/1.1`<br>
 
 = Resources = 
 
