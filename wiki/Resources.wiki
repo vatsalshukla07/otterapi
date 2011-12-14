@@ -636,7 +636,7 @@ This method returns a feed of Top 100, or 1K (1000), 5K (5000), 20K (20,000) ite
 
 When `type` is not specified, the list includes all types of items.  There are independent lists for type image, video and tweet, that can be accessed with the `type` parameter.
 
-Several langauges are supported by /top, described in the table above.
+Several languages are supported by /top, described in the table above.
 
 === Example: ===
 
