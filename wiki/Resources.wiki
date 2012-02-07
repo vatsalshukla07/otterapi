@@ -628,7 +628,7 @@ X-RateLimit-Reset: 1251349200
 || *Name*   || *Required* || *Description* ||
 || thresh   || required   || top100, top1k, top5k, top20k ||
 || type     || optional   || defaults to everything. Other values: image, video, tweet ||
-|| locale   || optional   || defaults to all.  Other values:  en, ja, kr, de, pt, es, th, fr ||
+|| locale   || optional   || defaults to all.  Other values:  en, ja, ko, de, pt, es, th, fr ||
 
 Accepts [ResListParameters List Parameters]
 
