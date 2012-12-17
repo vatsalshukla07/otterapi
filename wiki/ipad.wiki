@@ -1,6 +1,6 @@
 #sidebar TOC
 
-*Request*: http://otter.topsy.com/search.txt?q=ipad&window=dynamic&apikey=<your_apikey>
+*Request*: 'http://otter.topsy.com/search.txt?q=ipad&window=dynamic&apikey=<your_apikey>'
 *txt response*:
 
 {{{
