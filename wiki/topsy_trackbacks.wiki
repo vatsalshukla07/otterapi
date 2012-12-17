@@ -1,4 +1,9 @@
 #sidebar TOC
+
+*Request*: `http://otter.topsy.com/trackbacks.txt?tracktype=tweet__trackback&url=http%3A%2F%2Ftopsy.com%2F&apikey=<your_apikey>`
+
+*Response*: The TXT response is shown below. Other [ResponseFormats response formats] are also available.
+
 {{{
 ### FOR DEBUG ONLY ###
 $VAR1 = {
