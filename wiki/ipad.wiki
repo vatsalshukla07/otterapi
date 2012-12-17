@@ -2,7 +2,7 @@
 
 *Request*: `http://otter.topsy.com/search.txt?q=ipad&window=dynamic&apikey=<your_apikey>`
 
-*Response*: The TXT response is shown below, JSON and JSONP
+*Response*: The TXT response is shown below. Other response formats are also available.
 
 {{{
 ### FOR DEBUG ONLY ###
