@@ -1,5 +1,9 @@
 #sidebar TOC
 
+*Request*: `http://otter.topsy.com/authorinfo.txt?url=http%3A%2F%2Ftwitter.com%2Fbarackobama&apikey=<your_apikey>`
+
+*Response*: The TXT response is shown below. Other [ResponseFormats response formats] are also available.
+
 {{{
 ### FOR DEBUG ONLY ###
 $VAR1 = {
