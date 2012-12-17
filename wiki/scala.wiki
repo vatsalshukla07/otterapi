@@ -1,4 +1,9 @@
 #sidebar TOC
+
+*Request*: `http://otter.topsy.com/authorsearch.txt?q=scala&apikey=<your_apikey>`
+
+*Response*: The TXT response is shown below. Other [ResponseFormats response formats] are also available.
+
 {{{
 ### FOR DEBUG ONLY ###
 $VAR1 = {
