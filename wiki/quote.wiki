@@ -1,4 +1,4 @@
-# sidebar TOC
+#sidebar TOC
 {{{
 ### FOR DEBUG ONLY ###
 $VAR1 = {
