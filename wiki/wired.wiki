@@ -1,4 +1,9 @@
 #sidebar TOC
+
+*Request*: `http://otter.topsy.com/search.txt?q=site%3Awired.com&window=d&apikey=<your_apikey>`
+
+*Response*: The TXT response is shown below. Other [ResponseFormats response formats] are also available.
+
 {{{
 ### FOR DEBUG ONLY ###
 $VAR1 = {
