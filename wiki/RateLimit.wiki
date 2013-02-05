@@ -3,7 +3,7 @@
 
 = Usage Terms =
 
-The Otter API is provided free-of-charge upto 7000 queries per day.  If you are using free access, we ask for two things: 
+You can get a 30-day free trial of the Topsy Otter API by signing up for a key. This key will give you access for up to 7000 calls a day.  During your free access period, we ask for two things: 
 
 1. ... link back to Topsy with the following "Powered by Topsy" logo: 
 
@@ -15,8 +15,8 @@ http://cdn.topsy.com/img/powered.png
 
 The Otter API uses a credit allocation system to ensure fair distribution of capacity and support multiple tiers of usage, both free and commercial. The allocation scheme allows for:
 
-  # 7000 queries per day for free API based credits with an API key ( requires a simple sign-up via our API key sign-up interface http://manage.topsy.com/app )
-  # Commercial grade API based limits for larger volumes.  If your app requires larger volumes and you wish to get commercial access now, please send us a note at api@topsy.com. 
+  # 7000 queries per day for free trial API key users. This requires a simple sign-up via our Topsy manage page - http://manage.topsy.com/app.
+  # Commercial API for larger volumes and extended use.  If your application requires larger volumes or access beyond the initial 30 days,please send us a note at api@topsy.com. 
 
  You can check the status of your queries with the following call:
 
