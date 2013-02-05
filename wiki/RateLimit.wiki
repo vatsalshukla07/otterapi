@@ -3,7 +3,7 @@
 
 = Usage Terms =
 
-You can get a 30-day free trial of the Topsy Otter API by signing up for a key. This key will give you access for up to 7000 calls a day.  During your free access period, we ask for two things: 
+You can get a 30-day free trial of the Topsy Otter API by signing up for a key. This key will give you access for up to 7,000 calls a day.  During your free access period, we ask for two things: 
 
 1. ... link back to Topsy with the following "Powered by Topsy" logo: 
 
@@ -15,7 +15,7 @@ http://cdn.topsy.com/img/powered.png
 
 The Otter API uses a credit allocation system to ensure fair distribution of capacity and support multiple tiers of usage, both free and commercial. The allocation scheme allows for:
 
-  # 7000 queries per day for free trial API key users. This requires a simple sign-up via our Topsy manage page - http://manage.topsy.com/app.
+  # 7,000 queries per day for free trial API key users. This requires a simple sign-up via our Topsy manage page - http://manage.topsy.com/app.
   # Commercial API for larger volumes and extended use.  If your application requires larger volumes or access beyond the initial 30 days,please send us a note at api@topsy.com. 
 
  You can check the status of your queries with the following call:
@@ -41,7 +41,7 @@ X-RateLimit-Reset: 1250791200
 
 = Paging Limits =
 
-All calls that take [ResListParameters list parameters] limit `perpage` to 100 and `page` to 10. This gives you access to top 1000 items on any list.
+All calls that take [ResListParameters list parameters] limit `perpage` to 100 and `page` to 10. This gives you access to top 1,000 items on any list.
 
 = Client Identification =
 
