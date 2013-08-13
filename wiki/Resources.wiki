@@ -18,8 +18,6 @@ request will return a response with HTTP 400 status.
 
 == apikey == 
 
-You can obtain a free API key for the Otter API by creating an account at [http://manage.topsy.com/app http://manage.topsy.com/app]. 
-
 All requests accept the API key via the `apikey` parameter. 
 
    `GET /`[Resources resource]`.`[ResponseFormats response-format]`?apikey=KEY&keys=values HTTP/1.1`<br>
